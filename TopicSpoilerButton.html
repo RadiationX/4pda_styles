@@ -1,0 +1,893 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<script type="text/javascript" src="forum/js/z_forum_helpers.js"></script>
+	<script type="text/javascript" src="theme.js"></script>
+	<script type="text/javascript" src="blockeditor.js"></script>
+	<script type="text/javascript" src="z_emoticons.js"></script>
+	<link rel="stylesheet" type="text/css" href="forum/css/4pda_light_blue.css">
+    <link rel="stylesheet" type="text/css" href="fonts/roboto/import.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticons/import.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fontello/import.css">
+	<title>Тема с отключенными аватарками</title>
+</head>
+<body id="topic" class="modification">
+    <div id="topMargin" style="height:81px;"></div>
+    <div class="panel top">
+        <div class="navi top">
+            <a class="button first" onclick="window.HTMLOUT.firstPage()"><span>&lt;&lt;</span></a>
+            <a class="button prev" onclick="window.HTMLOUT.prevPage()"><span>&lt;</span></a>
+            <a class="button page" onclick="window.HTMLOUT.jumpToPage()"><span>Выбор</span></a>
+            <a class="button next disable"><span>&gt;</span></a>
+            <a class="button last disable"><span>&gt;&gt;</span></a>
+        </div>
+        <div class="topic_title_post"><a href="http://4pda.ru/forum/index.php?showtopic=521028&amp;st=16260#entry42403756">Meizu MX3 - Официальная прошивка</a></div>
+    </div>
+    <div class="poll">
+        <div class="hat">
+            <div class="hidetop" style="cursor:pointer;">
+                <input class="spoiler_button" type="button" value="+" onclick="toggleSpoilerVisibility(this)"><b><span>Опрос</span></b></div>
+            <div class="hidemain" style="display:none">
+                <form action="modules.php" method="get">
+                    <table class="ipbtable" cellspacing="1">
+                        <tbody>
+                            <tr>
+                                <th colspan="3" align="center"><b>Пользуетесь ли Вы поиском по теме и шапкой?</b></th>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="row1">
+                                    <div class="borderwrap">
+                                        <div class="row1" style="padding:4px;"><span class="postdetails"><strong>Смотрите ли вы шапку (раздел Инструкции) прежде чем задать вопрос в теме?</strong></span></div>
+                                        <table class="ipbtable" cellpadding="4" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="post2" colspan="3">
+                                                        <input type="radio" name="choice[1]" value="1" class="radiobutton">&nbsp;<b>Да</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="post2" colspan="3">
+                                                        <input type="radio" name="choice[1]" value="2" class="radiobutton">&nbsp;<b>Нет</b></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="row1">
+                                    <div class="borderwrap">
+                                        <div class="row1" style="padding:4px;"><span class="postdetails"><strong>Чистите (замораживаете/удаляете) ли Вы стандартные приложения?</strong></span></div>
+                                        <table class="ipbtable" cellpadding="4" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="post2" colspan="3">
+                                                        <input type="radio" name="choice[2]" value="1" class="radiobutton">&nbsp;<b>Нет, ничего не изменяю в прошивке</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="post2" colspan="3">
+                                                        <input type="radio" name="choice[2]" value="2" class="radiobutton">&nbsp;<b>Замораживаю</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="post2" colspan="3">
+                                                        <input type="radio" name="choice[2]" value="3" class="radiobutton">&nbsp;<b>Удаляю</b></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="row1">
+                                    <div class="borderwrap">
+                                        <div class="row1" style="padding:4px;"><span class="postdetails"><strong>Какой расход батареи в вашей прошивке?</strong></span></div>
+                                        <table class="ipbtable" cellpadding="4" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="post2" colspan="3">
+                                                        <input type="radio" name="choice[3]" value="1" class="radiobutton">&nbsp;<b>1-3% в режиме сна</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="post2" colspan="3">
+                                                        <input type="radio" name="choice[3]" value="2" class="radiobutton">&nbsp;<b>3-10% в режиме сна</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="post2" colspan="3">
+                                                        <input type="radio" name="choice[3]" value="3" class="radiobutton">&nbsp;<b>&gt; 10%, аппарат не спит</b></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="row1" colspan="3" align="center"><b>Всего голосов: 234</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="formbuttonrow">
+                                    <input class="button" type="submit" name="submit" value="Голосовать!" title="Проголосуйте в опросе">&nbsp;
+                                    <input class="button" type="button" value="Показать результаты" title="Просмотр результатов (перед добавлением вашего голоса)" onclick="HTMLOUT.go_gadget_show()">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="catend" colspan="3">
+                                    <!-- no content -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="hidden" name="addpoll" value="1">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="posts_list">
+        <div name="entry26980392" class="jump" style="position: absolute; width: 100%; margin-top:-81px; left: 0;" id="entry26980392"></div>
+        <div class="post_container" name="del26980392">
+            <div class="post_header">
+                <div class="header_wrapper">
+                    <div class="avatar circle " onclick="window.HTMLOUT.showUserMenu('26980392','2514907','montikov-d')">
+                        <div class="img" style="background-image:url(http://s.4pda.to/forum/uploads/av-2514907-3763197.gif);"></div>
+                    </div><a class="inf nick " onclick="window.HTMLOUT.showUserMenu('26980392','2514907','montikov-d')"><span><b>montikov-d</b></span></a>
+                    <div class="inf group"><span style="color:#FF9900">Друзья 4PDA</span></div><a class="inf reputation" onclick="window.HTMLOUT.showRepMenu('26980392','2514907','montikov-d','1','1')"><span>169</span></a>
+                    <div class="date-link"><span class="inf date"><span>26.11.2013, 01:45</span></span><a class="inf link" onclick="window.HTMLOUT.showPostLinkMenu('26980392')"><span><span class="sharp">#</span>16261</span></a></div><a class="inf menu" onclick="window.HTMLOUT.showPostMenu('26980392','26.11.2013, 01:45','2514907','montikov-d','0','0')"><span>Меню</span></a></div>
+            </div>
+            <div class="hat">
+                <div class="hidetop" style="cursor:pointer;">
+                    <input class="spoiler_button" type="button" value="+" onclick="toggleSpoilerVisibility(this)"><b><span>Показать шапку</span></b></div>
+                <div class="hidemain" style="display: none;">
+                    <div class="post_body ">
+                        <div align="center"><span style="font-size:14pt;line-height:100%"><b>Meizu MX3 - Официальная прошивка (OS Flyme <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=40300363" target="_blank">4.2.8.2I HK</a> - последняя)</b></span><b><br><img alt="Изображение" src="file:///android_asset/forum/style_images/f/281-firmware.png"> <span style="font-size:8pt;line-height:100%"><span style="color:grey">Meizu MX3</span></span><br><a title="Ссылка" rel="nofollow" href="http://devdb.ru/meizu_mx3" target="_blank">Описание</a> | <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=444103" target="_blank">Обсуждение</a> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=444103&amp;view=getnewpost" target="_blank">»</a> | <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=505394" target="_blank">Покупка</a> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=505394&amp;view=getnewpost" target="_blank">»</a> | <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=515054&amp;st=0&amp;view=findpost&amp;p=26393210" target="_blank">Аксессуары</a> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=515054&amp;st=0&amp;view=findpost&amp;p=26393210" target="_blank">»</a> | <b>Прошивка</b> | <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=538441" target="_blank">Темы и Украшательства</a> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=538441" target="_blank">»</a> | <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=575420" target="_blank">Брак/Ремонт</a> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=575420" target="_blank">»</a>
+                            <br>
+                            <br><span style="font-size:10pt;line-height:100%"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=42300720" target="_blank"><span style="color:seagreen">Flyme 4.5.5A (Android 5.0.1 Lollipop).</span></a><span style="color:red"> Отсутствует Русский Язык в интерфейсе! <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41830265" target="_blank"><span style="color:green">(Подробнее)</span></a>
+                            </span>
+                            </span>
+                            </b>
+                            <br>
+                            <div align="center"><span style="color:green"><b>В связи с этим</b></span>, <b><span style="color:red">все посты на эту тему не несущей смысловой нагрузки (флуд) будут удаляться</span></b>, <b>а авторам таких сообщений будут вынесены</b> <span style="color:red"><b>наказания </b></span><b>в рамках</b> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?act=boardrules" target="_blank"><span style="font-size:10pt;line-height:100%"><span style="color:red"><b>Правил Форума</b></span></span></a></div>
+                            <br>
+                            <div align="center"><span style="font-size:14pt;line-height:100%"><span style="color:red"><b>Сроки выхода новой стабильной версии переносятся</b></span></span>
+                            </div>
+                            <div class="post-block spoil close">
+                                <div class="block-title" data-block-init="1">Подробнее</div>
+                                <div class="block-body"><b>В общем говорится, что прошивка еще очень сырая и не отвечает критериям релиза публичной бета - версии.</b>
+                                    <br><span style="color:red"><b>Ее выпуск переносится с 30 июня на неопределенный срок. Как только так сразу - как говорится.</b></span>
+                                    <br><span style="color:green"><b>Ознакомиться можно здесь <a title="Ссылка" rel="nofollow" href="http://bbs.meizu.cn/thread-5642923-1-1.html" target="_blank">http://bbs.meizu.cn/thread-5642923-1-1.html</a></b></span></div>
+                            </div>
+                            <br>
+                            <br><span style="color:red"><b><span style="font-size:12pt;line-height:100%">Прежде чем что-то спрашивать, прочтите шапку или воспользуйтесь поиском по теме!</span></b>
+                            </span><b><br><span style="color:orangered"><span style="font-size:10pt;line-height:100%">Всё, что Вы делаете - Вы делаете на Ваш страх и риск! Авторы руководств и прошивок не несут ответственности. Это только Ваш ВЫБОР.</span></span><br><span style="color:orange">Убедительная просьба не нарушать правила форума! Выражайте спасибо в ЛС/QMS или поднятием репутации!</span><br>Пользуйтесь кнопками <span style="color:teal">Хорошо</span>/<span style="color:crimson">Плохо</span></b></div>
+                        <br>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1"><b><span style="color:red"><span style="font-size:10pt;line-height:100%">Почему мой пост удалили? (Правила темы)</span></span></b></div>
+                            <div class="block-body">
+                                <ul>
+                                    <li>Потому, что оффтоп, <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=117396&amp;view=findpost&amp;p=33646847" target="_blank"><b>обсуждать бесполезно</b></a>.
+                                        <br>
+                                    </li>
+                                    <li>Потому, что мат, <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=117396&amp;view=findpost&amp;p=32626290" target="_blank"><b>обсуждать бесполезно</b></a>.
+                                        <br>
+                                    </li>
+                                    <li>Потому, что <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=117396&amp;view=findpost&amp;p=31950594" target="_blank"><b>национализм</b></a>.
+                                        <br>
+                                    </li>
+                                    <li>Потому, что просто вне рамок темы оказалось, <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=117396&amp;view=findpost&amp;p=31690193" target="_blank"><b>обсуждать бесполезно</b></a>.
+                                        <br>
+                                    </li>
+                                    <li>Потому, что размещенная информация нарушает Авторские Права, <a title="Ссылка" rel="nofollow" href="http://4pda.ru/copyright_notice/" target="_blank"><b>обсуждать бесполезно</b></a>.
+                                        <br>
+                                    </li>
+                                    <li>Потому, что оскорблял и провоцировал других форумчан, <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=117396&amp;view=findpost&amp;p=24425138" target="_blank"><b>обсуждать бесполезно</b></a>.
+                                        <br>
+                                    </li>
+                                    <li>Любые нарушения Правил, <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?act=boardrules" target="_blank"><b>обсуждать бесполезно</b></a>.
+                                        <br>
+                                        <br>
+                                    </li>
+                                    <li>Ответ на Ваш вопрос есть в теме, которую Вы не удосужились прочитать
+                                        <br>
+                                    </li>
+                                    <li>Ваш пост является ответом на пост пользователя, который не удосужился прочитать тему, прежде чем задавать вопрос
+                                        <br>
+                                    </li>
+                                    <li>Ваш пост не имеет <b>никакого</b> отношения к теме (объекту) обсуждения
+                                        <br>
+                                    </li>
+                                    <li>Ваш пост не несет никакой смысловой нагрузки или является: спамом, флудом, оскорблением, содержит скрытый или явный мат, разжиганием холивара/конфликта и т.д., что противоречит <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?act=boardrules" target="_blank"><b>Правилам Форума 4pda.ru</b></a>
+                                        <br>
+                                    </li>
+                                    <li>Ваш пост является дублем вашего поста, что противоречит <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?act=boardrules" target="_blank"><b>Правилам Форума 4pda.ru</b></a>
+                                        <br>
+                                    </li>
+                                    <li>Ваши посты являются перепиской с конкретным пользователем. Для этого существует <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?act=qms" target="_blank"><b>QMS</b></a>.
+                                        <br>
+                                    </li>
+                                    <li>Ваш пост содержит реферальные ссылки, ссылки на сторонние ресурсы или ссылки, обработанные сервисами-"сокращателями" ссылок
+                                        <br>
+                                    </li>
+                                    <li>Ваш пост удален во время чистки темы
+                                        <br>
+                                    </li>
+                                    <li><span>Ваш пост удален по ошибке во время чистки темы с помощью мультимодерации (и такое иногда бывает  <img alt=":)" title=":)" src="file:///android_asset/forum/style_emoticons/default/smile_good.gif"> )</span></li>
+                                </ul>
+                                <br>Перед публикацией изображений просьба ознакомиться с темой <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=353146&amp;view=findpost&amp;p=14041004" target="_blank"><b>Как убрать изображение под спойлер</b></a></div>
+                        </div>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1">FAQ для новичков</div>
+                            <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=40453558" target="_blank">FAQ для новичков</a>
+                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;st=9120&amp;view=findpost&amp;p=36980620" target="_blank">mini FAQ от пользователя Sp1DeRok</a></div>
+                        </div>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1">FAQ (ответы на часто задаваемые вопросы)</div>
+                            <div class="block-body">
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Где найти инструкцию по работе с системой Flyme?</div>
+                                    <div class="block-body">На смартфоне нужно зайти в Настройки - Спец. возможности - Инструкция.
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как включить/выключить дисплей без кнопки включения, жестами?</div>
+                                    <div class="block-body">Чтобы включить дисплей, минуя экран блокировки, нужно нажать сенсорное кольцо и, не отпуская его, сделать слайд (скольжение) пальцем вверх к экрану.
+                                        <br>Чтобы выключить дисплей, нужно некоторое время удерживать нажатым сенсорное кольцо. </div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как вызвать меню запущенных приложений, быстро попасть в настройки?</div>
+                                    <div class="block-body">В любой момент (в том числе и в полноэкранном режиме) потяните от нижней кромки экрана вверх. Чтобы попасть в меню с быстрым запуском приложений, настройкам яркости и к кнопке настроек - в появившемся окне сделайте пальцем слайд влево.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как завершить все запущенные приложения?</div>
+                                    <div class="block-body">Потяните от нижней кромки экрана вверх. Откроется меню с активными приложениями. Потяните пальцем ВНИЗ за любое приложение, строка закроется, все приложения будут остановлены. Чтобы остановить отдельное приложение - потяните его ВВЕРХ за пределы строки. Чтобы просто закрыть строку с приложениями, нажмите кнопку домой.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как посмотреть в настройках список приложений и получить информацию о статистике использования устройства?</div>
+                                    <div class="block-body">Чтобы в настройках телефона появились список приложений и статистика батарейки, нужно в номеронабирателе ввести *#*#6961#*#* (после ввода кода зайти в Настройки-Спец. возможности (Settings-Accessibility).
+                                        <br>Чтобы получить дополнительную информацию об устройстве (состояние батареи, нагрев, статистика использования, сведения о Wi-Fi и самом телефоне), нужно в номеронабирателе ввести комбинацию *#*#4636#*#*.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как сделать скриншот текущего состояния экрана?</div>
+                                    <div class="block-body">Одновременно нажмите кнопки включения и громкость вниз.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">В приложениях не отображается кнопка "Назад", что делать?</div>
+                                    <div class="block-body">Функцию кнопки "Назад" в любом приложении и всегда выполняет свайп вверх от сенсорного кольца (или кнопки "Домой") смартфона.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">В каких версиях смартфона МХ3 есть модуль NFC?</div>
+                                    <div class="block-body">Чип NFC есть во всех версиях смартфона, кроме модели с памятью 16ГБ.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Работает ли будильник при полностью выключенном аппарате?</div>
+                                    <div class="block-body">Да, в данном случае будильник сработает и включит выключенный телефон для подачи звукового сигнала.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как в записной книжке поменять сортировку контактов на Фамилия-Имя?</div>
+                                    <div class="block-body">Если необходимо изменить (расширить) функционал смартфона, но встроенной опции (программы) не обнаружено, используйте магазин приложений Плей Маркет, чтобы установить необходимое <a title="Ссылка" rel="nofollow" href="https://play.google.com/store/apps/details?id=com.gatherer.contactslaunch&amp;hl=ru" target="_blank">программное обеспечение</a>.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как происходит оповещение о пропущенных звонках, SMS и т.д.?</div>
+                                    <div class="block-body">Оповещение осуществляется миганием сенсорного кольца смартфона белым светом (уровень яркости можно изменить в Настройки - Экран).</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как поставить на определённый контакт свою мелодию?</div>
+                                    <div class="block-body">Для установки на контакт своей мелодии необходимо войти в телефонную книгу, выбрать редактирование нужного контакта, выбрать пункт "Добавить поле" и в открывшемся списке полей нажать "Мелодия звонка". Пользовательские мелодии необходимо загрузить в папку Disk\Ringtones. </div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как внутри полноэкранных приложений (например, игр) вызвать кнопку "Меню"?</div>
+                                    <div class="block-body">Если у полноэкранного приложения нет собственного меню и используется стандартное меню Android, то его можно вызвать, открыв панель уведомлений свайпом от верха экрана вниз. В этой панели справа будет доступна кнопка "Меню" (в виде трех точек). Функцию кнопки "Назад" выполняет свайп вверх от сенсорного кольца на корпусе телефона к экрану.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Как включить режим HDR в фотокамере?</div>
+                                    <div class="block-body">Сделайте двойной тап пальцем в окне видоискателя (это экран телефона в режиме съемки) - появится всплывающее меню, где можно включить режим HDR.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Можно ли заменить оболочку Flyme (лаунчер) на какую-нибудь другую?</div>
+                                    <div class="block-body">Да, можно. При этом сохраняется функционал сенсорной кнопки-кольца "Домой".</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1">Прошивки</div>
+                            <div class="block-body"><span style="font-size:12pt;line-height:100%"><div align="center"><a title="Ссылка" rel="nofollow" href="http://www.mymeizu.ru/faq/software_mx3/" target="_blank">Программное обеспечение Meizu MX3 на официальном Российском сайте MEIZU</a><br><a title="Ссылка" rel="nofollow" href="https://meizufans.eu/forum/category/5/meizu-mx3-firmware" target="_blank">Программное обеспечение Meizu MX3 на зарубежном ресурсе meizufans.eu</a><br><a title="Ссылка" rel="nofollow" href="http://www.flyme.cn/firmwarelist?modelId=1&amp;type=1" target="_blank">Программное обеспечение Meizu MX3 на www.flyme.cn</a></div></span>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Flyme 3</div>
+                                    <div class="block-body">
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">HK версия</div>
+                                            <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=30696043" target="_blank">3.5.1 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=31475567" target="_blank">3.5.3 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=31786368" target="_blank">3.6.4 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32162249" target="_blank">3.6.6 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32608297" target="_blank">3.7.1 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32774371" target="_blank">3.7.2 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=34204117" target="_blank">3.7.3 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33102100" target="_blank">3.7.4 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33243433" target="_blank">3.7.5 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33409642" target="_blank">3.7.6 (HK)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=34396961" target="_blank">3.8.1 (HK)</a>
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">CN версия</div>
+                                            <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=30402366" target="_blank">3.5.1 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=31500794" target="_blank">3.6.2А (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=31606723" target="_blank">3.6.3 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=31756886" target="_blank">3.6.4А (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=31911252" target="_blank">3.6.5A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32071653" target="_blank">3.6.6A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32217395" target="_blank">3.6.7A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32373596" target="_blank">3.7A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32428259" target="_blank">3.7.0.1 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32547504" target="_blank">3.7.1A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32710556" target="_blank">3.7.2 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=32876285" target="_blank">3.7.3 Alpha (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=34179050" target="_blank">3.7.3 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33025488" target="_blank">3.7.4A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33190301" target="_blank">3.7.5А (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33344324" target="_blank">3.7.6А (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33493701" target="_blank">3.7.7A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33680560" target="_blank">3.7.8А (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33811523" target="_blank">3.7.9 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=33946752" target="_blank">3.8 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=34285089" target="_blank">3.8.1А (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=34449582" target="_blank">3.8.2A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=34617499" target="_blank">3.8.3 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=34966358" target="_blank">3.8.4 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=35123153" target="_blank">3.8.5А (CN)</a>
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Flyme 4</div>
+                                    <div class="block-body">
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">HK версия</div>
+                                            <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=37468443" target="_blank">4.1.3.5I (HK) (Стабильная)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=40296370" target="_blank">Flyme 4.2.8.2I (Неофициальная)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;st=14320&amp;view=findpost&amp;p=40300363" target="_blank">Flyme 4.2.8.2I (Стабильная)</a></div>
+                                        </div>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">CN версия</div>
+                                            <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=35330010" target="_blank">4.0.4 Alpha (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=36014407" target="_blank">4.0.5 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=36362231" target="_blank">4.1.3 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=36536646" target="_blank">4.1.3.1A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=36702250" target="_blank">4.1.3.2 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=36867782" target="_blank">4.1.3.3 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=37019034" target="_blank">4.1.3.4 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=37206188" target="_blank">4.1.3.5 (CN)(Cтабильная версия)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=37310085" target="_blank">4.1.4 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=37389837" target="_blank">4.1.4A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=37566855" target="_blank">4.1.5 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=37745143" target="_blank">4.1.6A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=37920325" target="_blank">4.1.7 (CN) (Cтабильная версия)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=38576161" target="_blank">4.1.8 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=38746904" target="_blank">4.1.9 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=38917801" target="_blank">4.2.6 (релиз) (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=38657741" target="_blank">4.2.6A (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=39086190" target="_blank">4.2.7 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=39265049" target="_blank">4.2.8 (CN) пробная версия</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=39432697" target="_blank">4.2.8.1 (CN) пробная версия</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://www.flyme.cn/firmwarelist?modelId=1&amp;type=1" target="_blank">4.2.8.2 (CN)</a>
+                                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41030843" target="_blank">4.2.8.2 (Перепакованная с HK)</a>
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Flyme 4.5 (Android 5.0.1 Lollipop)</div>
+                                    <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=42300720" target="_blank">Flyme 4.5.4A от 18.08.015</a>
+                                        <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=42137954" target="_blank">ЗБТ Flyme 4.5.5 (CN)</a>
+                                        <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41811821" target="_blank">Flyme 4.5.4A (официальная бета)</a>
+                                        <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41657153" target="_blank">Flyme 4.5.4 (CN) БЕТА ВЕРСИЯ от 21.07.15</a>
+                                        <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41500147" target="_blank">Flyme 4.5.4 ЗАКРЫТЫЙ БЕТА ТЕСТ(CN)</a>
+                                        <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41351652" target="_blank">4.5.2A от 07.07.2015</a>
+                                        <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=41194887" target="_blank">Meizu MX3 - Официальная прошивка (Пост 999 NEXO 999 #41194887)</a></div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Прошивка модема</div>
+                                    <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=38938318" target="_blank">Прошивка модема</a></div>
+                                </div><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=35134229" target="_blank"><b>Репак 3.8.5 CN</b></a> (только для HK аппаратов) вопросы <b>только</b> в личку, в теме <b>удаляю</b> без предупреждения
+                                <br><a title="Ссылка" rel="nofollow" href="http://flyme.lyalyuev.info/" target="_blank">Все последние прошивки</a>
+                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=37227713" target="_blank">Русификация Flyme 4.1.*.* (нужен рут)</a></div>
+                        </div>
+                        <div align="center"><b><span style="color:orange">Есть несколько видов MX3: Отличий нет, только в виде обновления. <br><b>1) НК</b> версия (производится для Китая (Гонконг), также России, Израиля) обновляется прошивками в формате update.zip, update.bin.
+                            <br><b>2) CN</b> (операторская версия прошивается только прошивками формата update.bin).
+                            <br>Прошивки индетичны различия только в том, что в прошивке формата *.bin предустановлены китайские программы.
+                            <br>Дальнейшие вопросы о различиях между *.zip и *.bin будут удалятся без предупреждения.</span>
+                            </b>
+                        </div>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1"><b>Шаблон для оформления новой прошивки(либо так оформляем, либо сразу снос поста)</b></div>
+                            <div class="block-body">
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Пример</div>
+                                    <div class="block-body"><span style="color:darkblue"><span style="font-size:12pt;line-height:100%"><b><div align="center">Flyme *.*.* (HK|CN)</div></b></span></span>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">Важно</div>
+                                            <div class="block-body">1. Если на текущей прошивке был открыт доступ к системе в аккаунте Flyme (root), то необходимо обновлять прошивку с обязательной отметкой опции "Clear Data" для избежания программных ошибок при последующей эксплуатации смартфона.
+                                                <br>2. Очистка данных ("Clear Data") подразумевает удаление текущих настроек, записей телефонной книги, сообщений, заметок, аккаунтов почты, а также установленного стороннего ПО. При этом не затрагиваются такие данные, как музыка, видео, фотографии и прочие файлы, содержащиеся в телефоне.
+                                                <br>Пожалуйста, заблаговременно позаботьтесь о создании резервных копий необходимой информации путем синхронизации данных с аккаунтом Flyme.
+                                                <br>Для сохранения стороннего ПО рекомендуется использовать специально предназначенные для этого утилиты из Google Play Market.
+                                                <br>3. Если в результате обновления прошивки наблюдаются аварийные закрытия программ и другие ошибки, рекомендуется произвести обновление прошивки повторно с обязательной отметкой опции "Clear Data".</div>
+                                        </div>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">Инструкция</div>
+                                            <div class="block-body">1. Загрузите файл прошивки update.zip в телефон (в корень диска) в режиме USB-накопителя.
+                                                <br>2. Выключите телефон.
+                                                <br>3. Включая, удерживайте одновременно кнопки "Вкл" и "Громкость вверх" до появления надписи "System Upgrade".
+                                                <br>4. Отметьте опцию "System Upgrade" и, если необходимо, опцию "Clear Data", после нажмите на экране кнопку "Start".
+                                                <br>5. Дождитесь окончания процесса прошивки - телефон перезагрузится автоматически.</div>
+                                        </div>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">Изменения</div>
+                                            <div class="block-body">[Система]
+                                                <br>•
+                                                <br>•
+                                                <br>[Сеть]
+                                                <br>•
+                                                <br>[Рингтоны]
+                                                <br>•
+                                                <br>[App Center]
+                                                <br>•
+                                                <br>[Музыка]
+                                                <br>•
+                                                <br>[Календарь]
+                                                <br>•
+                                                <br>[Языки]
+                                                <br>•
+                                                <br>[Галерея]
+                                                <br>•</div>
+                                        </div>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">Скачать</div>
+                                            <div class="block-body">Ссылка+дата</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Код</div>
+                                    <div class="block-body">
+                                        <div class="post-block code ">
+                                            <div class="block-title" data-block-init="1"></div>
+                                            <div class="block-body ">[color=darkblue][size=3][b][center]Flyme *.*.* (HK|CN)[/center][/b][/size][/color]
+                                                <br>[spoiler=Важно]1. Если на текущей прошивке был открыт доступ к системе в аккаунте Flyme (root), то необходимо обновлять прошивку с обязательной отметкой опции "Clear Data" для избежания программных ошибок при последующей эксплуатации смартфона.
+                                                <br>2. Очистка данных ("Clear Data") подразумевает удаление текущих настроек, записей телефонной книги, сообщений, заметок, аккаунтов почты, а также установленного стороннего ПО. При этом не затрагиваются такие данные, как музыка, видео, фотографии и прочие файлы, содержащиеся в телефоне.
+                                                <br>Пожалуйста, заблаговременно позаботьтесь о создании резервных копий необходимой информации путем синхронизации данных с аккаунтом Flyme.
+                                                <br>Для сохранения стороннего ПО рекомендуется использовать специально предназначенные для этого утилиты из Google Play Market.
+                                                <br>3. Если в результате обновления прошивки наблюдаются аварийные закрытия программ и другие ошибки, рекомендуется произвести обновление прошивки повторно с обязательной отметкой опции "Clear Data".[/spoiler][spoiler=Инструкция]
+                                                <br>1. Загрузите файл прошивки update.zip в телефон (в корень диска) в режиме USB-накопителя.
+                                                <br>2. Выключите телефон.
+                                                <br>3. Включая, удерживайте одновременно кнопки "Вкл" и "Громкость вверх" до появления надписи "System Upgrade".
+                                                <br>4. Отметьте опцию "System Upgrade" и, если необходимо, опцию "Clear Data", после нажмите на экране кнопку "Start".
+                                                <br>5. Дождитесь окончания процесса прошивки - телефон перезагрузится автоматически.[/spoiler]
+                                                <br>[spoiler=Изменения][/spoiler][spoiler=Скачать]
+                                                <br>Дата выхода:
+                                                <br>Ссылка: [url=][/url][/spoiler]</div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1"><b>Важно!</b></div>
+                            <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41751336" target="_blank">Сравнение параметров звука в разных прошивках</a>
+                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=613250&amp;view=findpost&amp;p=36340107" target="_blank"><b>Рекомендации и предупреждения</b></a>
+                                <br><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=613250&amp;view=findpost&amp;p=36641783" target="_blank"><b>Рекомендации и предупреждения 1</b></a>
+                                <br><span style="color:red"><a title="Ссылка" rel="nofollow" href="http://forum.mymeizu.ru/forum/37-5756-1" target="_blank"><span style="color:red"><b>Проблемы с Виджетами на Flyme 4</b></span></a>
+                                </span> (Так, как проблема признается официалами, любые попытки флудить на эту тему будут удаляться в теме)
+                                <br>
+                                <br>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Тема актуальна только для MX3</div>
+                                    <div class="block-body">Также обращаем Ваше Внимание, что все представленные ниже материалы имеют силу только для моделей телефонов Meizu MX3. Материалы для других телефонов размещаются и обсуждаются в <b><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showforum=781" target="_blank">соответствующих темах данного раздела</a>.<br>Использование некоторых материалов из данной темы возможно и для других моделей, но все риски Вы при этом берете на себя.</b></div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Будущие проекты</div>
+                                    <div class="block-body">Вопросы наподобие: когда выйдет Ubuntu - в теме задавать не следует.
+                                        <br>Так же не следует задавать вопросы по поводу кастомных прошивок, бутлоадер заблокирован разработчиком, <u><b>кастомов нет и в ближайшее время не предвидится.</b></u>
+                                        <br>Если в шапке нет никакой информации, то это всего лишь означает, что <b><span style="color:red">пока нет какой то конкретной информации или решения по данному вопросу.</span></b>
+                                        <br><b><span style="color:limegreen">Как только появится любая подтвержденная информация - уж будьте уверены, мы обязательно сообщим Вам об этом.</span></b></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1">Инструкции</div>
+                            <div class="block-body">
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Получение Прав Root</div>
+                                    <div class="block-body">
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">C привязкой к аккаунту Flyme</div>
+                                            <div class="block-body">Как получить ROOT привилегии:
+                                                <br><b>1.</b> Будьте уверены, что Вы вошли в свой аккаунт Flyme
+                                                <br><b>2.</b> Идем в Настройки --&gt; Аккаунты --&gt; Ваш аккаунт Flyme
+                                                <br><b>3.</b> Кликните на пункте "Открыть системные привилегии"
+                                                <br><b>4.</b> Примите предупреждение и введите Ваш пароль от аккаунта Flyme
+                                                <br><b>5.</b> После подтверждения пароля телефон будет перезагружен
+                                                <br><b>6.</b> Ваш телефон должен сейчас обладать правами ROOT. Вы можете проверить состояние в меню настроек --&gt; Аккаунты --&gt; Ваш аккаунт Flyme, если системные привилегии открыты.</div>
+                                        </div>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">Без привязки к аккаунту Flyme</div>
+                                            <div class="block-body"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=40223652" target="_blank"><b>KingRoot</b> - получаем рут права, не имея доступа к аккаунту флайм (телефон привязанный к другой учетке)</a></div>
+                                        </div>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">Можно ли закрыть права root без перепрошивки?</div>
+                                            <div class="block-body">Нет!</div>
+                                        </div>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">Отключение/включение прав ROOT при активированном ROOT (Нужна установка Super SU)</div>
+                                            <div class="block-body">Рут отменяется в настройках SU- убрать чебокс в пункте - разрешить суперпользователя. При восстановлении чебокса - рут возвращается.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Установка GAPPS - ов</div>
+                                    <div class="block-body">Google сервисы с маркета приложений Meizu (версия 1.4.4 июнь 2015):
+                                        <a attach_id="6479752" s="0" href="http://4pda.ru/forum/dl/post/6479752/com_howie_gserverinstall_13.apk" rel="lyteframe" rev="width:728px;height:628px;scrolling:no;" title="Скачать com_howie_gserverinstall_13.apk" target="_blank"><img src="file:///android_asset/forum/style_images/1/folder_mime_types/zip.gif" alt="Прикрепленный файл" style="margin-right:3px;">com_howie_gserverinstall_13.apk</a> ( 34,98 МБ )
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Если у Вас проблема с Google Сервисами (Play Market и прочие)</div>
+                                    <div class="block-body">Решение - только <span style="color:red"><b>ПОЛНАЯ</b></span> переустановка сервисов.
+                                        <br>Для этого:
+                                        <br>1) Запускаем AppCenter
+                                        <br>2) Справа внизу иконка с человечком. Тапаем.
+                                        <br>3) Удаляем всё что связано с гуглом.
+                                        <br>4) Удаляем Google Installer (не уверен что обязательный пункт меню, но что - то мне казаллось, что иначе он считает, что сервисы установлены и не дает их поставить опять).
+                                        <br>5) Возвращаемся на экран назад и жмем "Удаленные", ищем там наш Google Installer (ну или в поиске по слову installer или howie).
+                                        <br>6) Устанавливаем.
+                                        <br>7) Запускаем (тапаем "Start the installation"), смарт должен уйти в ребут и установить всё как обновление.
+                                        <br>8) Смарт загружается, заходим в гугл плей вбиваем все и обновляем гугл плей сервисы, если предложит.
+                                        <br>9) Радуемся</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1"><b>Как войти в рекавери для прошивки или сброса данных?</b></div>
+                                    <div class="block-body">Одновременно зажать громкость вверх и кнопку включения. Эти действия производить в выключенном состоянии.</div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1"><b>Как увеличить скорость анимации?(Flyme 3)</b></div>
+                                    <div class="block-body">настройки - спец.возможности - для разработчиков и там 3 пункта анимации, делать 0.5 или вообще убрать
+                                        <br>
+                                        <br>Спасибо <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=2013846" target="_blank"><b>GuBruD</b></a></div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1"><b>Как включить режим разработчика и статистику батареи?(Flyme 3)</b></div>
+                                    <div class="block-body">Чтобы в настройках телефона появились список приложений и статистика батарейки, нужно в номеронабирателе ввести *#*#6961#*#* (после ввода кода зайти в Настройки-Спец. возможности (Settings-Accessibility).
+                                        <br>Чтобы получить дополнительную информацию об устройстве (состояние батареи, нагрев, статистика использования, сведения о Wi-Fi и самом телефоне), нужно в номеронабирателе ввести комбинацию *#*#4636#*#*.
+                                        <br>Так же появятся новые пункты в меню: Настройки-Спец. возможности
+                                        <br>
+                                        <br>Спасибо <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=347375" target="_blank"><b>dedma3ay</b></a></div>
+                                </div>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1"><b>Как исправить бутлуп (циклическая перезагрузка или невозможность загрузки) на Meizu MX3</b></div>
+                                    <div class="block-body"><span style="color:darkred">Внимание. Данный мануал для тех, у кого на самом телефоне не было файла прошивки на момент бутлупа!</span>
+                                        <br>
+                                        <br>Основано на собственном опыте. Исходя из предыдущего поста я не выполнил 2 пункт, а просто заменил файлы без установки нужных разрешений. Телефон сразу перезагрузился и застыл на заставке включения. Что теперь делать? Не надо бежать в СЦ или читать про снятие батареи(многие "умники" так советуют).
+                                        <br>
+                                        <br>1. Зажмите кнопку Увеличения громкости и Включения. Телефон ещё раз перезагрузится, но уже в Recovery.
+                                        <br>2. Подключите телефон к компьютеру с помощью USB-кабеля.
+                                        <br>3. На компьютере определится съёмный диск Recovery, пустой, объёмом 400 Мб. Нам этого достаточно.
+                                        <br>4. Скопируйте прошивку(у меня это 3.3.1 на которой я бутлуп и получил) в этот диск и отсоедините телефон.
+                                        <br>5. Ничего не перезагружая просто выберите обновление прошивки. Можно без очистки данных. Они не требуются. Нажмите Start(retry, у многих может быть по-разному)
+                                        <br>6. После прошивки телефон включится снова. Если был включен рут - придётся снова включать.
+                                        <br>
+                                        <br>P.s. Если у вас прошивка уже есть на телефоне, то пункты 2-4 пропустите!
+                                        <br>
+                                        <br>Спасибо <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=1360409" target="_blank"><b>McRePak</b></a></div>
+                                </div>
+                                <br>
+                                <ul>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41848323" target="_blank"><b>Перевод открытой бета 4.5.4A на русский</b></a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41204535" target="_blank">Инструкция по распаковке прошивок <b>Flyme 4.5</b></a></li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=37777537" target="_blank"><b>Гайд</b></a>, как сделать официальную прошивку с полным переводом, удалением Пекина из будильника и прочими плюшками с дальнейшим удалением root-доступа.
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=38069435" target="_blank">Делаем иконки сторонних приложений размером как у стандартных</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=39351887" target="_blank">Звук от 3го флайма</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=40292920" target="_blank">Исправляем лаги в ВК и другом софте</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=40251506" target="_blank">Восстановление уведомлений от сторонних приложений (<b>ВК</b>)</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=38681789" target="_blank">Лечим нерабочую кнопку на <b>Xiaomi Piston</b></a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41417009" target="_blank">Лечим нерабочую кнопку на <b>Xiaomi Piston 2</b> и <b>3</b> (Частичное решение)</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/pages/go/?u=http%3A%2F%2Fforum.mymeizu.ru%2Fforum%2F41-252-1" target="_blank">Советы и трюки Flyme OS (<b>Полезные комбинации клавиш и другое</b>)</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=613250&amp;view=findpost&amp;p=37556553" target="_blank">Ошибки Google Play</a>
+                                        <br>
+                                    </li>
+                                    <li>По поводу отвязки Flyme-аккаунта <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=413778&amp;view=findpost&amp;p=37836976" target="_blank"><span style="color:red"><b>раз</b></span></a> и <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=413778&amp;view=findpost&amp;p=37922487" target="_blank"><span style="color:red"><b>два</b></span></a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;st=6980&amp;view=findpost&amp;p=35681195" target="_blank">Способ отвязки от флайм аккаунта. (<span style="color:red"><b>Актуально для 3.7.x-3.8.x прошивок</b></span>)</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://forum.mymeizu.ru/forum/68-5777-1#49279" target="_blank">Для тех у кого не работает микрофон в <b>гугл Поиск</b></a>
+                                        <br>
+                                    </li>
+                                    <li><b>Оптимизация энергопотребления</b>
+                                        <br>
+                                        <ol type="1">
+                                            <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;st=15140&amp;view=findpost&amp;p=41087221" target="_blank">Чистим прошивку от ненужных программ</a>
+                                                <br>
+                                            </li>
+                                            <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=40893682" target="_blank">Список заморозки ненужного/"будящего" системного софта</a>
+                                                <br>
+                                            </li>
+                                            <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41247800" target="_blank">Еще совет по энергосбережению</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41271192" target="_blank">Гайд по активации <b>802.11n</b> и <b>HiFi</b></a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=41174086" target="_blank">Установка стороннего локера вместо стандартного</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=613250&amp;st=1580&amp;view=findpost&amp;p=40292291" target="_blank">Инструкция по установке <b>Xposed</b></a> на <b>Android 5.0 Flyme 4.5.x</b>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/pages/go/?u=http%3A%2F%2Fforum.mymeizu.ru%2Fforum%2F41-5786-1%2347991" target="_blank">Если в каких то приложениях время на час больше</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=629236&amp;st=380&amp;view=findpost&amp;p=38182839" target="_blank">Тем у кого перестала работать "<b>Персонализация</b>", а точнее темы не проходят проверку на лицензию.</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=444103&amp;view=findpost&amp;p=27671966" target="_blank">Разблокировка работы телефона на всех разрешённых каналах <b>5 ГГц</b></a>
+                                        <br>
+                                    </li>
+                                    <li><b>Проблемы с Google Play?</b>
+                                        <br>
+                                        <ul>
+                                            <li>Вам сюда <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=193414" target="_blank"><b><span style="color:red">Google Play - Технические проблемы</span></b></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=38996435" target="_blank">Инструкция по возврату с <b>Flyme <span style="color:red">4.x.x</span></b> на <b>Flyme <span style="color:orangered">3.x.x</span></b></a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=37556590" target="_blank">Пост с видеороликами - инструкциями</a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=521028&amp;view=findpost&amp;p=38102851" target="_blank">Инструкция для прошивки <b>CN</b>-аппаратов <b>НК</b>-версией Flyme (на примере Windows)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1">Полезное ПО</div>
+                            <div class="block-body">
+                                <ul>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=433406" target="_blank"><b>® Market Helper</b></a> - Решение проблемы несовместимости приложений из GooglePlay с вашим устройством.
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=146743" target="_blank"><b>MoreLocale 2</b></a> - Смена локали (язык интерфейса) даже если он не отображается в настройках.
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=497106" target="_blank"><b>360 yunpan</b></a> (альтернативный клиент встроенному облаку в много много террабайт) (актуально для европрошивок и там, где по каким либо причинам нет системного облака)
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=613250&amp;st=2160&amp;view=findpost&amp;p=41320885" target="_blank"><b>Уведомления на экране блокировке Meizu</b></a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=171594" target="_blank"><b>Adobe Flash Player</b></a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;view=findpost&amp;p=40223652" target="_blank"><b>KingRoot</b></a> - получаем рут права, не имея доступа к аккаунту флайм (телефон привязанный к другой учетке)
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="https://www.dropbox.com/s/x0ktbvdj0w09rb7/update.bin?dl=0" target="_blank"><b>Gappsы</b></a> - шьем без вайпа из файлового менеджера, ничего переименовывать не надо (рут слетает). Или устанавливаем это приложение
+                                        <a attach_id="6479752" s="0" href="http://4pda.ru/forum/dl/post/6479752/com_howie_gserverinstall_13.apk" rel="lyteframe" rev="width:728px;height:628px;scrolling:no;" title="Скачать com_howie_gserverinstall_13.apk" target="_blank"><img src="file:///android_asset/forum/style_images/1/folder_mime_types/zip.gif" alt="Прикрепленный файл" style="margin-right:3px;">com_howie_gserverinstall_13.apk</a> ( 34,98 МБ )
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="https://www.dropbox.com/s/3p3w7jspoqdyrw0/FlymeSuperuser.apk?dl=0" target="_blank"><b>Flyme superuser</b></a> - если ставите на "грязный" телефон, в теме даже не жалуйтесь что не работает.
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=274688" target="_blank"><b>Фикс часовых поясов</b></a>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=598323" target="_blank"><b>FontChooser</b></a> - смена системного шрифта, для тех кого не устраивает, что родная кириллица никуда не помещается, нужен рут
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=638632&amp;st=0&amp;view=findpost&amp;p=37547748" target="_blank"><b>FlymeTool</b></a>, Xposed модуль, содержащий обширный набор модификаций для Flyme OS
+                                        <br>
+                                    </li>
+                                    <li><b><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=318487" target="_blank">SuperSU</a> Последние версии (2.40+)  прекрасно работают на нашем устройстве.</b>
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=439160&amp;st=1100" target="_blank"><b>Wakelock Detector</b></a> смотрим что кушает акум
+                                        <br>
+                                    </li>
+                                    <li>
+                                        <div class="post-block spoil close">
+                                            <div class="block-title" data-block-init="1">MzCrypt-Gui-v1.0.3 - для перепаковки прошивок: из .bin в .zip и наоборот</div>
+                                            <div class="block-body">
+                                                <a attach_id="6413918" s="0" href="http://4pda.ru/forum/dl/post/6413918/MzCrypt-Gui-v1.0.3-src%2Bbin.rar" rel="lyteframe" rev="width:728px;height:628px;scrolling:no;" title="Скачать MzCrypt-Gui-v1.0.3-src+bin.rar" target="_blank"><img src="file:///android_asset/forum/style_images/1/folder_mime_types/zip.gif" alt="Прикрепленный файл" style="margin-right:3px;">MzCrypt-Gui-v1.0.3-src+bin.rar</a> ( 3,66 МБ )
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=222871&amp;st=80" target="_blank"><b>SD Card Speed Booster</b></a> - C легкостью увеличивает скорость чтения карты памяти!
+                                        <br>
+                                    </li>
+                                    <li><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=467836" target="_blank"><b>Headset Droid</b></a> - Настройка различных действий на нажатия кнопок проводной гарнитуры. Поддерживаются одно- и многократные нажатия, а также их комбинации.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-block spoil close">
+                            <div class="block-title" data-block-init="1"><span style="color:orangered">Архив опросов:</span></div>
+                            <div class="block-body"><span style="color:orangered"></span>
+                                <div class="post-block spoil close">
+                                    <div class="block-title" data-block-init="1">Какая прошивка лучшая?</div>
+                                    <div class="block-body">
+                                        <table style="width:auto;display:inline;" id="ipb-attach-table-6572929-bb" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div id="ipb-attach-div-6572929-bb">
+                                                            <div id="ipb-attach-ct-6572929-bb"></div>
+                                                            <a attach_id="6572929" s="0" id="ipb-attach-url-6572929-bb" href="http://4pda.ru/forum/dl/post/6572929/%CE%EF%F0%EE%F1.png" rel="lytebox[26980392]" title="Опрос.png - Размер: 19,57 КБ" target="_blank"><img src="http://cs3-2.4pda.to/6572929.png" id="ipb-attach-img-6572929-bb" class="attach" rel="lytebox[26980392]" style="width:400;height:100" width="400" height="100" alt="Прикрепленное изображение"></a>
+                                                            <div id="ipb-attach-cb-6572929-bb" style="margin:0px"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <script type="text/javascript" class="">
+                                            fix_linked_img_thumb("6572929-bb", parseInt("1322"), parseInt("333"), "19,57 КБ");
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div align="right"><b><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&amp;act=Stats&amp;CODE=who&amp;t=521028" target="_blank"><span style="color:red">Счетчик сообщений в теме.</span></a></b>
+                            <br>По вопросам и предложениям наполнения шапки обращаться к <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=2694382" target="_blank">куратору</a> темы через <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?act=qms&amp;mid=2694382" target="_blank"><b>QMS</b></a></div>
+                        <br>
+                        <br><span class="edit">Сообщение отредактировал <b>igor302</b> - 18.08.2015, 16:40</span>
+                        <div class="post-edit-reason">Причина редактирования: Добавил ® Market Helper - Решение проблемы несовместимости приложений из GooglePlay с вашим устройством.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post_footer"><a class="link button claim" href="/forum/index.php?act=report&amp;t=521028&amp;p=26980392&amp;st=16260"><span>Жалоба</span></a><a class="button nick" onclick="window.HTMLOUT.insertTextToPost('[SNAPBACK]26980392[/SNAPBACK] [B]montikov-d,[/B] \n')"><span>Ник</span></a><a class="button quote" onclick="window.HTMLOUT.quote('781','521028','26980392','26.11.2013, 01:45','2514907','montikov-d')"><span>Цитата</span></a><a class="button vote bad" onclick="window.HTMLOUT.postVoteBad('26980392')"><span>Плохо</span></a><a class="button vote good" onclick="window.HTMLOUT.postVoteGood('26980392')"><span>Хорошо</span></a></div>
+
+            <div class="between_messages"></div>
+        </div>
+        <div name="entry42398916" class="jump" style="position: absolute; width: 100%; margin-top:-81px; left: 0;" id="entry42398916"></div>
+        <div class="post_container" name="del42398916">
+            <div class="post_header">
+                <div class="header_wrapper">
+                    <div class="avatar circle " onclick="window.HTMLOUT.showUserMenu('42398916','1349364','Нельсон')">
+                        <div class="img" style="background-image:url(http://s.4pda.to/forum/uploads/av-1349364-3179836.jpg);"></div>
+                    </div><a class="inf nick " onclick="window.HTMLOUT.showUserMenu('42398916','1349364','Нельсон')"><span><b>Нельсон</b></span></a>
+                    <div class="inf group"><span style="color:#FF9900">Друзья 4PDA</span></div><a class="inf reputation" onclick="window.HTMLOUT.showRepMenu('42398916','1349364','Нельсон','1','1')"><span>62</span></a>
+                    <div class="date-link"><span class="inf date"><span>Сегодня, 16:16</span></span><a class="inf link" onclick="window.HTMLOUT.showPostLinkMenu('42398916')"><span><span class="sharp">#</span>16262</span></a></div><a class="inf menu" onclick="window.HTMLOUT.showPostMenu('42398916','Сегодня, 16:16','1349364','Нельсон','0','0')"><span>Меню</span></a></div>
+            </div>
+            <div class="post_body ">
+                <div class="post-block quote">
+                    <div class="block-title">yurik2406 @ 22.08.2015, 15:23
+                        <a href="/forum/index.php?act=findpost&amp;pid=42397971" target="_blank" title="Перейти к сообщению"><img src="file:///android_asset/forum/style_images/1/post_snapback.gif" alt="*" border="0"></a>
+                    </div>
+                    <div class="block-body">Если зависает сенсор, у меня тоже так бывает, то звонок можна принять удержанием клавиши громкости
+                        <br>
+                    </div>
+                </div>
+                <br>Да, но это не решение проблемы. Кстати, после завершения звонка, тач у вас работает? Или все равно приходится перезагружать?
+                <br>
+                <br>
+                <div class="post-block quote">
+                    <div class="block-title">almurin @ 22.08.2015, 15:55
+                        <a href="/forum/index.php?act=findpost&amp;pid=42398536" target="_blank" title="Перейти к сообщению"><img src="file:///android_asset/forum/style_images/1/post_snapback.gif" alt="*" border="0"></a>
+                    </div>
+                    <div class="block-body">на 385 такая проблема была.грешил на темы, новроде не из-за них. Этокстати была первая причина обновится на четвертый флпйм
+                        <br>
+                    </div>
+                </div>
+                <br>Я сидел на 3.5.3, и тоже перешел на четверку <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=521028&amp;st=14480&amp;view=findpost&amp;p=40450261" target="_blank">по этой причине</a>, видимо зря.
+                <br>
+                <br>
+                <div class="post-block quote">
+                    <div class="block-title">eric2la @ 22.08.2015, 16:12
+                        <a href="/forum/index.php?act=findpost&amp;pid=42398830" target="_blank" title="Перейти к сообщению"><img src="file:///android_asset/forum/style_images/1/post_snapback.gif" alt="*" border="0"></a>
+                    </div>
+                    <div class="block-body">аналогичная проблема и у меня время от времени появляется и на 3 флайме, и на 4. Телефон М353, сейчас прошивка 4.2.8.2i
+                        <br>
+                    </div>
+                </div>
+                <br>Может на Лоллипупе (5-ом андроиде) ее исправят? Есть кто из бета-тестеров, вдруг уже исправлена?</div>
+            <div class="post_footer"><a class="link button claim" href="/forum/index.php?act=report&amp;t=521028&amp;p=42398916&amp;st=16261"><span>Жалоба</span></a><a class="button nick" onclick="window.HTMLOUT.insertTextToPost('[SNAPBACK]42398916[/SNAPBACK] [B]Нельсон,[/B] \n')"><span>Ник</span></a><a class="button quote" onclick="window.HTMLOUT.quote('781','521028','42398916','Сегодня, 16:16','1349364','Нельсон')"><span>Цитата</span></a><a class="button vote bad" onclick="window.HTMLOUT.postVoteBad('42398916')"><span>Плохо</span></a><a class="button vote good" onclick="window.HTMLOUT.postVoteGood('42398916')"><span>Хорошо</span></a></div>
+
+            <div class="between_messages"></div>
+        </div>
+        <div name="entry42399063" class="jump" style="position: absolute; width: 100%; margin-top:-81px; left: 0;" id="entry42399063"></div>
+        <div class="post_container" name="del42399063">
+            <div class="post_header">
+                <div class="header_wrapper">
+                    <div class="avatar circle " onclick="window.HTMLOUT.showUserMenu('42399063','1663123','yurik2406')">
+                        <div class="img" style="background-image:url(http://s.4pda.to/forum/uploads/av-1663123-13092083.png);"></div>
+                    </div><a class="inf nick " onclick="window.HTMLOUT.showUserMenu('42399063','1663123','yurik2406')"><span><b>yurik2406</b></span></a>
+                    <div class="inf group"><span style="color:#FF9900">Друзья 4PDA</span></div><a class="inf reputation" onclick="window.HTMLOUT.showRepMenu('42399063','1663123','yurik2406','1','1')"><span>264</span></a>
+                    <div class="date-link"><span class="inf date"><span>Сегодня, 16:24</span></span><a class="inf link" onclick="window.HTMLOUT.showPostLinkMenu('42399063')"><span><span class="sharp">#</span>16263</span></a></div><a class="inf menu" onclick="window.HTMLOUT.showPostMenu('42399063','Сегодня, 16:24','1663123','yurik2406','0','0')"><span>Меню</span></a></div>
+            </div>
+            <div class="post_body ">
+                <div class="post-block quote">
+                    <div class="block-title">Нельсон @ 22.08.2015, 15:16
+                        <a href="/forum/index.php?act=findpost&amp;pid=42398916" target="_blank" title="Перейти к сообщению"><img src="file:///android_asset/forum/style_images/1/post_snapback.gif" alt="*" border="0"></a>
+                    </div>
+                    <div class="block-body">Кстати, после завершения звонка, тач у вас работает?
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>Работает, телефон не перезагружаю
+                <br>
+                <br><span class="edit">Сообщение отредактировал <b>yurik2406</b> - Сегодня, 16:25</span></div>
+            <div class="post_footer"><a class="link button claim" href="/forum/index.php?act=report&amp;t=521028&amp;p=42399063&amp;st=16262"><span>Жалоба</span></a><a class="button nick" onclick="window.HTMLOUT.insertTextToPost('[SNAPBACK]42399063[/SNAPBACK] [B]yurik2406,[/B] \n')"><span>Ник</span></a><a class="button quote" onclick="window.HTMLOUT.quote('781','521028','42399063','Сегодня, 16:24','1663123','yurik2406')"><span>Цитата</span></a><a class="button vote bad" onclick="window.HTMLOUT.postVoteBad('42399063')"><span>Плохо</span></a><a class="button vote good" onclick="window.HTMLOUT.postVoteGood('42399063')"><span>Хорошо</span></a></div>
+
+            <div class="between_messages"></div>
+        </div>
+        <div name="entry42403756" class="jump" style="position: absolute; width: 100%; margin-top:-81px; left: 0;" id="entry42403756"></div>
+        <div class="post_container" name="del42403756">
+            <div class="post_header">
+                <div class="header_wrapper">
+                    <div class="avatar circle " onclick="window.HTMLOUT.showUserMenu('42403756','2999433','kedrs')">
+                        <div class="img" style="background-image:url(file:///android_asset/profile/av.png);"></div>
+                    </div><a class="inf nick " onclick="window.HTMLOUT.showUserMenu('42403756','2999433','kedrs')"><span><b>kedrs</b></span></a>
+                    <div class="inf group"><span style="color:#FF9900">Друзья 4PDA</span></div><a class="inf reputation" onclick="window.HTMLOUT.showRepMenu('42403756','2999433','kedrs','1','1')"><span>125</span></a>
+                    <div class="date-link"><span class="inf date"><span>Сегодня, 20:35</span></span><a class="inf link" onclick="window.HTMLOUT.showPostLinkMenu('42403756')"><span><span class="sharp">#</span>16264</span></a></div><a class="inf menu" onclick="window.HTMLOUT.showPostMenu('42403756','Сегодня, 20:35','2999433','kedrs','0','0')"><span>Меню</span></a></div>
+            </div>
+            <div class="post_body ">
+                <div class="post-block quote">
+                    <div class="block-title">Нельсон @ 22.08.2015, 17:16
+                        <a href="/forum/index.php?act=findpost&amp;pid=42398916" target="_blank" title="Перейти к сообщению"><img src="file:///android_asset/forum/style_images/1/post_snapback.gif" alt="*" border="0"></a>
+                    </div>
+                    <div class="block-body">Может на Лоллипупе (5-ом андроиде) ее исправят? Есть кто из бета-тестеров, вдруг уже исправлена?
+                        <br>
+                    </div>
+                </div>
+                <br>Ни на одной прошивке такого не было, вообще ни на одной.</div>
+            <div class="post_footer"><a class="link button claim" href="/forum/index.php?act=report&amp;t=521028&amp;p=42403756&amp;st=16263"><span>Жалоба</span></a><a class="button nick" onclick="window.HTMLOUT.insertTextToPost('[SNAPBACK]42403756[/SNAPBACK] [B]kedrs,[/B] \n')"><span>Ник</span></a><a class="button quote" onclick="window.HTMLOUT.quote('781','521028','42403756','Сегодня, 20:35','2999433','kedrs')"><span>Цитата</span></a><a class="button vote bad" onclick="window.HTMLOUT.postVoteBad('42403756')"><span>Плохо</span></a><a class="button vote good" onclick="window.HTMLOUT.postVoteGood('42403756')"><span>Хорошо</span></a></div>
+
+            <div class="between_messages"></div>
+        </div>
+    </div>
+    <div name="entryEnd" id="entryEnd"></div>
+    <div class="panel bottom">
+        <div class="navi bottom">
+            <a class="button first" onclick="window.HTMLOUT.firstPage()"><span>&lt;&lt;</span></a>
+            <a class="button prev" onclick="window.HTMLOUT.prevPage()"><span>&lt;</span></a>
+            <a class="button page" onclick="window.HTMLOUT.jumpToPage()"><span>Выбор</span></a>
+            <a class="button next disable"><span>&gt;</span></a>
+            <a class="button last disable"><span>&gt;&gt;</span></a>
+        </div>
+        <div class="who"><a id="viewers" onclick="window.HTMLOUT.showReadingUsers()"><span>Кто читает тему</span></a>
+            <a id="writers" onclick="window.HTMLOUT.showWriters()"><span>Кто писал сообщения</span></a></div>
+        <div class="topic_title_post"><a href="http://4pda.ru/forum/index.php?showtopic=521028&amp;st=16260#entry42403756">Meizu MX3 - Официальная прошивка</a></div>
+    </div>
+    <div id="bottomMargin"></div>
+    <script>
+        jsEmoticons.parseAll('file:///android_asset/forum/style_emoticons/default/');
+        initPostBlock();
+    </script>
+</body>
+
+</html>

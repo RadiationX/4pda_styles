@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        window.onload = function(){
+            var s = "anal akrabat vasiliy kek allahuakbar";
+            s+=" ";//костыль
+            var ai=0, kol=0;
+
+            for(var i = 0; i<=s.length;i++){
+                if(s[i]=="a"|s[i]=="A") ai++;
+                
+                if(s[i]==" "){
+                    if(ai==3) kol++;
+                    ai=0;
+                }
+            }  
+            
+            alert(kol);//result
+        }
+        
+        
+        
+        
+    </script>
+</body>
+</html>

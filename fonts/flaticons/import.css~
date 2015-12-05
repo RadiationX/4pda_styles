@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("coba_src/flaticon.eot");
+    src: url("coba_src/flaticon.eot#iefix") format("embedded-opentype"), url("coba_src/flaticon.woff") format("woff"), url("coba_src/flaticon.ttf") format("truetype"), url("coba_src/flaticon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-family: 'flaticon';
+    font-size: 1.25em;
+    font-style: normal;
+}
