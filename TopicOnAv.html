@@ -8,6 +8,7 @@
     <script type="text/javascript" src="theme.js"></script>
     <script type="text/javascript" src="blockeditor.js"></script>
     <script type="text/javascript" src="z_emoticons.js"></script>
+    <script type="text/javascript">function openHat(e){var t=e.parentNode.getElementsByTagName("div")[1];"none"==t.style.display?(t.style.display="",e.setAttribute("class","hidetop open")):(t.style.display="none",e.setAttribute("class","hidetop close"))}</script>
     <link rel="stylesheet" type="text/css" href="forum/css/4pda_light_blue.css">
     <link rel="stylesheet" type="text/css" href="fonts/roboto/import.css">
     <link rel="stylesheet" type="text/css" href="fonts/flaticons/import.css">
@@ -27,8 +28,8 @@
         </div>
         <div class="topic_title_post"><a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=11560#entry22872213">Неофициальный клиент 4pda.ru, Неофициальный клиент для сайта 4pda.ru</a></div>
     </div>
-    <div class="poll" style="display:none;">
-        <div class="hidetop" style="cursor:pointer;" onclick="var _n=this.parentNode.getElementsByTagName('div')[1];if(_n.style.display=='none'){_n.style.display='';}else{_n.style.display='none';}"><b>Опрос</b>
+    <div class="poll">
+        <div class="hidetop" style="cursor:pointer;" onclick="openHat(this);"><b><span>Опрос</span></b>
         </div>
         <div class="hidemain" style="display:none">
             <form action="modules.php" method="get">
@@ -125,7 +126,7 @@
                     <div class="date-link"><span class="inf date"><span>02.10.2011, 12:35</span></span><a class="inf link" onclick="window.HTMLOUT.showPostLinkMenu('9233031')"><span><span class="sharp">#</span>11561</span></a></div><a class="inf menu" onclick="window.HTMLOUT.showPostMenu('9233031','02.10.2011, 12:35','236113','slartus','0','0')"><span>Меню</span></a></div>
             </div>
             <div class="hat">
-                <div class="hidetop" style="cursor:pointer;" onclick="var _n=this.parentNode.getElementsByTagName('div')[1];if(_n.style.display=='none'){_n.style.display='';}else{_n.style.display='none';}"><b><span>Показать шапку</span></b></div>
+                <div class="hidetop close" style="cursor:pointer;" onclick="openHat(this);"><b><span>Показать шапку</span></b></div>
                 <div class="hidemain" style="display:none">
                     <div class="post_body "><span style="font-size:14pt;line-height:100%"><b><span style="color:blue">Неофициальный клиент 4pda.ru</span></b>
                         </span>
