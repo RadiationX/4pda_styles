@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1{
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Shadow</h1>
+    <h1>Text Shadow</h1>
+</body>
+</html>
+<script type="text/javascript" src="http://s.4pda.to/JK4KRvTd0Pd.js?_=2" async="async"></script>
+        <script type="text/javascript">
+            function getCommentsData(){
+                return '{"264253":{"0":[0,0,0,0],"2745254":[1,0,0,1],"2745284":[0,0,0,0],"2745256":[1,0,0,1],"2745264":[0,0,0,0],"2745312":[0,0,0,0]}}';    
+            }
+        </script><!-- 1450205606 1840000854 -->
+
+<script>
+    window.onload = function() {
+        var anchors = document.querySelectorAll('.karma');
+        var data = JSON.parse(getCommentsData())[264253];
+        for(var i = 0; i < anchors.length; i++) {
+            var found = anchors[i].getAttribute("data-karma").match(/([\d]*)-([\d]*)/);
+            anchors[i].innerHTML= '<b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось"></span></span>';
+            anchors[i].querySelector(".num-wrap .num").innerHTML = data[found[2]][3];
+            anchors[i].onclick = function () {
+                found = this.getAttribute("data-karma").match(/([\d]*)-([\d]*)/);
+                this.querySelector(".num-wrap .num").innerHTML = data[found[2]][3]+1;
+            };
+        }
+    }
+</script>

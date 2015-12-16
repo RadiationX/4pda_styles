@@ -1,0 +1,140 @@
+.poll {
+    .hidetop {
+        input {
+
+        }
+        b {
+            span {
+                
+            }
+        }
+        &.open {
+            b {
+                &:before {
+                    content: "Скрыть опрос";
+                }
+            }
+        }
+        &.close {
+            b {
+                &:before {
+                    content: "Показать опрос";
+                }
+            }
+        }
+    }
+    .hidemain {
+        form {
+            .poll_title {
+                span {
+                    
+                }
+            }
+            .poll_body {
+                .poll_theme {
+                    &:last-of-type {
+                        
+                    }
+                    .theme_title {
+                        span {
+                            
+                        }
+                    }
+                    .items {
+                        .item {
+                            input {
+                                &.checkbox {
+                                    &+.icon {
+                                        &:after {
+                                            
+                                        }
+                                    }
+                                }
+                                &.radiobutton {
+                                    &+.icon {
+                                        &:after {
+                                            
+                                        }
+                                    }
+                                }
+                                &:checked {
+                                    &.checkbox {
+                                        &+.icon {
+                                            &:after {
+                                                
+                                            }
+                                        }
+                                    }
+                                    &.radiobutton {
+                                        &+.icon {
+                                            &:after {
+                                                
+                                            }
+                                        }
+                                    }
+                                    &+.icon {
+                                        &:after {
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            .icon {
+                                &:after {
+                                    
+                                }
+                            }
+                            .item_body {
+                                .name {
+                                
+                                }
+                            }
+                        }
+                        &.voted {
+                            .item {
+                                .name {
+                                    span {
+                                    
+                                    }
+                                }
+                                .num_votes {
+                                    span {
+                                        
+                                    }
+                                    &:after {
+                                        content: " Голосов";
+                                    }
+                                }
+                                .range {
+                                    .range_bar {
+                                        
+                                    }
+                                    .value {
+                                        span {
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .votes_info {
+                span {
+                    
+                }
+            }
+            .buttons {
+                .button {
+                    &:last-child {
+                        
+                    }
+                    &:first-child {
+                        
+                    }
+                }
+            }
+        }
+    }
+}

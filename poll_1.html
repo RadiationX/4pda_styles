@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        function openHat(e) {
+            var t = e.parentNode.getElementsByTagName("div")[1];
+            "none" == t.style.display ? (t.style.display = "", e.setAttribute("class", "hidetop open")) : (t.style.display = "none", e.setAttribute("class", "hidetop close"))
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="forum/css/4pda_light_blue.css">
+    <link rel="stylesheet" type="text/css" href="fonts/roboto/import.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticons/import.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fontello/import.css">
+</head>
+
+<body>
+    <div class="poll">
+        <div class="hat">
+            <div class="hidetop close" style="cursor:pointer;" onclick="openHat(this);"><b><span>Опрос</span></b></div>
+            <div class="hidemain" style="display:none">
+                <form action="modules.php" method="get">
+                    <div class="poll_title"><span>Рейтинг тем для 5.0</span></div>
+                    <div class="poll_body">
+                        <div class="poll_theme">
+                            <div class="theme_title"><span>Ваша тема</span></div>
+                            <div class="items">
+                                <label class="item">
+                                    <input type="radio" name="choice[1]" value="1" class="radiobutton"><span class="icon"></span><span class="item_body"><span class="name">Dark Material Design</span></span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="choice[1]" value="2" class="radiobutton"><span class="icon"></span><span class="item_body"><span class="name">Black Material Design</span></span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="choice[1]" value="3" class="radiobutton"><span class="icon"></span><span class="item_body"><span class="name">Стоковая</span></span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="choice[1]" value="4" class="radiobutton"><span class="icon"></span><span class="item_body"><span class="name">Своя</span></span>
+                                </label>
+                                <label class="item">
+                                    <input type="radio" name="choice[1]" value="5" class="radiobutton"><span class="icon"></span><span class="item_body"><span class="name">Я не в теме</span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="votes_info"><span>Всего голосов: 266</span></div>
+                    <div class="buttons">
+                        <input class="button" type="submit" name="submit" value="Голосовать!" title="Проголосуйте в опросе">&nbsp;
+                        <input class="button" type="button" value="Показать результаты" title="Просмотр результатов (перед добавлением вашего голоса)" onclick="HTMLOUT.go_gadget_show()">
+                    </div>
+                    <input type="hidden" name="addpoll" value="1">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="poll">
+        <div class="hat">
+            <div class="hidetop open" style="cursor:pointer;" onclick="openHat(this);"><b><span>Опрос</span></b></div>
+            <div class="hidemain" style="">
+                <form action="modules.php" method="get">
+                    <div class="poll_body">
+                        <div class="poll_theme">
+                            <div class="theme_title"><span>Обнаруженные неисправности(не лечащиеся перепрошивкой)</span></div>
+                            <div class="items voted">
+                                <div class="item"><span class="name"><span>Проблемы с внешним динамиком.</span></span><span class="num_votes"><span>57</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:12.1%;"></div><span class="value"><span>12.1%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Проблемы со связью.</span></span><span class="num_votes"><span>71</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:15.07%;"></div><span class="value"><span>15.07%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Проблемы с экраном.</span></span><span class="num_votes"><span>61</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:12.95%;"></div><span class="value"><span>12.95%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Пыль в неположенных местах.</span></span><span class="num_votes"><span>17</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:3.61%;"></div><span class="value"><span>3.61%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Нету!</span></span><span class="num_votes"><span>192</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:40.76%;"></div><span class="value"><span>40.76%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Проблема с зарядкой/батареей</span></span><span class="num_votes"><span>73</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:15.5%;"></div><span class="value"><span>15.5%</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poll_theme">
+                            <div class="theme_title"><span>Как вы ремонтируете телефон?</span></div>
+                            <div class="items voted">
+                                <div class="item"><span class="name"><span>Сдаю в СЦ.</span></span><span class="num_votes"><span>125</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:26.54%;"></div><span class="value"><span>26.54%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Пробую сам, не получается - СЦ.</span></span><span class="num_votes"><span>186</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:39.49%;"></div><span class="value"><span>39.49%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Только сам.</span></span><span class="num_votes"><span>100</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:21.23%;"></div><span class="value"><span>21.23%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Покупаю новый.</span></span><span class="num_votes"><span>60</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:12.74%;"></div><span class="value"><span>12.74%</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poll_theme">
+                            <div class="theme_title"><span>Как вам в целом качество сборки? (качество крышки не включено)</span></div>
+                            <div class="items voted">
+                                <div class="item"><span class="name"><span>Качество отменное.</span></span><span class="num_votes"><span>340</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:72.19%;"></div><span class="value"><span>72.19%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Видали и лучше.</span></span><span class="num_votes"><span>116</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:24.63%;"></div><span class="value"><span>24.63%</span></span>
+                                    </div>
+                                </div>
+                                <div class="item"><span class="name"><span>Просто хлам.</span></span><span class="num_votes"><span>15</span></span>
+                                    <div class="range">
+                                        <div class="range_bar" style="width:3.18%;"></div><span class="value"><span>3.18%</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="votes_info"><span>Всего голосов: 471</span></div>
+                    <div class="buttons">Вы уже голосовали в этом опросе</div>
+                    <input type="hidden" name="addpoll" value="1">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
