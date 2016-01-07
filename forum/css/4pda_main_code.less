@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@pollRangeBg: rgba(128, 128, 128, 0.2);
 .mainBox {
     background: @mainBoxBgColor;
     margin: 0.5em 0;
@@ -267,6 +268,32 @@ a {
                             }
                         }
                     }
+                }
+            }
+            .galContainer{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    text-align: center;
+                    a{
+                        img{
+                            
+                        }
+                    }
+                }
+            }
+            .wp-caption{
+                .wp-caption-dt{
+                    display: block;
+                     a{
+                        img{
+                            
+                        }
+                     }
+                }
+                .wp-caption-dd{
+                    
                 }
             }
             .mlinks {
@@ -1221,27 +1248,58 @@ a {
             display: table-cell;
             min-width: 3em;
             text-align: center;
+            height: 3em;
             padding: 0.875em 0;
             color: @accentColor;
+            position: relative;
             >span{
                 .mdButton;
+                display: none;
             }
             &:active{
                 background: @tapColor;
             }
             &.first{
-                
+                &:after{
+                    margin-left: 0em;    
+                }
+                &:before{
+                    margin-left: -0.375em;    
+                }
             }
             &.prev{
-                
+                &:before{
+                    content: none;
+                }
             }
             &.page{
-
+                &:after,&:before{
+                    content: none;
+                }
+                >span{
+                    display: inline;    
+                }
             }
             &.next{
-
+                &:after{
+                    transform: rotate(225deg);
+                    -webkit-transform: rotate(225deg);
+                }
+                &:before{
+                    content: none;
+                }
             }
             &.last{
+                &:after,&:before{
+                    transform: rotate(225deg);
+                    -webkit-transform: rotate(225deg);
+                }
+                &:after{
+                    margin-left: 0em;    
+                }
+                &:before{
+                    margin-left: -0.375em;    
+                }
 
             }
             &.disable{
@@ -1249,6 +1307,24 @@ a {
                 &:active{
                     background: none;    
                 }
+            }
+            &:after, &:before{
+                content: "";
+                display: block;
+                height: 0.5em;
+                width: 0.5em;
+                box-sizing: border-box;
+                border: @borderInput;
+                border-color: inherit;
+                border-top: none;
+                border-right: none;
+                top: 50%;
+                margin-top: -0.25em;
+                left: 50%;
+                margin-left: -0.125em;
+                position: absolute;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
             }
         }
         &.top{
@@ -1582,6 +1658,11 @@ a {
                         margin-right: -0.75em;    
                     }
                 }
+                &:after{
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
             }
         }
     }
@@ -1594,6 +1675,7 @@ a {
     .postcolor{
         overflow: auto!important;
         height: auto!important;
+        margin: -1em;
         padding: 1em;
     }
     img {
@@ -1741,7 +1823,26 @@ a {
         }
     }
 }
-
+body.newyear{
+    .post_container .post_header .avatar{
+        .img{
+            .bRad(4em);
+        }
+        &:after{
+            content: "";
+                position: absolute;
+                height: 4em;
+                width: 4.5em;
+                background-image: url(hat.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                top: -0.5em;
+                left: 0.625em;
+                -webkit-transform: rotate(10deg);
+                transform: rotate(10deg);
+        }
+    }
+}
 .post_container {
     .mainBox;
     .post_header {
@@ -1751,6 +1852,7 @@ a {
         }
         .avatar {
             width: 4em;
+            position: relative;
             .img{
                 height: 4em;
                 width: 4em;
@@ -1948,12 +2050,14 @@ a {
     &.search-results{
         .topic_title_post{
             border-bottom: @border1;
+            font-weight: bold;
         }
         .post_container{
             .post_header{
                 padding: 0.5em 1em;
                 .s_inf{
                     &.nick{
+                        font-weight: bold;
                         color: @textColor;
                         &.online{
                             color: @curColor;
@@ -1968,7 +2072,9 @@ a {
                 }    
             }
             .s_post_footer{
-                 padding: 1em 0.5em;   
+                border-top: @border1;
+                padding: 0.75em 1em;  
+                line-height: 1.5em;
             }
         }
         .bad-search-result{
@@ -1988,7 +2094,7 @@ a {
             height: 5.5em;    
         }
         .post_body{
-            padding: 0;
+            padding: 1em;
         }
     }
 }
@@ -2180,7 +2286,19 @@ div[data-post]{
 
 /*--- END FORUM TOPIC ---*/
 /*--- PROFILE ---*/
-
+body.newyear .user-profile-list > li:first-child .user-box .photo .img:after {
+    content: "";
+    position: absolute;
+    height: 4em;
+    width: 4.5em;
+    background-image: url(hat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -0.5em;
+    left: 0.625em;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
 .user-profile-list {
     max-width: 60em;
     margin: 0 auto;
@@ -2249,7 +2367,6 @@ div[data-post]{
                     margin-right: 1em;
                     float: left;
                     
-                    overflow: hidden;
                     //нахер этот img
                     img {
                         display: block;
@@ -2263,10 +2380,11 @@ div[data-post]{
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: contain;
+                        position: relative;
+                        .bRad(4em);
                         &.circle{
-                            .bRad(4.5em); 
+                            .bRad(4em); 
                         }
-                        
                     }
                 }
                 h1 {

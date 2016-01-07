@@ -274,6 +274,17 @@ a {
   -webkit-border-radius: 0 0 2px 2px;
   border-radius: 0 0 2px 2px;
 }
+.container .content .content-box .galContainer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container .content .content-box .galContainer li {
+  text-align: center;
+}
+.container .content .content-box .wp-caption .wp-caption-dt {
+  display: block;
+}
 .container .content .content-box .mlinks {
   background: #f4f4f4;
   border-top: 1px solid #e9e9e9;
@@ -1179,22 +1190,78 @@ a {
   display: table-cell;
   min-width: 3em;
   text-align: center;
+  height: 3em;
   padding: 0.875em 0;
   color: #0277bd;
+  position: relative;
 }
 .panel .navi .button > span {
   font-size: 0.875em;
   font-weight: bold;
   text-transform: uppercase;
+  display: none;
 }
 .panel .navi .button:active {
   background: rgba(0, 0, 0, 0.1);
+}
+.panel .navi .button.first:after {
+  margin-left: 0em;
+}
+.panel .navi .button.first:before {
+  margin-left: -0.375em;
+}
+.panel .navi .button.prev:before {
+  content: none;
+}
+.panel .navi .button.page:after,
+.panel .navi .button.page:before {
+  content: none;
+}
+.panel .navi .button.page > span {
+  display: inline;
+}
+.panel .navi .button.next:after {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+.panel .navi .button.next:before {
+  content: none;
+}
+.panel .navi .button.last:after,
+.panel .navi .button.last:before {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+.panel .navi .button.last:after {
+  margin-left: 0em;
+}
+.panel .navi .button.last:before {
+  margin-left: -0.375em;
 }
 .panel .navi .button.disable {
   color: #bbbbbb;
 }
 .panel .navi .button.disable:active {
   background: none;
+}
+.panel .navi .button:after,
+.panel .navi .button:before {
+  content: "";
+  display: block;
+  height: 0.5em;
+  width: 0.5em;
+  box-sizing: border-box;
+  border: 0.125em solid #737373;
+  border-color: inherit;
+  border-top: none;
+  border-right: none;
+  top: 50%;
+  margin-top: -0.25em;
+  left: 50%;
+  margin-left: -0.125em;
+  position: absolute;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 .panel .who {
   display: table;
@@ -1418,7 +1485,7 @@ a {
 .poll .hidemain form .poll_body .poll_theme .items.voted .item .range {
   margin-top: 0.25em;
   position: relative;
-  background: #e9e9e9;
+  background: rgba(128, 128, 128, 0.2);
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
@@ -1476,6 +1543,11 @@ a {
 .poll .hidemain form .buttons .button:first-child {
   margin-right: -0.75em;
 }
+.poll .hidemain form .buttons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .post_body {
   padding: 1em;
   position: relative;
@@ -1484,6 +1556,7 @@ a {
 .post_body .postcolor {
   overflow: auto!important;
   height: auto!important;
+  margin: -1em;
   padding: 1em;
 }
 .post_body img {
@@ -1602,6 +1675,23 @@ a {
   top: -0.5em;
   left: -0.5em;
 }
+body.newyear .post_container .post_header .avatar .img {
+  -webkit-border-radius: 4em;
+  border-radius: 4em;
+}
+body.newyear .post_container .post_header .avatar:after {
+  content: "";
+  position: absolute;
+  height: 4em;
+  width: 4.5em;
+  background-image: url(hat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -0.5em;
+  left: 0.625em;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
 .post_container {
   background: #ffffff;
   margin: 0.5em 0;
@@ -1616,6 +1706,7 @@ a {
 }
 .post_container .post_header .avatar {
   width: 4em;
+  position: relative;
 }
 .post_container .post_header .avatar .img {
   height: 4em;
@@ -1778,11 +1869,13 @@ a {
 }
 .posts_list.search-results .topic_title_post {
   border-bottom: 1px solid #e9e9e9;
+  font-weight: bold;
 }
 .posts_list.search-results .post_container .post_header {
   padding: 0.5em 1em;
 }
 .posts_list.search-results .post_container .post_header .s_inf.nick {
+  font-weight: bold;
   color: #212121;
 }
 .posts_list.search-results .post_container .post_header .s_inf.nick.online {
@@ -1795,7 +1888,9 @@ a {
   font-size: 0.875em;
 }
 .posts_list.search-results .post_container .s_post_footer {
-  padding: 1em 0.5em;
+  border-top: 1px solid #e9e9e9;
+  padding: 0.75em 1em;
+  line-height: 1.5em;
 }
 .posts_list.search-results .bad-search-result {
   background: #ffffff;
@@ -1817,7 +1912,7 @@ a {
   height: 5.5em;
 }
 .posts_list.search-results .post_body {
-  padding: 0;
+  padding: 1em;
 }
 div[data-post] {
   background: #ffffff;
@@ -2004,6 +2099,19 @@ div[data-post] .post_body {
 }
 /*--- END FORUM TOPIC ---*/
 /*--- PROFILE ---*/
+body.newyear .user-profile-list > li:first-child .user-box .photo .img:after {
+  content: "";
+  position: absolute;
+  height: 4em;
+  width: 4.5em;
+  background-image: url(hat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -0.5em;
+  left: 0.625em;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
 .user-profile-list {
   max-width: 60em;
   margin: 0 auto;
@@ -2076,7 +2184,6 @@ div[data-post] .post_body {
   height: 4em;
   margin-right: 1em;
   float: left;
-  overflow: hidden;
 }
 .user-profile-list > li:first-child .user-box .photo img {
   display: block;
@@ -2089,10 +2196,13 @@ div[data-post] .post_body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
+  -webkit-border-radius: 4em;
+  border-radius: 4em;
 }
 .user-profile-list > li:first-child .user-box .photo .img.circle {
-  -webkit-border-radius: 4.5em;
-  border-radius: 4.5em;
+  -webkit-border-radius: 4em;
+  border-radius: 4em;
 }
 .user-profile-list > li:first-child .user-box h1 {
   display: block;
