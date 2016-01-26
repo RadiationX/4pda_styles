@@ -5,11 +5,51 @@ function copySelection() {
         alert(selectedText);
 }
 
+
+
+
+
+
+window.onload = function () {
+    var postAttach = new PostAttach;
+
+var str = JSON.stringify(postAttach);
+
+    console.log(str);
+}
+
+function PostAttach() {
+    var anchorList = document.querySelectorAll('div[id*="entry"]');
+    for (var i = 0; i < anchorList.length; i++) {
+        var post = anchorList[i].nextElementSibling;
+        if (post.className != 'post_container') return;
+        var attachList = post.querySelectorAll('a[attach_id]');
+
+        function attachCollection() {
+            var obj = {};
+            for (var j = 0; j < attachList.length; j++) {
+                var att = attachList[j];
+                if(att.getAttribute('href').match(/jpg|gif|jpeg|png/g))
+                   obj['att' + (j + 1)] = att.getAttribute('href');
+            }
+            if (!obj.att1) return;
+            return obj;
+        }
+        this[anchorList[i].getAttribute("id")] = attachCollection();
+    }
+}
+
+
+
+
+
+
+
+
 function deleteMessages(formId) {
     try {
         var f = elem(formId);
         var checkboxes = f.getElementsByTagName('input');
-
         var checkboxesChecked = [];
         // loop over them all
         for (var i = 0; i < checkboxes.length; i++) {
@@ -26,9 +66,15 @@ function deleteMessages(formId) {
     }
 }
 
-function toggleSpoilerVisibility(e){var t=e.parentNode.parentNode.getElementsByTagName("div")[1];"none"==t.style.display?(t.style.display="",e.parentNode.setAttribute("class","hidetop open")):(t.style.display="none",e.parentNode.setAttribute("class","hidetop close"))};
+function toggleSpoilerVisibility(e) {
+    var t = e.parentNode.parentNode.getElementsByTagName("div")[1];
+    "none" == t.style.display ? (t.style.display = "", e.parentNode.setAttribute("class", "hidetop open")) : (t.style.display = "none", e.parentNode.setAttribute("class", "hidetop close"))
+};
 
-function openHat(e){var t=e.parentNode.getElementsByTagName("div")[1];"none"==t.style.display?(t.style.display="",e.setAttribute("class","hidetop open")):(t.style.display="none",e.setAttribute("class","hidetop close"))};
+function openHat(e) {
+    var t = e.parentNode.getElementsByTagName("div")[1];
+    "none" == t.style.display ? (t.style.display = "", e.setAttribute("class", "hidetop open")) : (t.style.display = "none", e.setAttribute("class", "hidetop close"))
+};
 
 function scrollToElement(id) {
 
