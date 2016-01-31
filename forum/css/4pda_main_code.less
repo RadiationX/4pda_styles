@@ -1214,14 +1214,6 @@ a {
 /*--- END QMS ---*/
 /*--- FORUM TOPIC ---*/
 
-[data-post] {
-    >a[name*="entry"] {
-        position: absolute;
-        margin-top: -4em;
-        left: 0;
-        width: 100%;
-    }
-}
 #topMargin{
     background: @mainBoxBgColor;    
 }
@@ -1235,6 +1227,20 @@ a {
         display: inline-block;
         padding: 0.875em;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        span{
+            
+        }
+        .name{
+            
+        }
+        .description{
+            display: block;
+            color: @secondTextColor;
+            font-size: 0.875em;
+            .comma{
+                 display: none;   
+            }
+        }
     }
 }
 .panel{
@@ -2026,6 +2032,11 @@ a {
         }
     }
 }
+#search{
+    .panel.bottom:empty+#bottomMargin{
+        display: none;
+    }
+}
 .posts_list {
     &.search-results{
         .topic_title_post{
@@ -2078,178 +2089,7 @@ a {
         }
     }
 }
-//Вид как в браузере
-div[data-post]{
-    .mainBox;
-    .bRad(2px);
-    margin-top: 0.5em;
-    .post_header_container {
-        position: relative;
-        z-index: 2;
-        .post_header {
-            .bRad(2px 2px 0 0);
-            text-align: left;
-            position: relative;
-            padding-top: 2.25em;
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-            line-height: 2.25em;
-            min-height: 6.75em;
-            &:before {
-                content: "";
-                position: absolute;
-                height: 2.25em;
-                width: 100%;
-                top: 0;
-                left: 0;
-                background: @mainColor;
-            }
-            &:after {
-                content: "";
-                position: absolute;
-                top: 6.75em;
-                left: 0.5em;
-                right: 0.5em;
-                border-top: @border1;
-            }
-            br {
-                display: none;
-            }
-            .post_date {
-                position: absolute;
-                top: 0;
-                right: 0.571em;
-                font-size: 0.875em;
-                .contrast;
-                a {
-                    .contrast;
-                }
-            }
-            .post_nick {
-                position: absolute;
-                top: 0;
-                left: 1.75em;
-                a {
-                    font-size: 0.875em;
-                    font-weight: bold;
-                    .contrast;
-                }
-            }
-            .post_user_info {
-                >* {}
-                strong {
-                    float: right;
-                }
-                span {}
-                span + br {
-                    display: block;
-                }
-                font[color] {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 2.25em;
-                    width: 2.25em;
-                    color: transparent;
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        width: 0.75em;
-                        height: 0.75em;
-                        top: 0.75em;
-                        left: 0.75em;
-                        border-radius: 50%;
-                    }
-                    &[color=red] {
-                        &:after {
-                            background: @userColor;
-                        }
-                    }
-                    &[color=green] {
-                        &:after {
-                            background: @userOnlineColor;
-                        }
-                    }
-                }
-                a {
-                    color: @accentColor;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    font-size: 0.875em;
-                    &[href*="act=qms"] {
-                        float: right;
-                    }
-                    &[href*="showuser"] {
-                        float: right;
-                        padding-right: 0.75em;
-                    }
-                }
-            }
-            [id*="ajaxrep"] {
-                color: @accentColor;
-            }
-            [onclick*="rep_change"] {
-                position: relative;
-                width: 2em;
-                display: inline-block;
-                height: 2em;
-                vertical-align: top;
-                background: @mainBoxBgColor;
-                img {
-                    display: none;
-                }
-                &:before {
-                    content: '';
-                    position: absolute;
-                    left: 0.5em;
-                    top: 0.5em;
-                    right: 0.5em;
-                    bottom: 0.5em;
-                    .bRad(2px);
-                    line-height: 1em;
-                    color: @contrLinkColor;
-                    text-align: center;
-                }
-                &[href*="win_minus"] {
-                    &:before {
-                        content: '-';
-                        background: @voteBadColor;
-                    }
-                }
-                &[href*="win_add"] {
-                    margin-left: -0.5em;
-                    &:before {
-                        content: '+';
-                        background: @voteGoodColor;
-                    }
-                }
-            }
-            .post_action {
-                display: table;
-                width: 100%;
-                text-align: center;
-                a {
-                    display: table-cell;
-                    color: @accentColor;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 0.875em;
-                }
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 4.5em;
-                    left: 0.5em;
-                    right: 0.5em;
-                    border-top: @border1;
-                }
-            }
-        }
-    }
-    .post_body {
-        .bRad(0 0 2px 2px);
-    }
-}
+
 
 .searchlite {
     background: rgba(248, 143, 0, 0.3);
@@ -3214,28 +3054,6 @@ li .post-block{
             }
         }
     }
-    
-    div[data-post]{
-        .post_header_container {
-            .post_header {
-                width: 25%;
-                min-width: 16.25em;
-                max-width: 18.75em;
-                position: relative;
-                float: left;
-                clear: both;
-                &:before {
-                    .bRad(2px 0 0 0);
-                }
-            }
-        }
-        .post_body {
-            min-height: 11.25em;
-            border-left: @border1;
-            overflow: hidden;
-        }
-    }
-
     .post-block{
         .bRad(2px);
         margin-left: 0!important;

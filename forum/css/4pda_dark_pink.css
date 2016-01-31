@@ -1166,12 +1166,6 @@ a {
 }
 /*--- END QMS ---*/
 /*--- FORUM TOPIC ---*/
-[data-post] > a[name*="entry"] {
-  position: absolute;
-  margin-top: -4em;
-  left: 0;
-  width: 100%;
-}
 #topMargin {
   background: #2b2b2b;
 }
@@ -1185,6 +1179,14 @@ a {
   display: inline-block;
   padding: 0.875em;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.topic_title_post a .description {
+  display: block;
+  color: #8a8a8a;
+  font-size: 0.875em;
+}
+.topic_title_post a .description .comma {
+  display: none;
 }
 .panel {
   background: #2b2b2b;
@@ -1862,6 +1864,9 @@ a {
   display: table;
   clear: both;
 }
+#search .panel.bottom:empty + #bottomMargin {
+  display: none;
+}
 .posts_list.search-results .topic_title_post {
   border-bottom: 1px solid #474747;
   font-weight: bold;
@@ -1908,177 +1913,6 @@ a {
 }
 .posts_list.search-results .post_body {
   padding: 1em;
-}
-div[data-post] {
-  background: #2b2b2b;
-  margin: 0.5em 0;
-  box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  margin-top: 0.5em;
-}
-div[data-post] .post_header_container {
-  position: relative;
-  z-index: 2;
-}
-div[data-post] .post_header_container .post_header {
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
-  text-align: left;
-  position: relative;
-  padding-top: 2.25em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  line-height: 2.25em;
-  min-height: 6.75em;
-}
-div[data-post] .post_header_container .post_header:before {
-  content: "";
-  position: absolute;
-  height: 2.25em;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: #17415f;
-}
-div[data-post] .post_header_container .post_header:after {
-  content: "";
-  position: absolute;
-  top: 6.75em;
-  left: 0.5em;
-  right: 0.5em;
-  border-top: 1px solid #474747;
-}
-div[data-post] .post_header_container .post_header br {
-  display: none;
-}
-div[data-post] .post_header_container .post_header .post_date {
-  position: absolute;
-  top: 0;
-  right: 0.571em;
-  font-size: 0.875em;
-  color: #ededed;
-  background: #17415f;
-}
-div[data-post] .post_header_container .post_header .post_date a {
-  color: #ededed;
-  background: #17415f;
-}
-div[data-post] .post_header_container .post_header .post_nick {
-  position: absolute;
-  top: 0;
-  left: 1.75em;
-}
-div[data-post] .post_header_container .post_header .post_nick a {
-  font-size: 0.875em;
-  font-weight: bold;
-  color: #ededed;
-  background: #17415f;
-}
-div[data-post] .post_header_container .post_header .post_user_info strong {
-  float: right;
-}
-div[data-post] .post_header_container .post_header .post_user_info span + br {
-  display: block;
-}
-div[data-post] .post_header_container .post_header .post_user_info font[color] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2.25em;
-  width: 2.25em;
-  color: transparent;
-}
-div[data-post] .post_header_container .post_header .post_user_info font[color]:after {
-  content: "";
-  position: absolute;
-  width: 0.75em;
-  height: 0.75em;
-  top: 0.75em;
-  left: 0.75em;
-  border-radius: 50%;
-}
-div[data-post] .post_header_container .post_header .post_user_info font[color][color=red]:after {
-  background: #cb5242;
-}
-div[data-post] .post_header_container .post_header .post_user_info font[color][color=green]:after {
-  background: #309f5e;
-}
-div[data-post] .post_header_container .post_header .post_user_info a {
-  color: #e91e63;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.875em;
-}
-div[data-post] .post_header_container .post_header .post_user_info a[href*="act=qms"] {
-  float: right;
-}
-div[data-post] .post_header_container .post_header .post_user_info a[href*="showuser"] {
-  float: right;
-  padding-right: 0.75em;
-}
-div[data-post] .post_header_container .post_header [id*="ajaxrep"] {
-  color: #e91e63;
-}
-div[data-post] .post_header_container .post_header [onclick*="rep_change"] {
-  position: relative;
-  width: 2em;
-  display: inline-block;
-  height: 2em;
-  vertical-align: top;
-  background: #2b2b2b;
-}
-div[data-post] .post_header_container .post_header [onclick*="rep_change"] img {
-  display: none;
-}
-div[data-post] .post_header_container .post_header [onclick*="rep_change"]:before {
-  content: '';
-  position: absolute;
-  left: 0.5em;
-  top: 0.5em;
-  right: 0.5em;
-  bottom: 0.5em;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  line-height: 1em;
-  color: #ededed;
-  text-align: center;
-}
-div[data-post] .post_header_container .post_header [onclick*="rep_change"][href*="win_minus"]:before {
-  content: '-';
-  background: #a54336;
-}
-div[data-post] .post_header_container .post_header [onclick*="rep_change"][href*="win_add"] {
-  margin-left: -0.5em;
-}
-div[data-post] .post_header_container .post_header [onclick*="rep_change"][href*="win_add"]:before {
-  content: '+';
-  background: #249151;
-}
-div[data-post] .post_header_container .post_header .post_action {
-  display: table;
-  width: 100%;
-  text-align: center;
-}
-div[data-post] .post_header_container .post_header .post_action a {
-  display: table-cell;
-  color: #e91e63;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.875em;
-}
-div[data-post] .post_header_container .post_header .post_action:before {
-  content: "";
-  position: absolute;
-  top: 4.5em;
-  left: 0.5em;
-  right: 0.5em;
-  border-top: 1px solid #474747;
-}
-div[data-post] .post_body {
-  -webkit-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
 }
 .searchlite {
   background: rgba(248, 143, 0, 0.3);
@@ -2869,23 +2703,6 @@ li .post-block {
   .posts_list.search-results .post_header table tbody tr:first-child {
     -webkit-border-radius: 0;
     border-radius: 0;
-  }
-  div[data-post] .post_header_container .post_header {
-    width: 25%;
-    min-width: 16.25em;
-    max-width: 18.75em;
-    position: relative;
-    float: left;
-    clear: both;
-  }
-  div[data-post] .post_header_container .post_header:before {
-    -webkit-border-radius: 2px 0 0 0;
-    border-radius: 2px 0 0 0;
-  }
-  div[data-post] .post_body {
-    min-height: 11.25em;
-    border-left: 1px solid #474747;
-    overflow: hidden;
   }
   .post-block {
     -webkit-border-radius: 2px;
