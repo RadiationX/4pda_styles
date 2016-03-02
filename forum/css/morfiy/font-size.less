@@ -1,0 +1,16 @@
+@font-sizes-style: 36pt, 24pt, 18pt, 14pt, 12pt, 10pt, 8pt;
+@font-sizes-em: 3.75em, 2.55em, 1.95em, 1.55em, 1.35em, 1.15em, 0.95em;
+
+.post_body-sizes(@list-style, @list-em, @index: 1) when (isnumber(extract(@list-style, @index))) {
+    @styleSize: extract(@list-style, @index);
+    @styleEm: extract(@list-em, @index);
+    @item: ~'.post_body span[style*="font-size:@{styleSize}"]';
+    @{item} {
+        font-size: @styleEm !important;
+        * {
+            font-size: inherit !important;
+        }
+    }
+    .post_body-sizes(@font-sizes-style, @font-sizes-em, (@index + 1)); // next size
+}
+.post_body-sizes(@font-sizes-style, @font-sizes-em);

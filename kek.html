@@ -1,37 +1,670 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <style>
-        h1{
-            text-shadow: 2px 4px 8px rgba(0,0,0,0.5);
-        }
-    </style>
-</head>
-<body>
-    <h1>Text Shadow</h1>
-    <h1>Text Shadow</h1>
-</body>
-</html>
-<script type="text/javascript" src="http://s.4pda.to/JK4KRvTd0Pd.js?_=2" async="async"></script>
-        <script type="text/javascript">
-            function getCommentsData(){
-                return '{"264253":{"0":[0,0,0,0],"2745254":[1,0,0,1],"2745284":[0,0,0,0],"2745256":[1,0,0,1],"2745264":[0,0,0,0],"2745312":[0,0,0,0]}}';    
-            }
-        </script><!-- 1450205606 1840000854 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ru" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 
-<script>
-    window.onload = function() {
-        var anchors = document.querySelectorAll('.karma');
-        var data = JSON.parse(getCommentsData())[264253];
-        for(var i = 0; i < anchors.length; i++) {
-            var found = anchors[i].getAttribute("data-karma").match(/([\d]*)-([\d]*)/);
-            anchors[i].innerHTML= '<b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось"></span></span>';
-            anchors[i].querySelector(".num-wrap .num").innerHTML = data[found[2]][3];
-            anchors[i].onclick = function () {
-                found = this.getAttribute("data-karma").match(/([\d]*)-([\d]*)/);
-                this.querySelector(".num-wrap .num").innerHTML = data[found[2]][3]+1;
+<head>
+    <script>
+        <!--
+        (function (f, h) {
+            var c = "$4";
+            if ("function" != typeof f[c] || .3 > f[c].lib4PDA) {
+                var g = {},
+                    b = function () {
+                        return f[c] || this
+                    },
+                    k = function (a, d) {
+                        return function () {
+                            "function" == typeof d && (!a || a in b ? d(b[a], a) : !g[a] && (g[a] = [d]) || g[a].push(d))
+                        }
+                    };
+                b.fn = b.prototype = {
+                    lib4PDA: .3,
+                    constructor: b,
+                    addModule: function (a, d) {
+                        if (!(a in b)) {
+                            b[a] = b.fn[a] = d ? "function" == typeof d ? d(b) : d : h;
+                            for (var c = 0, e = g[a]; e && c < e.length;) e[c++](b[a], a);
+                            delete g[a]
+                        }
+                        return b
+                    },
+                    onInit: function (a, d) {
+                        for (var c = (a = (a + "").split(" ")).length, e = d; c;) e = new k(a[--c],
+                            e);
+                        e();
+                        return b
+                    }
+                };
+                f[c] = f.lib4PDA = b;
+                for (c in b.fn) b[c] = b.fn[c]
+            }
+        })(window);
+        //-->
+    </script>
+    <meta name="HandheldFriendly" content="True" />
+    <meta http-equiv="content-type" content="text/html;charset=windows-1251" />
+
+    <!--meta name="theme-color" content="#4373C3"/-->
+
+    <!--[if lt IE 9]>
+<script src="http://s.4pda.to/JK4K2oZDf2c7cHEWOEG3.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="search" type="application/opensearchdescription+xml" title="Поиск по форуму 4pda" href="opensearch_4pda.xml" />
+    <title>ForPDA - 4PDA</title>
+    <link rel="stylesheet" href="http://s.4pda.to/JK4KQ2BWPLd6X7K0ghmI4Odv8j.css?_=1455100199" media="all, handheld" />
+    <link rel="stylesheet" href="http://s.4pda.to/JK4KHXswoMyZnUL6ETdDsjZuz2DFatuOitRZ6jdOz12YpPSaX3d3uUTrGvb3vJPoRgpa3axH.css" media="all, handheld" />
+    <link rel="stylesheet" href="http://s.4pda.to/JK4KQ2BWPjdz0CHVPKjOPKT8cZB9M.css?_=1448530807" media="all, handheld" />
+    <!--[if IE 7]>
+<link rel="stylesheet" href="http://s.4pda.to/JK4K30MKetz12i1NDsuPQoYeMxNVH.css?_=1231">
+<![endif]-->
+    <script src="http://s.4pda.to/JK4KQ2BWPDsz0DkHuVz11H9HwdMLAQ.js?_=1448530867"></script>
+    <script src="http://s.4pda.to/JK4KQ2BWPDsw8k6L3ygFquhlZHRKv6fWz1U.js?_=1452861274" charset="windows-1251"></script>
+    <script>
+        <!--
+        var ipb_var_base_url = "http://4pda.ru/forum/index.php?",
+            ipb_md5_check = "558628747c61f4fe63e58846d699ce44",
+            ipb_input_f = 285,
+            ipb_input_t = 271502,
+            ipb_input_p = 0;
+        //-->
+    </script>
+</head>
+
+<body>
+    <div id="ipbwrapper">
+        <div class="borderwrap-header">
+            <div id="logostrip"><a href="http://4pda.ru/forum/index.php?act=idx"><span style="color:#4373c3;font-size:24pt;">4</span>PDA</a></div>
+            <div class="header-links">
+                <a href="/">На сайт</a>
+                <a href="http://4pda.ru/forum/index.php?act=fav">Избранное</a>
+                <a href="http://4pda.ru/forum/index.php?act=rep&view=rating">Репутация</a>
+                <br />
+                <a href="http://4pda.ru/forum/index.php?act=Members">Пользователи</a>
+                <a href="http://4pda.ru/forum/index.php?act=search">Поиск</a>
+                <a href="http://4pda.ru/forum/index.php?act=Help">Помощь</a>
+                <br />
+                <a href="http://4pda.ru/forum/index.php?showtopic=20758">Каталог программ</a>
+                <a href="http://4pda.ru/forum/index.php?act=boardrules">Правила</a>
+            </div>
+        </div>
+        <div id="userlinks">
+            <b><a href="http://4pda.ru/forum/index.php?showuser=2556269">radiation15</a></b> ( <a href="http://4pda.ru/forum/index.php?act=login&CODE=03&k=558628747c61f4fe63e58846d699ce44&return=http%3A%2F%2F4pda.ru%2Fforum%2Findex.php%3Fshowtopic%3D271502%26st%3D34680">Выход</a> ): <b><a href="http://4pda.ru/forum/index.php?act=UserCP&CODE=00" title="Изменение личных данных и т.д.">Профиль</a></b>
+            <br />
+            <br /><a href="http://4pda.ru/forum/index.php?act=search&pattern=getnew">Новые сообщения</a>
+            <br />&middot;&nbsp;<a href="http://4pda.ru/forum/index.php?act=qms" onclick="window.open(this.href,this.target,'width=480px,height=600px,scrollbars=yes'); return false;" target="_blank">Сообщения (1)</a>
+        </div>
+        <script>
+            window.CONFIG = {
+                member_id: 2556269,
+                baseurl: "http://4pda.ru/forum/index.php?",
+                mailboxes: ["u2556269"],
+                ws: "ws://app.4pda.ru/ws/",
+                xhr: "http://app.4pda.ru/er/"
             };
-        }
-    }
-</script>
+        </script>
+        <div id="events-wrapper" style="display:none;">
+            <div id="events-list"><a target="q2572494" data-rev="25399238" data-count="1" title="Тестирование" href="http://4pda.ru/forum/index.php?act=qms&mid=2760915&t=2572494">DumF0rGaming</a></div><a href="http://4pda.ru/forum/index.php?act=qms&" id="events-count">Сообщений: 1</a></div>
+        <script src="http://s.4pda.to/JK4KQ2BWPDMxWxi24i8J0T.js?_=1448530872" charset="windows-1251"></script>
+        <style type="text/css">
+            @import url("http://s.4pda.to/JK4KQ2BWPbctRMIFnytaJyz0Wtj.css");
+        </style>
+        <link rel="stylesheet" href="http://s.4pda.to/JK4K7Hm8z2Ez2nVLJKYIh5e2tbo72h6bz0oC0xukXKl313.css" media="all" />
+        <script type="text/javascript" src="http://s.4pda.to/JK4K7Hm8z2Ez2nVLJKYIykz0nr3w8ncIvsMoaolARz0elle.js"></script>
+        <div class="globalmesswrap" style="display:none" id="gc_1">
+            <p style="float:right;width:auto;margin:7px;padding:0">
+                <a href="javascript:toggleglobalmess(1,0,'43',1455570565);"><img src="http://s.4pda.to/JK4K79GIw5um4A7z1z0eYoSGwOtELFyCwz1oZDlARz0eFz20.gif" border="0" alt="Показать объявления" /></a>
+            </p>
+            <h4>Объявления</h4></div>
+        <div class="globalmesswrap" style="display:show" id="go_1">
+            <p style="float:right;width:auto;margin:7px;padding:0">
+                <a href="javascript:toggleglobalmess(1,1,'43',1455570565);"><img src="http://s.4pda.to/JK4K79mI3kjZdi3MknWWihqIgDRfz2JeUDPgaHXLrdn9V.gif" border="0" alt="Скрыть объявления" /></a>
+            </p>
+            <h4>Объявления</h4>
+            <div class="globalmesscontent">
+                <div align="center"><a title="Ссылка" rel="nofollow" href="http://4pda.ru/2016/02/12/276056/" target="_blank"><span style="color:red"><b>Участвуй в конкурсе "Знак качества" от FiiO и выиграй Hi-Fi плеер!</b></span></a></div>
+            </div>
+        </div>
+        <div id="navstrip">&gt;&nbsp;<a href="http://4pda.ru/forum/index.php?act=idx">4PDA</a>&nbsp;&gt;&nbsp;<a href="http://4pda.ru/forum/index.php?showforum=281">Android</a>&nbsp;&gt;&nbsp;<a href="http://4pda.ru/forum/index.php?showforum=212">Android - Программы</a>&nbsp;&gt;&nbsp;<a href="http://4pda.ru/forum/index.php?showforum=285">Интернет и коммуникации</a></div>
+        <script type="text/javascript">
+            //<![CDATA[
+            function jump_to_page(pag) {
+                var pages = parseInt(1734);
+                var st = (pag - 1);
+                if (st < 0) st = 0;
+                if (st > pages) st = pages;
+                st = parseInt(st * 20);
+                window.location = "http://4pda.ru/forum/index.php?showtopic=271502&st=" + st;
+            }
+            //]]>
+        </script>
+        <a name="top"></a>
+        <noindex>
+            <div class="borderwrap" style="margin-bottom:6px;">
+                <h3><img src="http://s.4pda.to/JK4KPT4dPz20oZxCPULpFpaqyYVKLGsiSquBz2BrH.gif" border="0" alt=">" width="8" height="8">&nbsp;Внимание!</h3>
+                <p><b><span style="color:royalblue">Новые темы необходимо создавать только в <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showforum=212" target="_blank">корневом разделе</a>! В дальнейшем они будут обработаны модераторами.</span></b>
+                    <br />
+                    <br /><span style="color:#CF0CA6"><b>Если Вы выложили новую версию программы, пожалуйста, сообщите об этом модератору нажав на вашем сообщении кнопку "Жалоба".</b></span>
+                    <br />
+                    <br /><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=112220" target="_blank"><span style="color:#78AF00"><b>Каталог программ Android</b></span></a></p>
+            </div>
+        </noindex>
+        <br />
+        <div class="makepost_link"><a href="/forum/index.php?act=post&amp;do=reply_post&amp;f=285&amp;t=271502">Ответить</a>&nbsp;&nbsp;<a href="/forum/index.php?act=post&amp;do=new_post&amp;f=285" title="Открытие новой темы">Создать тему</a></div>
+        <div class="pagination"><a href="#" onclick="var pag = prompt('Введите номер страницы:','');if(!isNaN(pag)&&pag){jump_to_page(pag)} return false;">1735 страниц</a>&nbsp;&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502">&laquo;</a>&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=34660">&lt;</a>&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=34640">1733</a>&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=34660">1734</a>&nbsp;<span class="pagecurrent">1735</span>&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=34680">&raquo;</a></div>
+        <br />
+        <div class="topic_title_post">ForPDA, Неофициальный клиент для сайта 4pda.ru
+            <br />
+            <form action="/forum/index.php?" method="get" name="search" style="margin:0;">
+                <div style="text-align:center; margin:2px;">
+                    <input type="hidden" name="forums[]" value="285" />
+                    <input type="hidden" name="topics[]" value="271502" />
+                    <input type="hidden" name="act" value="search" />
+                    <input type="hidden" name="source" value="pst" />
+                    <input type="text" size="15" name="query" class="searchinput" value="Ключевое слово" id="search-in-post-query-1" onfocus="if ( 'Ключевое слово' == this.value ) this.value = '';" />
+                    <input type="submit" value="Найти в этой теме" class="button" />
+                </div>
+            </form>
+        </div>
+        <script>
+            <!--
+            img_item = "";
+            var img_item_a = [img_item + ' <a href="/forum/index.php?act=fav&amp;type=topics&amp;tact=delete&amp;selectedtids=1773817&amp;referer=%2Fforum%2Findex.php%3Fshowtopic%3D271502%26st%3D34680" onclick="return confirm(this.getAttribute(&quot;data-confirm&quot;));" data-confirm="Вы подписаны на эту тему.\nПри удалении темы из избранного подписка на тему будет отменена.\n\nПродолжить?">Удалить из избранного</a>', img_item + ' <a href="/forum/index.php?act=fav&amp;type=topics&amp;tact=none&amp;selectedtids=1773817&amp;referer=%2Fforum%2Findex.php%3Fshowtopic%3D271502%26st%3D34680">Отписаться от темы</a>',
+img_item + " <a href='/forum/index.php?act=Print&amp;client=printer&amp;f=285&amp;t=271502'>Версия для печати</a>",
+img_item + " <a href='/forum/index.php?act=Print&amp;client=choose&amp;f=285&amp;t=271502'>Скачать тему</a>"
+
+]; //-->
+        </script>
+        <div data-post="9233031">
+            <a name="entry9233031"></a>
+            <div class="post_header_container">
+                <div class="post_header"><span class="post_date">02.10.2011, 11:35&nbsp;|<a href="/forum/index.php?showtopic=271502&amp;view=findpost&amp;p=9233031" onclick="link_to_post(9233031); return false;">#34681</a>|</span>
+                    <br /><span class="post_nick"><a href="#" title="Вставить ник" onclick="return insertText('[SNAPBACK]9233031[/SNAPBACK] [B]slartus,[/B] ')" data-av="13/236113-19293449.png">slartus</a></span>
+                    <br/>
+                    <span class="post_user_info">Группа: <span style='color:#BC33FF'>Разработчики</span>
+                    <br /><font color="red">[offline]</font> <a href="/forum/index.php?act=qms&mid=236113" target="qms_236113">Сообщения (QMS)</a>
+                    <a href="/forum/index.php?showuser=236113">Профиль</a>
+                    </span>
+                    Реп. (<a href="/forum/index.php?act=rep&amp;view=history&amp;mid=236113" title="Просмотреть репутацию"><span id="ajaxrep-236113">9373</span></a>)
+                    <a href="/forum/index.php?act=rep&amp;view=win_minus&amp;mid=236113&amp;p=9233031" onclick="rep_change_window_open(this.href);return false;" title="Опустить репутацию"><img src="http://s.4pda.to/JK4K79mI3kjZbqqrIz2xQOZeM9trWwJndhlEhGoaOz0z1.gif" border="0" alt="-" /></a>&nbsp;|&nbsp;
+                    <a href="/forum/index.php?act=rep&amp;view=win_add&amp;mid=236113&amp;p=9233031" onclick="rep_change_window_open(this.href);return false;" title="Поднять репутацию"><img src="http://s.4pda.to/JK4KGY1IKjq0z1ETICuU2EXz0h6bT2qirZKeZRHCU.gif" border="0" alt="+" /></a>
+                    <br/>
+                    <span class="post_action"><a href="/forum/index.php?act=report&amp;t=271502&amp;p=9233031&amp;st=34680">Жалоба</a>&nbsp;<a href="/forum/index.php?act=Post&amp;CODE=02&amp;f=285&amp;t=271502&amp;qpid=9233031">Цитата</a></span>
+                </div>
+            </div>
+            <div class="post_body emoticons"><span style="font-size:14pt;line-height:100%"><b><span style="color:blue">ForPDA</span></b>
+                </span>
+                <br /><span style="font-size:12pt;line-height:100%"><b>версия: 1.42.7/3.2.0</b></span>
+                <br />
+                <br /><i>Последнее обновление программы в шапке: <b>11.02.2016</b></i>
+                <br />
+                <br /><img src="http://cs3-2.4pda.to/6843129.png" class="linked-image" alt="Прикрепленное изображение" />
+                <br />
+                <br />
+                <div class="post-block spoil close">
+                    <div class="block-title">ещё скриншоты</div>
+                    <div class="block-body">
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7231383-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7231383-bb">
+                                        <div id="ipb-attach-ct-7231383-bb"></div>
+                                        <a id="ipb-attach-url-7231383-bb" href="http://4pda.ru/forum/dl/post/7231383/light.png" rel="lytebox[9233031]" title="light.png - Размер: 213,89 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7231383.png" id="ipb-attach-img-7231383-bb" class="attach" rel="lytebox[9233031]" style="width:225;height:400" width="225" height="400" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7231383-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7231385-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7231385-bb">
+                                        <div id="ipb-attach-ct-7231385-bb"></div>
+                                        <a id="ipb-attach-url-7231385-bb" href="http://4pda.ru/forum/dl/post/7231385/dark.png" rel="lytebox[9233031]" title="dark.png - Размер: 209,76 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7231385.png" id="ipb-attach-img-7231385-bb" class="attach" rel="lytebox[9233031]" style="width:225;height:400" width="225" height="400" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7231385-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7231387-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7231387-bb">
+                                        <div id="ipb-attach-ct-7231387-bb"></div>
+                                        <a id="ipb-attach-url-7231387-bb" href="http://4pda.ru/forum/dl/post/7231387/black.png" rel="lytebox[9233031]" title="black.png - Размер: 200,63 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7231387.png" id="ipb-attach-img-7231387-bb" class="attach" rel="lytebox[9233031]" style="width:225;height:400" width="225" height="400" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7231387-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7231391-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7231391-bb">
+                                        <div id="ipb-attach-ct-7231391-bb"></div>
+                                        <a id="ipb-attach-url-7231391-bb" href="http://4pda.ru/forum/dl/post/7231391/material_light.png" rel="lytebox[9233031]" title="material_light.png - Размер: 242,88 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7231391.png" id="ipb-attach-img-7231391-bb" class="attach" rel="lytebox[9233031]" style="width:225;height:400" width="225" height="400" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7231391-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7231394-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7231394-bb">
+                                        <div id="ipb-attach-ct-7231394-bb"></div>
+                                        <a id="ipb-attach-url-7231394-bb" href="http://4pda.ru/forum/dl/post/7231394/material_dark.png" rel="lytebox[9233031]" title="material_dark.png - Размер: 235,76 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7231394.png" id="ipb-attach-img-7231394-bb" class="attach" rel="lytebox[9233031]" style="width:225;height:400" width="225" height="400" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7231394-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7231398-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7231398-bb">
+                                        <div id="ipb-attach-ct-7231398-bb"></div>
+                                        <a id="ipb-attach-url-7231398-bb" href="http://4pda.ru/forum/dl/post/7231398/material_black.png" rel="lytebox[9233031]" title="material_black.png - Размер: 238,02 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7231398.png" id="ipb-attach-img-7231398-bb" class="attach" rel="lytebox[9233031]" style="width:225;height:400" width="225" height="400" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7231398-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7231399-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7231399-bb">
+                                        <div id="ipb-attach-ct-7231399-bb"></div>
+                                        <a id="ipb-attach-url-7231399-bb" href="http://4pda.ru/forum/dl/post/7231399/white_old.png" rel="lytebox[9233031]" title="white_old.png - Размер: 254,68 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7231399.png" id="ipb-attach-img-7231399-bb" class="attach" rel="lytebox[9233031]" style="width:225;height:400" width="225" height="400" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7231399-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br />
+                <br /><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=541046" target="_blank">Стили и модификации для ForPDA</a> | <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=671139" target="_blank">Клуб пользователей ForPDA</a>
+                <br />
+                <br /><b>Краткое описание:</b>
+                <br />Неофициальный клиент для просмотра сайта 4pda.ru.
+                <br />
+                <br /><b>Описание:</b>
+                <br />Возможности: чтение новостей и отправка комментариев к ним, полноценное общение на форуме в том числе отправка личных сообщений, три темы оформления и возможность использовать до трёх разновидностей встроенных и подключения собственных стилей (css) оформления топика, новостей и QMS, режим мультимодерации в помощь кураторам и многое, многое другое.
+                <br />Приятного использования.
+                <br />
+                <br /><b>Разработчики:</b>
+                <br />Автор и разработчик (1.х - 2.х): <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=236113" target="_blank"><b>slartus</b></a>
+                <br />Разработчик (3.х): <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=2556269" target="_blank"><b>radiation15</b></a>
+                <br />Разработчик (3.х): <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=1726458" target="_blank"><b>iSanechek</b></a>
+                <br />Дизайнер стилей: <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=96664" target="_blank"><b>Морфий</b></a>
+                <br />
+                <br /><b>Русский интерфейс:</b> Да
+                <br />
+                <br /><span style="color:blue"><b>Скачать:</b></span>
+                <br /><b>Версия 3.2.0:</b> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502&view=findpost&p=40949296&quot;" target="_blank">ForPDA (Пост radiation15 #40949296)</a> - <span style="color:red">для Android 4.0.3 и выше</span>
+                <br />
+                <br /><b>Версия 1.42.7:</b> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502&view=findpost&p=47019584" target="_blank">ForPDA (Пост slartus #47019584)</a> - <span style="color:green">для Android 2.х и выше</span>
+                <br />Поддержка только на платной основе, обращаться к <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=236113" target="_blank"><b>slartus</b></a>.
+                <br />Пост с описанием ошибок, просьбами и предложениями <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502&view=findpost&p=27692473" target="_blank">&gt;&gt;&gt;тут&lt;&lt;&lt;</a>.
+                <br />За консультацией по этому вопросу можно обратиться к <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?act=qms&mid=1460862" target="_blank"><b>gar_alex</b> в QMS</a>.
+                <br />
+                <br />
+                <div class="post-block spoil close">
+                    <div class="block-title">Прошлые версии</div>
+                    <div class="block-body"> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502&view=findpost&p=40949296%22" target="_blank">ForPDA (Пост radiation15 #40949296)</a></div>
+                </div>
+                <br /><span style="color:red"><b>Проверка обновлений в приложении происходит раз в день. Версия для показа избирается автором.</b></span>
+                <br />
+                <br />
+                <div class="post-block spoil close">
+                    <div class="block-title">Опросы - архив</div>
+                    <div class="block-body">
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7374392-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7374392-bb">
+                                        <div id="ipb-attach-ct-7374392-bb"></div>
+                                        <a id="ipb-attach-url-7374392-bb" href="http://4pda.ru/forum/dl/post/7374392/opros_-_knopka_zakrit_prilojenie.png" rel="lytebox[9233031]" title="opros_-_knopka_zakrit_prilojenie.png - Размер: 29,94 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7374392.png" id="ipb-attach-img-7374392-bb" class="attach" rel="lytebox[9233031]" style="width:400;height:96" width="400" height="96" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7374392-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-7105001-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-7105001-bb">
+                                        <div id="ipb-attach-ct-7105001-bb"></div>
+                                        <a id="ipb-attach-url-7105001-bb" href="http://4pda.ru/forum/dl/post/7105001/%EE%EF%F0%EE%F1_%E1%F0%E0%F3%E7%E5%F0%ED%FB%E9_%E2%E8%E4.png" rel="lytebox[9233031]" title="опрос_браузерный_вид.png - Размер: 126,02 КБ" target="_blank"><img src="http://cs3-2.4pda.to/7105001.png" id="ipb-attach-img-7105001-bb" class="attach" rel="lytebox[9233031]" style="width:400;height:186" width="400" height="186" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-7105001-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-6958903-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-6958903-bb">
+                                        <div id="ipb-attach-ct-6958903-bb"></div>
+                                        <a id="ipb-attach-url-6958903-bb" href="http://4pda.ru/forum/dl/post/6958903/%EE%EF%F0%EE%F1+%E2%EA%EB%E0%E4%EA%E8.png" rel="lytebox[9233031]" title="опрос вкладки.png - Размер: 115,17 КБ" target="_blank"><img src="http://cs3-2.4pda.to/6958903.png" id="ipb-attach-img-6958903-bb" class="attach" rel="lytebox[9233031]" style="width:400;height:140" width="400" height="140" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-6958903-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-5079114-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-5079114-bb">
+                                        <div id="ipb-attach-ct-5079114-bb"></div>
+                                        <a id="ipb-attach-url-5079114-bb" href="http://4pda.ru/forum/dl/post/5079114/opros-3.png" rel="lytebox[9233031]" title="opros-3.png - Размер: 67,46 КБ" target="_blank"><img src="http://cs3-2.4pda.to/5079114.png" id="ipb-attach-img-5079114-bb" class="attach" rel="lytebox[9233031]" style="width:400;height:224" width="400" height="224" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-5079114-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-5048380-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-5048380-bb">
+                                        <div id="ipb-attach-ct-5048380-bb"></div>
+                                        <a id="ipb-attach-url-5048380-bb" href="http://4pda.ru/forum/dl/post/5048380/Opros2.png" rel="lytebox[9233031]" title="Opros2.png - Размер: 32,46 КБ" target="_blank"><img src="http://cs3-2.4pda.to/5048380.png" id="ipb-attach-img-5048380-bb" class="attach" rel="lytebox[9233031]" style="width:400;height:88" width="400" height="88" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-5048380-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:auto;display:inline;" id="ipb-attach-table-4989634-bb" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="ipb-attach-div-4989634-bb">
+                                        <div id="ipb-attach-ct-4989634-bb"></div>
+                                        <a id="ipb-attach-url-4989634-bb" href="http://4pda.ru/forum/dl/post/4989634/%EE%EF%F0%EE%F1.JPG" rel="lytebox[9233031]" title="опрос.JPG - Размер: 13,14 КБ" target="_blank"><img src="http://cs3-2.4pda.to/4989634.jpg" id="ipb-attach-img-4989634-bb" class="attach" rel="lytebox[9233031]" style="width:400;height:63" width="400" height="63" alt="Прикрепленное изображение" /></a>
+                                        <div id="ipb-attach-cb-4989634-bb" style="margin:0px"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br />
+                <br /><span style="font-size:14pt;line-height:100%"><b>Перед тем, как оставить сообщение:</b></span>
+                <br />Если вы нашли <a title="Ссылка" rel="nofollow" href="https://www.google.by/url?sa=t&source=web&rct=j&ei=bf8bVf_bKNXhaoi3gqAJ&url=http://lurkmore.to/%25D0%2591%25D0%25B0%25D0%25B3&ved=0CCgQFjAC&usg=AFQjCNG4FAI6Vn_ZwuFFeva3J1D0nRtVZg&sig2=yQQcSqBakuvpuWPG4lM9hA" target="_blank">баг</a> (ошибку), хотите оставить просьбу или предложение, для начала прочтите:
+                <br />1. <a title="Ссылка" rel="nofollow" href="https://trello.com/b/waBsLILd/client-4pda" target="_blank"><span style="color:blue"><b>Список задач - "Органайзер разработчиков"</b></span></a>
+                <br />2. <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502&view=findpost&p=46060846" target="_blank"><span style="color:blue"><b>FAQ (<a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?s=&showtopic=271502&view=findpost&p=28724490" target="_blank">+старая редакция</a>)</b>
+                </span>
+                </a> и <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502&view=findpost&p=45570566" target="_blank"><span style="color:blue"><b>Mini-FAQ по обновлению 3.1.4 и выше</b></span></a>.
+                <br />3. <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502&view=findpost&p=33324855" target="_blank"><span style="color:blue"><b>Как правильно сообщать об ошибке</b></span></a>
+                <br />И только в том случае, если вы не нашли ответа на ваш вопрос, пишите в теме. Иначе, сообщения будут удаляться.
+                <br />
+                <br /><b>Все предложения о доработке, идеи о новом функционале, по смене дизайна, спорные вопросы и т.п. обсуждаем здесь - <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=671139" target="_blank">Клуб пользователей ForPDA</a> - если ваша идея будет подкреплена большинством, разработчик примет окончательное решение.</b>
+                <br />
+                <br /><span style="color:blue"><b>Исходники:</b></span> <a title="Ссылка" rel="nofollow" href="https://github.com/slartus/4pdaClient-plus" target="_blank">4pda2.x</a>
+                <br />
+                <br /><b><div align="center"><span style="font-size:14pt;line-height:100%"><span style="color:red">!!! ВНИМАНИЕ !!!</span></span></div></b><a name="attention_2_10_17_59" title="attention_2_10_17_59">&#711;</a>
+                <br /><b><div align="center"><span style="font-size:12pt;line-height:100%"><span style="color:red">На сайте ведутся работы, проблемы с авторизацией на самом сайте.<br />Все претензии сюда - <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=725085&st=0&view=findpost&p=47047233" target="_blank">Не работает форма входа</a><br />Пообщаться на эту тему сюда - <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=671139" target="_blank">Клуб пользователей ForPDA</a><br /><br />* * *<br /><br />Ошибка при авторизации на 3.1.9 исправлено в 3.2.0 (Нажимаете войти, игнорируете (жмите "ОК") сообщение "капча не найдена", нажимаете "ВХОД")</span></span></div></b>
+                <br />
+                <br />
+                <div align="center"><b><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502&view=findpost&p=32591818" target="_blank">Почему клиент удалили из Google Play?</a><br /><a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=271502" target="_blank">Где брать новые версии?</a></b></div>
+                <br />
+                <br />--------------
+                <br />
+                <br />
+                <div align="center"><b><span style="color:red">В этой теме запрещено обсуждение еще не вышедшего для массового пользования официального клиента.<br />Запрос и предоставление ссылок/apk также запрещены.<br />Желающих пофлудить на эту тему - прошу в раздел <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showforum=219" target="_blank">Трепалка</a><br />За игнорирование данного предупреждения - RO</span></b></div>
+                <br />
+                <br /><span style="color:blue">Уважаемые форумчане, будьте любезны, не пишите сообщения на подобие "Поддерживаю", "Я за!", "У меня та же фигня", "Я того же мнения" и т.п. Для этого есть хорошая штука - <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showtopic=229018&st=0&view=findpost&p=7053572" target="_blank"><b>Пользовательская модерация</b></a>, ваше сообщение можно заменить простым нажатием кнопки "хорошо" <img src="http://cs3-2.4pda.to/4095444.png" class="linked-image" alt="Прикрепленное изображение" /> а посты с отрицательныи рейтингом <img src="http://cs3-2.4pda.to/4095448.png" class="linked-image" alt="Прикрепленное изображение" /> буду просматривать и удалять.</span>
+                <br />
+                <br />
+                <div align="right">Просьба: сообщения о битых ссылках,
+                    <br />грамматических и других ошибках,
+                    <br />наполнению шапки информацией оставлять в <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?act=qms&mid=96664" target="_blank">QMS</a>
+                    <br /><span style="color:green"><b>Куратор темы</b>:</span> <a title="Ссылка" rel="nofollow" href="http://4pda.ru/forum/index.php?showuser=96664" target="_blank"><b>Морфий</b></a> </div>
+                <br />
+                <br /><span class="edit">Сообщение отредактировал <b>Морфий</b> - 12.02.2016, 11:44</span>
+                <div class="post-edit-reason">Причина редактирования: 1.42.7 / 3.2.0</div>
+            </div>
+        </div>
+        <div data-post="47150914">
+            <a name="entry47150914"></a>
+            <div class="post_header_container">
+                <div class="post_header"><span class="post_date">Вчера, 23:14&nbsp;|<a href="/forum/index.php?showtopic=271502&amp;view=findpost&amp;p=47150914" onclick="link_to_post(47150914); return false;">#34682</a>|</span>
+                    <br /><span class="post_nick"><a href="#" title="Вставить ник" onclick="return insertText('[SNAPBACK]47150914[/SNAPBACK] [B]DumF0rGaming,[/B] ')" data-av="15/2760915-8879159.jpg">DumF0rGaming</a></span>
+                    <br/>
+                    <span class="post_user_info">Группа: <span style='color:#FF9900'>Друзья 4PDA</span>
+                    <br /><font color="green">[online]</font> <a href="/forum/index.php?act=qms&mid=2760915" target="qms_2760915">Сообщения (QMS)</a>
+                    <a href="/forum/index.php?showuser=2760915">Профиль</a>
+                    </span>
+                    Реп. (<a href="/forum/index.php?act=rep&amp;view=history&amp;mid=2760915" title="Просмотреть репутацию"><span id="ajaxrep-2760915">16</span></a>)
+                    <a href="/forum/index.php?act=rep&amp;view=win_minus&amp;mid=2760915&amp;p=47150914" onclick="rep_change_window_open(this.href);return false;" title="Опустить репутацию"><img src="http://s.4pda.to/JK4K79mI3kjZbqqrIz2xQOZeM9trWwJndhlEhGoaOz0z1.gif" border="0" alt="-" /></a>&nbsp;|&nbsp;
+                    <a href="/forum/index.php?act=rep&amp;view=win_add&amp;mid=2760915&amp;p=47150914" onclick="rep_change_window_open(this.href);return false;" title="Поднять репутацию"><img src="http://s.4pda.to/JK4KGY1IKjq0z1ETICuU2EXz0h6bT2qirZKeZRHCU.gif" border="0" alt="+" /></a>
+                    <br/>
+                    <span class="post_action"><a href="/forum/index.php?act=report&amp;t=271502&amp;p=47150914&amp;st=34680">Жалоба</a>&nbsp;<a href="/forum/index.php?act=Post&amp;CODE=02&amp;f=285&amp;t=271502&amp;qpid=47150914">Цитата</a></span>
+                </div>
+            </div>
+            <div class="post_body emoticons">
+                <a href="/forum/index.php?act=findpost&amp;pid=47150866" target="_blank" title="Перейти к сообщению"><img src="http://s.4pda.ru/forum/style_images/1/post_snapback.gif" alt="*" border="0" /></a> <b>Niko Bellic 1234,</b> как я уже писал откатывайте WebView или пробуйте заморозить
+                <br />
+                <br /><span class="edit">Сообщение отредактировал <b>DumF0rGaming</b> - Вчера, 23:16</span></div>
+        </div>
+        <div data-post="47151365">
+            <a name="entry47151365"></a>
+            <div class="post_header_container">
+                <div class="post_header"><span class="post_date">Вчера, 23:32&nbsp;|<a href="/forum/index.php?showtopic=271502&amp;view=findpost&amp;p=47151365" onclick="link_to_post(47151365); return false;">#34683</a>|</span>
+                    <br /><span class="post_nick"><a href="#" title="Вставить ник" onclick="return insertText('[SNAPBACK]47151365[/SNAPBACK] [B]kemer42rus,[/B] ')" data-av="57/4667657-16629309.jpg">kemer42rus</a></span>
+                    <br/>
+                    <span class="post_user_info">Группа: <span style='color:#FF9900'>Друзья 4PDA</span>
+                    <br /><font color="red">[offline]</font> <a href="/forum/index.php?act=qms&mid=4667657" target="qms_4667657">Сообщения (QMS)</a>
+                    <a href="/forum/index.php?showuser=4667657">Профиль</a>
+                    </span>
+                    Реп. (<a href="/forum/index.php?act=rep&amp;view=history&amp;mid=4667657" title="Просмотреть репутацию"><span id="ajaxrep-4667657">21</span></a>)
+                    <a href="/forum/index.php?act=rep&amp;view=win_minus&amp;mid=4667657&amp;p=47151365" onclick="rep_change_window_open(this.href);return false;" title="Опустить репутацию"><img src="http://s.4pda.to/JK4K79mI3kjZbqqrIz2xQOZeM9trWwJndhlEhGoaOz0z1.gif" border="0" alt="-" /></a>&nbsp;|&nbsp;
+                    <a href="/forum/index.php?act=rep&amp;view=win_add&amp;mid=4667657&amp;p=47151365" onclick="rep_change_window_open(this.href);return false;" title="Поднять репутацию"><img src="http://s.4pda.to/JK4KGY1IKjq0z1ETICuU2EXz0h6bT2qirZKeZRHCU.gif" border="0" alt="+" /></a>
+                    <br/>
+                    <span class="post_action"><a href="/forum/index.php?act=report&amp;t=271502&amp;p=47151365&amp;st=34680">Жалоба</a>&nbsp;<a href="/forum/index.php?act=Post&amp;CODE=02&amp;f=285&amp;t=271502&amp;qpid=47151365">Цитата</a></span>
+                </div>
+            </div>
+            <div class="post_body emoticons">В чем проблема? При скачивании версии начиная 3.1.4. выдает ошибку при скачивании а рании версии устанавливаются но войти не могу!</div>
+        </div>
+        <div data-post="47151725">
+            <a name="entry47151725"></a>
+            <div class="post_header_container">
+                <div class="post_header"><span class="post_date">Вчера, 23:48&nbsp;|<a href="/forum/index.php?showtopic=271502&amp;view=findpost&amp;p=47151725" onclick="link_to_post(47151725); return false;">#34684</a>|</span>
+                    <br /><span class="post_nick"><a href="#" title="Вставить ник" onclick="return insertText('[SNAPBACK]47151725[/SNAPBACK] [B]ilya-fedin,[/B] ')" data-av="18/3582018-14671843.png">ilya-fedin</a></span>
+                    <br/>
+                    <span class="post_user_info">Группа: <span style='color:#FF9900'>Друзья 4PDA</span>
+                    <br /><font color="green">[online]</font> <a href="/forum/index.php?act=qms&mid=3582018" target="qms_3582018">Сообщения (QMS)</a>
+                    <a href="/forum/index.php?showuser=3582018">Профиль</a>
+                    </span>
+                    Реп. (<a href="/forum/index.php?act=rep&amp;view=history&amp;mid=3582018" title="Просмотреть репутацию"><span id="ajaxrep-3582018">400</span></a>)
+                    <a href="/forum/index.php?act=rep&amp;view=win_minus&amp;mid=3582018&amp;p=47151725" onclick="rep_change_window_open(this.href);return false;" title="Опустить репутацию"><img src="http://s.4pda.to/JK4K79mI3kjZbqqrIz2xQOZeM9trWwJndhlEhGoaOz0z1.gif" border="0" alt="-" /></a>&nbsp;|&nbsp;
+                    <a href="/forum/index.php?act=rep&amp;view=win_add&amp;mid=3582018&amp;p=47151725" onclick="rep_change_window_open(this.href);return false;" title="Поднять репутацию"><img src="http://s.4pda.to/JK4KGY1IKjq0z1ETICuU2EXz0h6bT2qirZKeZRHCU.gif" border="0" alt="+" /></a>
+                    <br/>
+                    <span class="post_action"><a href="/forum/index.php?act=report&amp;t=271502&amp;p=47151725&amp;st=34680">Жалоба</a>&nbsp;<a href="/forum/index.php?act=Post&amp;CODE=02&amp;f=285&amp;t=271502&amp;qpid=47151725">Цитата</a></span>
+                </div>
+            </div>
+            <div class="post_body emoticons">
+                <a href="/forum/index.php?act=findpost&amp;pid=47151365" target="_blank" title="Перейти к сообщению"><img src="http://s.4pda.ru/forum/style_images/1/post_snapback.gif" alt="*" border="0" /></a> <b>kemer42rus,</b>
+                <br />Как к клиенту относится проблема со скачиванием не из клиента?</div>
+        </div>
+        <!-- TABLE FOOTER -->
+        <div class="topic_foot_nav">
+            <br/>
+            <!--<a href="/forum/index.php?showtopic=271502&amp;view=old" style="text-decoration:none">&laquo;</a> | --><a href="/forum/index.php?showforum=285" style="font-weight: bold;text-decoration:none">Интернет и коммуникации</a>
+            <!-- | <a href="/forum/index.php?showtopic=285&amp;view=new" style="text-decoration:none">&raquo;</a>-->
+        </div>
+        <div class="pagination"><a href="#" onclick="var pag = prompt('Введите номер страницы:','');if(!isNaN(pag)&&pag){jump_to_page(pag)} return false;">1735 страниц</a>&nbsp;&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502">&laquo;</a>&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=34660">&lt;</a>&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=34640">1733</a>&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=34660">1734</a>&nbsp;<span class="pagecurrent">1735</span>&nbsp;<a href="http://4pda.ru/forum/index.php?showtopic=271502&amp;st=34680">&raquo;</a></div>
+        <br/>
+        <div class="makepost_link"><a href="/forum/index.php?act=post&amp;do=reply_post&amp;f=285&amp;t=271502">Ответить</a>&nbsp;&nbsp;<a href="/forum/index.php?act=post&amp;do=new_post&amp;f=285" title="Открытие новой темы">Создать тему</a></div>
+        <div class="quick_editor">
+            <form name="REPLIER" action="/forum/index.php?" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="act" value="post" />
+                <input type="hidden" name="CODE" value="03" />
+                <input type="hidden" name="f" value="285" />
+                <input type="hidden" name="t" value="271502" />
+                <input type="hidden" name="st" value="34680" />
+                <input type="hidden" name="auth_key" value="558628747c61f4fe63e58846d699ce44" />
+                <input type="hidden" name="fast_reply_used" value="1" />
+                <div class="post_header_editor"><b>Быстрый ответ</b></div>
+                <script language="JavaScript" type="text/javascript">
+                    <!--
+                    var tags = new Array("b", "i", "u", "s", "left", "center", "right", "quote", "mod", "ex");
+                    var itags = new Array();
+
+                    function insertText(text) {
+                        var textarea_obj = elem("post");
+                        textarea_obj.value += text;
+                        return false;
+                    }
+
+                    function addtag(id) {
+                        var textarea_obj = elem("post");
+                        var n = -1;
+                        for (i = 0; i < tags.length; i++) {
+                            if (tags[i] == id) n = i;
+                        }
+                        if (n != -1) {
+                            if (itags[n] != 1) {
+                                itags[n] = 1;
+                                textarea_obj.value += "[" + id + "]";
+                            } else {
+                                itags[n] = 0;
+                                textarea_obj.value += "[/" + id + "]";
+                            }
+                        }
+                        return false;
+                    }
+
+                    function elem(id) {
+                        if (isdef(typeof (document.getElementById))) return document.getElementById(id);
+                        else if (isdef(typeof (document.all))) return document.all[id];
+                        else if (isdef(typeof (document.layers))) return document[id];
+                        else return null;
+                    }
+
+                    function isdef(typestr) {
+                        return ((typestr != "undefined") && (typestr != "unknown")) ? true : false;
+                    }
+                    //-->
+                </script>
+                <input type="hidden" name="_wysiwyg_used" id="_wysiwyg_used" value="0" />
+                <input type="hidden" name="editor_ids[]" value="" />
+                <div class="editor_button">
+                    <input onclick="return addtag('b');" value="B" type="button" />
+                    <input onclick="return addtag('i');" value="I" type="button" />
+                    <input onclick="return addtag('u');" value="U" type="button" />
+                    <input onclick="return addtag('s');" value="S" type="button" />
+                    <input onclick="return addtag('quote');" value="Цитата" type="button" />
+                    <br />
+                    <input onclick="return addtag('left');" value="влево" type="button" />
+                    <input onclick="return addtag('center');" value="центр" type="button" />
+                    <input onclick="return addtag('right');" value="вправо" type="button" />
+                </div>
+                <center>
+                    <textarea name="post" id="post" rows="6" cols="80" style="width:98%;"></textarea>
+                </center>
+                <div class="post_footer">
+                    Тема уже добавлена в <a href="/forum/index.php?act=fav">избранное</a>.
+                    <br />
+                    <input class="mod_chk" type="checkbox" name="enableemo" value="yes" checked="checked" />&nbsp;Включить смайлики</a>
+                    <br />
+                    <input class="mod_chk" type="checkbox" name="enablesig" value="yes" checked="checked" />&nbsp;Добавить подпись
+                    <center>
+                        <input type="submit" name="submit" value="Отправить" class="button" tabindex="2" accesskey="s" /> &nbsp;
+                        <input type="submit" name="preview" value="Просмотр" class="button" />
+                    </center>
+                </div>
+            </form>
+        </div>
+        <div class="forum_search">
+            <form action="/forum/index.php?" method="get" name="search">
+                <input type="hidden" name="forums[]" value="285" />
+                <input type="hidden" name="topics[]" value="271502" />
+                <input type="hidden" name="act" value="search" />
+                <input type="hidden" name="source" value="pst" />
+                <input type="text" size="25" name="query" class="searchinput" value="Ключевое слово" onfocus="if ( 'Ключевое слово' == this.value ) this.value = '';" id="search-in-post-query-2" />
+                <br/>
+                <input type="submit" value="Найти в этой теме" class="button" />
+            </form>
+        </div>
+        <div class="forum_user_lnks">
+            <script>
+                <!--
+                document.write(img_item_a.join("<br />"));
+                //-->
+            </script>
+        </div>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter29691590 = new Ya.Metrika({
+                            id: 29691590,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true
+                        });
+                    } catch (e) {}
+                });
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript>
+            <div><img src="//mc.yandex.ru/watch/29691590" style="position:absolute; left:-9999px;" alt="" /></div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+        <div id="gfooter">
+
+            <script>
+                jsEmoticons.parseAll();
+                initPostBlock();
+            </script>
+
+            <br /><a href="/wp-content/plugins/ngx.php?mb=0"><b>Полная версия</b></a>&nbsp;&nbsp;&nbsp;<a href="lofiversion/index.php?t271502.html"><b>Текстовая версия</b></a>
+            <br />
+            <br />Сейчас: 16.02.2016, 00:09</div>
+
+        <div align="center" class="copyright">&copy; 4PDA 2005-2016 г. Все права защищены.
+            <br />4PDA<sup>&reg;</sup> - зарегистрированный товарный знак.
+            <br /><a href="/copyright_notice/">Условия использования информации</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/disclaimer/">Отказ от ответственности</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/advert/" title="Размещение рекламы"><strong>Размещение рекламы</strong></a>
+            <br />
+            <br />
+            <noindex><a href="http://www.ibresource.ru/" style="text-decoration:none" target="_blank">Форум</a> <a href="http://www.invisionboard.com" style="text-decoration:none" target="_blank">IP.Board</a> &copy; 2016 &nbsp;<a href="http://www.invisionpower.com" style="text-decoration:none" target="_blank">IPS, Inc</a>.
+                <br />
+            </noindex>
+        </div>
+
+        <script type="text/javascript" src="http://s.4pda.to/JK4KRvTd0Pd.js?_=2"></script>
+
+        <div style="text-align:center">
+            <!--LiveInternet counter-->
+            <script type="text/javascript">
+                <!--
+                document.write("<a href='http://www.liveinternet.ru/click' " +
+                        "target=_blank><img src='http://counter.yadro.ru/hit?t26.11;r" +
+                        escape(document.referrer) + ((typeof (screen) == "undefined") ? "" :
+                            ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                                screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+                        ";" + Math.random() +
+                        "' alt='' title='LiveInternet: number of visitors for today is" +
+                        " shown' " +
+                        "border=0 width=88 height=15></a>") //-->
+            </script>
+            <!--/LiveInternet-->
+        </div>
+    </div>
+</body>
+
+</html>

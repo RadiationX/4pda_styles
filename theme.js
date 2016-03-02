@@ -1,3 +1,30 @@
+function getAttaches() {
+    var anchorList = document.querySelectorAll('div[data-post]');
+    var jsonArr = [];
+    for (var i = 0; i < anchorList.length; i++) {
+        var post = anchorList[i];
+        //if (post.className != 'post_container') break;
+        var attachList = post.querySelectorAll("a[rel*='lytebox']");
+        var obj = [];
+        for (var j = 0, count = 0; j < attachList.length; j++) {
+            var att = attachList[j].getAttribute('href');
+            if (att.match(/jpg|png|bmp|gif|jpeg/i)) {
+                obj.push(att);
+                count++;
+            }
+        }
+        if (!obj[0]) continue;
+        jsonArr.push(obj);
+    }
+    return jsonArr;
+}
+
+window.onload = function () {
+    console.log("GOVNO" + JSON.stringify(getAttaches()));
+}
+
+
+
 function copySelection() {
     var selObj = window.getSelection();
     var selectedText = selObj.toString();
@@ -10,13 +37,7 @@ function copySelection() {
 
 
 
-window.onload = function () {
-    var postAttach = new PostAttach;
 
-var str = JSON.stringify(postAttach);
-
-    console.log(str);
-}
 
 function PostAttach() {
     var anchorList = document.querySelectorAll('div[id*="entry"]');
@@ -29,8 +50,8 @@ function PostAttach() {
             var obj = {};
             for (var j = 0; j < attachList.length; j++) {
                 var att = attachList[j];
-                if(att.getAttribute('href').match(/jpg|gif|jpeg|png/g))
-                   obj['att' + (j + 1)] = att.getAttribute('href');
+                if (att.getAttribute('href').match(/jpg|gif|jpeg|png/g))
+                    obj['att' + (j + 1)] = att.getAttribute('href');
             }
             if (!obj.att1) return;
             return obj;
