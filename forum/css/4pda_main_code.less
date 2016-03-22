@@ -661,38 +661,13 @@ a {
                 }
             }
             .btn {
-                padding: 0.5em;
+                padding: 0.75em;
                 display: inline-block;
                 position: relative;
                 .bRad(2px);
-                color: @contrastColor;
-                &.iblock {}
-                &.nomargin {}
-                &.noborder {}
-                &.big {}
-                &.green {
-                    background: #390;
-                }
-                &.orenge {
-                    background: #fec63d;
-                }
-                &.gray {
-                    background: #999;
-                }
-                &.white {
-                    background: @mainColor;
-                }
-                &:after{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-                &:active:after{
-                    background: @tapColor;
-                }
+                color: #ffffff;
+                background: #0277bd;
+                margin: 0.25em 0;
             }
             .eg_tbl {
                 background: transparent;
@@ -1123,7 +1098,7 @@ a {
         .bRad(2px);
         position: relative;
         z-index: 1;
-        padding: 0.5em;
+        padding: 0.75em;
         .mainBox;
         margin: 0;
         overflow: hidden;
@@ -2890,34 +2865,29 @@ li .post-block{
                 .content-box {
                     .table4site {
                         .bRad(2px);
-                        display: table;
+                        background: #fafafa;
+                        border-bottom: @border1;
+                        border-collapse: collapse;
+                        border-top: 1px solid @border1;
+                        display: block;
+                        height: auto!important;
+                        margin: 0.5em -1em;
+                        overflow-x: auto;
+                        position: relative;
                         tbody {
-                            display: table-row-group;
-                            th {
-                                display: table-row;
-                            }
+                            display: table;
+                            width: 100%;
                             tr {
-                                .bRad(0);
-                                display: table-row;
-                                border: @border1;
-                                margin: 0.5em;
-                                p {
-                                    margin: 0;
-                                    display: inline-block;
-                                }
                                 td {
-                                    display: table-cell;
-                                    width: 100%;
-                                    padding: 0.2em 0.4em;
-                                    padding-left: 0.6em;
-                                    border-right: @border1;
-                                    &:first-child {
-                                        width: auto;
-                                        background: none;
-                                        color: @textColor;
-                                    }
-                                    &:last-child {
-                                        border-left: none;
+                                    padding: 0.75em 0.5em;
+                                    text-align: left;
+                                }
+                                td>p {
+                                    margin: 0;
+                                }
+                                &:nth-child(even) {
+                                    td {
+                                        background: rgba(0, 0, 0, 0.05);
                                     }
                                 }
                             }
