@@ -218,50 +218,31 @@ a {
             .table4site {
                 .bRad(2px);
                 height: auto!important;
-                font-size: 0.95em;
                 border-collapse: collapse;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                border: @border1;
-                display: block;
-                overflow: hidden;
+                border-top: @border1;
+                border-bottom: @border1;
+                overflow-x: auto;
                 background: @mlHeadBgColor;
-                margin: 0.5em 0;
+                margin: 0.5em -1em;
                 position: relative;
+                display: block;
                 tbody {
-                    display: block;
-                    th {
-                        display: block;
-                    }
-                    tr {
-                        .bRad(2px);
-                        display: block;
-                        border: @border1;
-                        margin: 0.5em;
-                        p {
-                            margin: 0;
+                    width: 100%;
+                    display: table;
+                    tr{
+                        td{
+                            text-align: left;
+                            padding: 0.75em 0.5em;
+                            >p{
+                                margin: 0;
+                            }
+                            
                         }
-                        td {
-                            display: block;
-                            width: 100%;
-                            background: @mainBoxBgColor;
-                            padding: 0.2em 0.4em;
-                            padding-left: 0.6em;
-                            color: @textColor;
-                            &:first-child {
-                                .contrast;
-                                .bRad(2px 2px 0 0);
-                                padding: 0 0.4em;
-                                line-height: 1.75em;
-                                background: @tableHeadColor;
-                                //background: @hiddenTitleBg;
-                            }
-                            &:last-child {
-                                .bRad(0 0 2px 2px);
-                            }
+                        &:nth-child(even) td{
+                            background: rgba(0, 0, 0, 0.05);
                         }
                     }
+                    
                 }
             }
             .galContainer{
@@ -668,6 +649,17 @@ a {
                 color: #ffffff;
                 background: #0277bd;
                 margin: 0.25em 0;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%; 
+                }
+                &:active:after{
+                    background: rgba(0, 0, 0, 0.1);
+                }
             }
             .eg_tbl {
                 background: transparent;
@@ -2661,6 +2653,13 @@ li .post-block{
             white-space: pre-wrap;
             font-family: Courier, Courier New, Verdana, Arial;
             font-size: 0.875em;
+            white-space: pre-wrap;
+            background: linear-gradient(transparent 20/14em, rgba(130, 130, 130, 0.1) 20/14em);
+            background-size: 40/14em 40/14em;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0.5em;
+            margin-bottom: 1em;
         }
         &.box {
             >.block-body {
@@ -2863,36 +2862,6 @@ li .post-block{
             
             .content {
                 .content-box {
-                    .table4site {
-                        .bRad(2px);
-                        background: #fafafa;
-                        border-bottom: @border1;
-                        border-collapse: collapse;
-                        border-top: 1px solid @border1;
-                        display: block;
-                        height: auto!important;
-                        margin: 0.5em -1em;
-                        overflow-x: auto;
-                        position: relative;
-                        tbody {
-                            display: table;
-                            width: 100%;
-                            tr {
-                                td {
-                                    padding: 0.75em 0.5em;
-                                    text-align: left;
-                                }
-                                td>p {
-                                    margin: 0;
-                                }
-                                &:nth-child(even) {
-                                    td {
-                                        background: rgba(0, 0, 0, 0.05);
-                                    }
-                                }
-                            }
-                        }
-                    }
                     .mlinks {
                         position: relative;
                         .mlhead {
@@ -2910,66 +2879,6 @@ li .post-block{
                                         position: absolute;
                                         top: 0.25em;
                                         right: 0;
-                                        .mlrow {
-                                            .contrast;
-                                            .bRad(2px);
-                                            position: relative;
-                                            line-height: 2em;
-                                            margin: 0.25em 0.5em 0.25em 0.5em;
-                                            &:first-child {
-                                                display: none;
-                                            }
-                                            .mlcell {
-                                                display: inline-block;
-                                                position: relative;
-                                                padding: 0 10px;
-                                                a {
-                                                    display: block;
-                                                    width: 100%;
-                                                    height: 100%;
-                                                    position: absolute;
-                                                    color: transparent;
-                                                    top: 0;
-                                                    left: 0;
-                                                }
-                                                i {
-                                                    display: block;
-                                                    text-align: center;
-                                                    &:before {
-                                                        line-height: 2em;
-                                                    }
-                                                }
-                                                &:after {
-                                                    content: "";
-                                                    background: @contrLinkColor;
-                                                    position: absolute;
-                                                    width: 1px;
-                                                    bottom: 0.35em;
-                                                    right: 0;
-                                                    top: 0.35em;
-                                                }
-                                                &:last-child {
-                                                    border-right: none;
-                                                    position: absolute;
-                                                    top: 0;
-                                                    left: 0;
-                                                    width: 100%;
-                                                    &:after {
-                                                        display: none;
-                                                    }
-                                                }
-                                                &:nth-child(3) {
-                                                    &:after {
-                                                        width: 0;
-                                                    }
-                                                }
-                                            }
-                                            &:last-child {
-                                                .mlcell {
-                                                    border-bottom: none;
-                                                }
-                                            }
-                                        }
                                     }
                                 }
                             }
