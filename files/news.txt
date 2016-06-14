@@ -1,0 +1,622 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="file:///android_asset/forum/css/4pda_light_blue.css">
+<link rel="stylesheet" type="text/css" href="file:///android_asset/fonts/roboto/import.css">
+<link rel="stylesheet" type="text/css" href="file:///android_asset/fonts/flaticons/import.css">
+<link rel="stylesheet" type="text/css" href="file:///android_asset/fonts/fontello/import.css">
+<link rel="stylesheet" type="text/css" href="file:///android_asset/forum/css/youtube_video.css">
+<script type="text/javascript" src="file:///android_asset/forum/css/4pda_light_blue.js"></script>
+<script type="text/javascript" src="file:///android_asset/forum/js/z_forum_helpers.js"></script>
+<script type="text/javascript" src="file:///android_asset/theme.js"></script>
+<script type="text/javascript" src="file:///android_asset/blockeditor.js"></script>
+<script type="text/javascript" src="file:///android_asset/z_emoticons.js"></script>
+<title>Новости</title>
+</head>
+<body id="news" class="modification " style="font-family:inherit;">
+<div style="padding-top:0px">
+<div id="main"><div class="container" itemscope="" itemtype="http://schema.org/Article" data-ztm="1:304016:">
+		<meta itemprop="datePublished" content="2016-06-13T15:00:37+00:00">
+			<div class="product-detail">
+				<div class="photo">
+					<img itemprop="image" src="http://s.4pda.to/JK4K2JbsFhxTKj9Tpk3z0I1LFa7pkccJyEqqX.jpg" alt="Honor 5A со Snapdragon 617 будет стоить $106" title="Honor 5A со Snapdragon 617 будет стоить $106">
+					
+				</div>
+				<div class="description">
+					<h1 itemprop="name"><span itemprop="headline">Honor 5A со Snapdragon 617 будет стоить $106</span></h1>
+					<div class="info-holder">
+						<em class="date">13.06.16</em>
+						<span class="name"><a href="http://4pda.ru/forum/index.php?showuser=1796455">Ekzer</a></span>
+						<div class="area"></div>
+					</div>
+					<div class="more-box">
+						<a href="http://4pda.ru/2016/06/13/304016/#comments" class="number" title="Комментарии к Honor 5A со Snapdragon 617 будет стоить $106">26</a><div class="meta"># <a href="http://4pda.ru/tag/honor/" rel="tag">Honor</a>, <a href="http://4pda.ru/tag/honor-5a/" rel="tag">Honor 5A</a></div>
+					</div>
+				</div>
+			</div>
+<div class="content"><div class="content-box" itemprop="articleBody"><meta property="og:description" content="Бренд Honor стремительно развивается на рынке доступных смартфонов. День назад миру был представлен Honor 5A - 5,5-дюймовый смартфон на базе восьмиядерного процессора Kirin 620 или Snapdragon 617, в зависимости от модели. Новинка работает под управлением Android 6.0 Marshmallow с оболочкой Emotion UI 4.1, оснащена 13-Мп основной и 8-Мп фронтальной камерами. В нем присутствует двойной слот для SIM-карт и место для карты памяти&nbsp;microSD. Заявлена поддержка технологии VoLTE и длительное время работы благодаря аккумулятору на 3 100 мАч."><p style="text-align: justify;">Бренд Honor стремительно развивается на рынке доступных смартфонов. День назад миру был представлен Honor 5A - 5,5-дюймовый смартфон на базе восьмиядерного процессора Kirin 620 или Snapdragon 617, в зависимости от модели. Новинка работает под управлением Android 6.0 Marshmallow с оболочкой Emotion UI 4.1, оснащена 13-Мп основной и 8-Мп фронтальной камерами. В нем присутствует двойной слот для SIM-карт и место для карты памяти&nbsp;microSD. Заявлена поддержка технологии VoLTE и длительное время работы благодаря аккумулятору на 3 100 мАч.<!--more--></p>
+
+<p style="text-align: center;"><a data-lightbox="post-304016" href="http://s.4pda.to/JK4K5SeWnC7EIkPam3eKp9fpoT3OWT3O1oKz0cDMVtGQ3Hlz2Isz0b9bJk9ppiHuz2.jpg"><img src="http://s.4pda.to/JK4K4xpmCkGE3XnyBUWGryK8S9ROQHTHEN3z0jBNBnT0dWfQ9h3oCNB6ISuwtUuADN7kAwsAr.jpg" width="451" height="480" class="size-medium wp-image-304022  aligncenter" title="Honor 5A поддерживает VoLTE" alt="Honor 5A поддерживает VoLTE"></a></p>
+
+<p style="text-align: justify;">В полном виде спецификации Honor 5A выглядят следующим образом:</p>
+
+<ul>
+	<li style="text-align: justify;">5,5-дюймовый IPS-дисплей с разрешением 1280х720 пикселей с углами обзора 178°, контрастность&nbsp;1000:1, закаленное защитное стекло;</li>
+	<li style="text-align: justify;">восьмиядерный процессор&nbsp;Kirin 620 с частотой 1,2 ГГц и GPU Mali-450 (модели CAM-TL00, CAM-TL00H, CAM-UL00) / восьмиядерный процессор Qualcomm Snapdragon 617 и GPU Adreno 405 с максимальной тактовой частотой 1,5 ГГц (модель CAM-AL00);</li>
+	<li style="text-align: justify;">2 ГБ ОЗУ / 16 ГБ ПЗУ + слот для карт памяти до 128 ГБ;</li>
+	<li style="text-align: justify;">двойной слот для SIM;</li>
+	<li style="text-align: justify;">Android 6.0 Marshmallow с оболочкой Emotion UI 4.1;</li>
+	<li style="text-align: justify;">13-Мп основная камера с LED-вспышкой, сенсор Sony/OmniVision, апертура f/2.0, широкоугольный 28-мм объектив;</li>
+	<li style="text-align: justify;">8-Мп фронтальная камера. BSI-сенсор Sony/Hynix, апертура f/2.0, 4-элементный 27-мм широкоугольный объектив;</li>
+	<li style="text-align: justify;">размеры: 154,3 х 77,1 х 8,45 мм;</li>
+	<li style="text-align: justify;">вес: 168 гр.</li>
+	<li style="text-align: justify;">беспроводные интерфейсы: LTE / VoLTE, Wi-Fi 802.11 b/g/n, Bluetooth 4.0, GPS;</li>
+	<li style="text-align: justify;">аккумулятор: 3 100 мАч.</li>
+</ul>
+
+<p style="text-align: justify;">Honor 5A дебютирует в черном, белом, синем и золотистом цветах по цене $106 за стандартную версию и $121 за версию для китайских операторов сотовой связи. Предзаказ открыт с сегодняшнего дня, в продаже новинка появится 17 июня.</p><p class="mb_source">Источник:&nbsp;<noindex><a rel="nofollow" href="http://fonearena.com/blog/187826/huawei-honor-5a-with-5-5-inch-hd-display-4g-volte-3100mah-battery-announced.html" target="_blank">fonearena.com</a></noindex></p><br></div></div></div>
+<div class="materials-box">
+	<h2 class="box-title">Материалы по теме:</h2>
+	<ul class="materials-slider" data-ztm="0:303868,303077,300724,296825:thematic1"><li class="slider-item">
+<a href="http://4pda.ru/2016/06/11/303868/?utm_source=thematic1" title="Honor готовит две новинки на Snapdragon 615 "><img src="http://s.4pda.to/JK4KCJhls7LssOOM1psiv30NO1S62SwRoIB1.jpg" title="Honor готовит две новинки на Snapdragon 615 " alt="Honor готовит две новинки на Snapdragon 615 "></a>
+<h3><a href="http://4pda.ru/2016/06/11/303868/?utm_source=thematic1" title="Honor готовит две новинки на Snapdragon 615 ">Honor готовит две новинки на Snapdragon 615 </a></h3>
+</li><li class="slider-item">
+<a href="http://4pda.ru/2016/06/07/303077/?utm_source=thematic1" title="Инсайды #574: OnePlus 3, ZUK ZUI 2.0, Honor 5A и два сгибаемых смартфона от Samsung"><img src="http://s.4pda.to/JK4K38J1SccebMZSGOKvOGECYeRASFKmGdQg.jpg" title="Инсайды #574: OnePlus 3, ZUK ZUI 2.0, Honor 5A и два сгибаемых смартфона от Samsung" alt="Инсайды #574: OnePlus 3, ZUK ZUI 2.0, Honor 5A и два сгибаемых смартфона от Samsung"></a>
+<h3><a href="http://4pda.ru/2016/06/07/303077/?utm_source=thematic1" title="Инсайды #574: OnePlus 3, ZUK ZUI 2.0, Honor 5A и два сгибаемых смартфона от Samsung">Инсайды #574: OnePlus 3, ZUK ZUI 2.0, Honor 5A и два сгибаемых смартфона от Samsung</a></h3>
+</li><li class="slider-item">
+<a href="http://4pda.ru/2016/05/28/300724/?utm_source=thematic1" title="Инсайды #563: Samsung Galaxy J3 (2017), Apple TV, Honor 5A и возможный сиквел Xiaomi Redmi 3"><img src="http://s.4pda.to/JK4K0R7wr0Pe5cRmz1J6KLDBT9gU3BBUXxbVZ.jpg" title="Инсайды #563: Samsung Galaxy J3 (2017), Apple TV, Honor 5A и возможный сиквел Xiaomi Redmi 3" alt="Инсайды #563: Samsung Galaxy J3 (2017), Apple TV, Honor 5A и возможный сиквел Xiaomi Redmi 3"></a>
+<h3><a href="http://4pda.ru/2016/05/28/300724/?utm_source=thematic1" title="Инсайды #563: Samsung Galaxy J3 (2017), Apple TV, Honor 5A и возможный сиквел Xiaomi Redmi 3">Инсайды #563: Samsung Galaxy J3 (2017), Apple TV, Honor 5A и возможный сиквел Xiaomi Redmi 3</a></h3>
+</li><li class="slider-item">
+<a href="http://4pda.ru/2016/05/11/296825/?utm_source=thematic1" title="Фитнес-браслет Honor Band A1 поступит в продажу по цене $15"><img src="http://s.4pda.to/JK4K1OnMS0xrGdu69dKvu0MvwqF8vMB08xCD.jpg" title="Фитнес-браслет Honor Band A1 поступит в продажу по цене $15" alt="Фитнес-браслет Honor Band A1 поступит в продажу по цене $15"></a>
+<h3><a href="http://4pda.ru/2016/05/11/296825/?utm_source=thematic1" title="Фитнес-браслет Honor Band A1 поступит в продажу по цене $15">Фитнес-браслет Honor Band A1 поступит в продажу по цене $15</a></h3>
+</li></ul>
+</div>
+<ul class="page-nav box">
+	<li><a href="http://4pda.ru/news/newer/1465830037/" rel="next"><i class="icon-left-small"></i>&nbsp;Назад&nbsp;</a></li>
+	<li><a href="http://4pda.ru/news/older/1465830037/" rel="prev">&nbsp;Вперед&nbsp;<i class="icon-right-small"></i></a></li>
+</ul>
+
+		<div class="comment-box" id="comments">
+			<div class="heading">
+				<h2>26 комментариев</h2><a href="http://4pdaservice.org/#commentform class=" edit-link="" btn"="" style="padding:.3em .5em;margin:-.3em 0;color:#FFF" data-callfn="modJSaddComment">Комментировать</a></div><ul class="comment-list level-0">
+<li>
+	<a id="comment3080362" class="link-anchor"></a>
+	<div id="comment-3080362">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=5519901" target="_blank" title="zoteccs23">zoteccs23</a>
+		<span class="karma" data-karma="304016-3080362"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:03
+			<span class="more-meta">
+				|
+				<a href="#comment3080362" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">По характеристикам телефон нормальный но фирма не очень популярная.</p>
+<div id="comment-form-reply-3080362"><a href="http://4pdaservice.org/3080362/1">ответить</a></div></div><ul class="comment-list level-1">
+<li>
+	<a id="comment3080384" class="link-anchor"></a>
+	<div id="comment-3080384">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2510765" target="_blank" title="hylian">hylian</a>
+		<span class="karma" data-karma="304016-3080384"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">15</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:08
+			<span class="more-meta">
+				|
+				<a href="#comment3080384" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">zoteccs23,
+<br>Чего? Одна из популярнейших фирм.</p>
+<div id="comment-form-reply-3080384"><a href="http://4pdaservice.org/3080384/2">ответить</a></div></div><ul class="comment-list level-2">
+<li>
+	<a id="comment3080392" class="link-anchor"></a>
+	<div id="comment-3080392">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2510765" target="_blank" title="hylian">hylian</a>
+		<span class="karma" data-karma="304016-3080392"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">2</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:12
+			<span class="more-meta">
+				|
+				<a href="#comment3080392" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Хотя не так немного, бренд одной из самых популярнейших фирм.</p>
+<div id="comment-form-reply-3080392"><a href="http://4pdaservice.org/3080392/3">ответить</a></div></div><ul class="comment-list level-3">
+<li>
+	<a id="comment3080484" class="link-anchor"></a>
+	<div id="comment-3080484">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=4371335" target="_blank" title="SlavonGalaxy">SlavonGalaxy</a>
+		<span class="karma" data-karma="304016-3080484"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:55
+			<span class="more-meta">
+				|
+				<a href="#comment3080484" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Неплохо, голубой норм</p>
+<div id="comment-form-reply-3080484"><a href="http://4pdaservice.org/3080484/4">ответить</a></div></div><ul class="comment-list level-4"></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>
+	<a id="comment3080391" class="link-anchor"></a>
+	<div id="comment-3080391">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=5370207" target="_blank" title="huunte159">huunte159</a>
+		<span class="karma" data-karma="304016-3080391"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">1</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:11
+			<span class="more-meta">
+				|
+				<a href="#comment3080391" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">в Китае ток в путь покупают мейт 8</p>
+<div id="comment-form-reply-3080391"><a href="http://4pdaservice.org/3080391/2">ответить</a></div></div><ul class="comment-list level-2">
+<li>
+	<a id="comment3080397" class="link-anchor"></a>
+	<div id="comment-3080397">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=3488402" target="_blank" title="Хаджи">Хаджи</a>
+		<span class="karma" data-karma="304016-3080397"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:14
+			<span class="more-meta">
+				|
+				<a href="#comment3080397" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">а в России ток в путь покупают жигули гранта, особенно после призыва сами знаете кого держаться, но денег нет. Жигули одна из популярнейших фирм.</p>
+<div id="comment-form-reply-3080397"><a href="http://4pdaservice.org/3080397/3">ответить</a></div></div><ul class="comment-list level-3">
+<li>
+	<a id="comment3080405" class="link-anchor"></a>
+	<div id="comment-3080405">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=5298936" target="_blank" title="BluVelvet">BluVelvet</a>
+		<span class="karma" data-karma="304016-3080405"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:17
+			<span class="more-meta">
+				|
+				<a href="#comment3080405" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Хаджи, бренда "Жигули" уже как 25 лет нет</p>
+<div id="comment-form-reply-3080405"><a href="http://4pdaservice.org/3080405/4">ответить</a></div></div><ul class="comment-list level-4">
+<li>
+	<a id="comment3080413" class="link-anchor"></a>
+	<div id="comment-3080413">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=3488402" target="_blank" title="Хаджи">Хаджи</a>
+		<span class="karma" data-karma="304016-3080413"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">1</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:21
+			<span class="more-meta">
+				|
+				<a href="#comment3080413" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">BluVelvet,
+<br>но сути это не меняет, вы же поняли о чем идет речь.</p>
+<div id="comment-form-reply-3080413"><a href="http://4pdaservice.org/3080413/5">ответить</a></div></div><ul class="comment-list level-5">
+<li>
+	<a id="comment3080447" class="link-anchor"></a>
+	<div id="comment-3080447">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=5298936" target="_blank" title="BluVelvet">BluVelvet</a>
+		<span class="karma" data-karma="304016-3080447"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:40
+			<span class="more-meta">
+				|
+				<a href="#comment3080447" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Хаджи, дурак бы не понял, но что поделать приходится держаться</p>
+<div id="comment-form-reply-3080447"><a href="http://4pdaservice.org/3080447/6">ответить</a></div></div><ul class="comment-list level-6">
+<li>
+	<a id="comment3080491" class="link-anchor"></a>
+	<div id="comment-3080491">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=1966213" target="_blank" title="kozlovskyi">kozlovskyi</a>
+		<span class="karma" data-karma="304016-3080491"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:59
+			<span class="more-meta">
+				|
+				<a href="#comment3080491" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">BluVelvet,
+<br>Бренд Жигули покоряет дороги снг по сей день... это завода нет(хотя, он как бы есть, просто изменил имя), а Жигули все еще есть.</p>
+<div id="comment-form-reply-3080491"><a href="http://4pdaservice.org/3080491/7">ответить</a></div></div><ul class="comment-list level-7"></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>
+	<a id="comment3080478" class="link-anchor"></a>
+	<div id="comment-3080478">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=1892705" target="_blank" title="_PRIEST">_PRIEST</a>
+		<span class="karma" data-karma="304016-3080478"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">1</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:53
+			<span class="more-meta">
+				|
+				<a href="#comment3080478" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">zoteccs23,
+<br>" фирма не очень популярная."
+<br>Второй по продажам смартфонов в Европе. Третий в мире. Одни из немногих, у кого все еще растет доля рынка и прибыль</p>
+<div id="comment-form-reply-3080478"><a href="http://4pdaservice.org/3080478/2">ответить</a></div></div><ul class="comment-list level-2"></ul>
+</li>
+
+<li>
+	<a id="comment3080506" class="link-anchor"></a>
+	<div id="comment-3080506">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2501657" target="_blank" title="denmars">denmars</a>
+		<span class="karma" data-karma="304016-3080506"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 19:09
+			<span class="more-meta">
+				|
+				<a href="#comment3080506" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">zoteccs23,
+<br>ты че не адекват?</p>
+<div id="comment-form-reply-3080506"><a href="http://4pdaservice.org/3080506/2">ответить</a></div></div><ul class="comment-list level-2"></ul>
+</li>
+</ul>
+</li>
+
+<li>
+	<a id="comment3080364" class="link-anchor"></a>
+	<div id="comment-3080364">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=4173902" target="_blank" title="pedozavr">pedozavr</a>
+		<span class="karma" data-karma="304016-3080364"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:04
+			<span class="more-meta">
+				|
+				<a href="#comment3080364" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">норм ценник</p>
+<div id="comment-form-reply-3080364"><a href="http://4pdaservice.org/3080364/1">ответить</a></div></div><ul class="comment-list level-1"></ul>
+</li>
+
+<li>
+	<a id="comment3080389" class="link-anchor"></a>
+	<div id="comment-3080389">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2602425" target="_blank" title="Kant2000">Kant2000</a>
+		<span class="karma" data-karma="304016-3080389"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:10
+			<span class="more-meta">
+				|
+				<a href="#comment3080389" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Я по началу думал это huawei honor какой нибудь.</p>
+<div id="comment-form-reply-3080389"><a href="http://4pdaservice.org/3080389/1">ответить</a></div></div><ul class="comment-list level-1">
+<li>
+	<a id="comment3080393" class="link-anchor"></a>
+	<div id="comment-3080393">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2510765" target="_blank" title="hylian">hylian</a>
+		<span class="karma" data-karma="304016-3080393"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">2</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:12
+			<span class="more-meta">
+				|
+				<a href="#comment3080393" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Kant2000,
+<br>Он и есть.</p>
+<div id="comment-form-reply-3080393"><a href="http://4pdaservice.org/3080393/2">ответить</a></div></div><ul class="comment-list level-2"></ul>
+</li>
+
+<li>
+	<a id="comment3080396" class="link-anchor"></a>
+	<div id="comment-3080396">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=520116" target="_blank" title="zikasak">zikasak</a>
+		<span class="karma" data-karma="304016-3080396"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">1</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:13
+			<span class="more-meta">
+				|
+				<a href="#comment3080396" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Kant2000,
+<br>??? Honor - суббренд компании Huawei</p>
+<div id="comment-form-reply-3080396"><a href="http://4pdaservice.org/3080396/2">ответить</a></div></div><ul class="comment-list level-2">
+<li>
+	<a id="comment3080503" class="link-anchor"></a>
+	<div id="comment-3080503">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=1296917" target="_blank" title="sergej4ik">sergej4ik</a>
+		<span class="karma" data-karma="304016-3080503"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 19:08
+			<span class="more-meta">
+				|
+				<a href="#comment3080503" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">zikasak,<br>можно и так выразиться </p>
+<div id="comment-form-reply-3080503"><a href="http://4pdaservice.org/3080503/3">ответить</a></div></div><ul class="comment-list level-3"></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li>
+	<a id="comment3080406" class="link-anchor"></a>
+	<div id="comment-3080406">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=1190889" target="_blank" title="z-sg">z-sg</a>
+		<span class="karma" data-karma="304016-3080406"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:18
+			<span class="more-meta">
+				|
+				<a href="#comment3080406" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">По сути своей ремикс 4х,который в общем то неплох. Не сказать чтоб 4х вершина удовольствия от пользования,но по честному и не раздражает. Что в своем ценовом сегменте можно считать плюсом. Думаю с этим все тоже самое</p>
+<div id="comment-form-reply-3080406"><a href="http://4pdaservice.org/3080406/1">ответить</a></div></div><ul class="comment-list level-1"></ul>
+</li>
+
+<li>
+	<a id="comment3080422" class="link-anchor"></a>
+	<div id="comment-3080422">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2760915" target="_blank" title="DumF0rGaming">DumF0rGaming</a>
+		<span class="karma" data-karma="304016-3080422"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">2</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:27
+			<span class="more-meta">
+				|
+				<a href="#comment3080422" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Экран подкачал. Сюда либо FullHD, либо не такую лопату делать. И сканер. И 20$ накинуть, норм было бы</p>
+<div id="comment-form-reply-3080422"><a href="http://4pdaservice.org/3080422/1">ответить</a></div></div><ul class="comment-list level-1">
+<li>
+	<a id="comment3080430" class="link-anchor"></a>
+	<div id="comment-3080430">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2614790" target="_blank" title="FHOTON">FHOTON</a>
+		<span class="karma" data-karma="304016-3080430"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:32
+			<span class="more-meta">
+				|
+				<a href="#comment3080430" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">DumF0rGaming,
+<br>Может ты имел ввиду 20$ скинуть?  или если просто 20$ накинуть то было бы норм?</p>
+<div id="comment-form-reply-3080430"><a href="http://4pdaservice.org/3080430/2">ответить</a></div></div><ul class="comment-list level-2">
+<li>
+	<a id="comment3080437" class="link-anchor"></a>
+	<div id="comment-3080437">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2541199" target="_blank" title="Andy_4066">Andy_4066</a>
+		<span class="karma" data-karma="304016-3080437"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:35
+			<span class="more-meta">
+				|
+				<a href="#comment3080437" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">FHOTON, 20 за фхд экран со сканером доплатить</p>
+<div id="comment-form-reply-3080437"><a href="http://4pdaservice.org/3080437/3">ответить</a></div></div><ul class="comment-list level-3"></ul>
+</li>
+</ul>
+</li>
+
+<li>
+	<a id="comment3080432" class="link-anchor"></a>
+	<div id="comment-3080432">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=2459737" target="_blank" title="arraki">arraki</a>
+		<span class="karma" data-karma="304016-3080432"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:33
+			<span class="more-meta">
+				|
+				<a href="#comment3080432" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">Я извиняюсь конечно,но какое нахрен Full HD,у меня точно такое же разрешение на 6.98 д.,и всё просто афигенно выглядит.<br>Откуда вы такие "зоркие соколы" берётесь.</p>
+<div id="comment-form-reply-3080432"><a href="http://4pdaservice.org/3080432/2">ответить</a></div></div><ul class="comment-list level-2">
+<li>
+	<a id="comment3080466" class="link-anchor"></a>
+	<div id="comment-3080466">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=4656075" target="_blank" title="sts112">sts112</a>
+		<span class="karma" data-karma="304016-3080466"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:48
+			<span class="more-meta">
+				|
+				<a href="#comment3080466" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">arraki,
+<br>Вы из соседней комнаты на него смотрите?</p>
+<div id="comment-form-reply-3080466"><a href="http://4pdaservice.org/3080466/3">ответить</a></div></div><ul class="comment-list level-3"></ul>
+</li>
+</ul>
+</li>
+
+<li>
+	<a id="comment3080477" class="link-anchor"></a>
+	<div id="comment-3080477">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=1796487" target="_blank" title="infinitymrus">infinitymrus</a>
+		<span class="karma" data-karma="304016-3080477"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:53
+			<span class="more-meta">
+				|
+				<a href="#comment3080477" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">DumF0rGaming,
+<br>есть такой аппарат уже, xiaomi выпустил аппараты на любой вкус</p>
+<div id="comment-form-reply-3080477"><a href="http://4pdaservice.org/3080477/2">ответить</a></div></div><ul class="comment-list level-2"></ul>
+</li>
+</ul>
+</li>
+
+<li>
+	<a id="comment3080442" class="link-anchor"></a>
+	<div id="comment-3080442">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=1190889" target="_blank" title="z-sg">z-sg</a>
+		<span class="karma" data-karma="304016-3080442"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">2</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 18:39
+			<span class="more-meta">
+				|
+				<a href="#comment3080442" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">У меня вот сейчас в руках 4с с hd разрешением,на 5 дюймах оно еще как бы терпимо. На 4х когда рассматривал в магазине уже слегка бросается в глаза нехватка плотности пикселей. Ну если не мельком а вглядываться. Согласен с мнением что на 5'5" просится FHD. А вот насчет актуальности сканера распальцовки на бюджетнике есть сомнения)</p>
+<div id="comment-form-reply-3080442"><a href="http://4pdaservice.org/3080442/1">ответить</a></div></div><ul class="comment-list level-1">
+<li>
+	<a id="comment3080495" class="link-anchor"></a>
+	<div id="comment-3080495">
+	<div class="heading">
+		<a class="nickname" href="http://4pda.ru/forum/index.php?showuser=1966213" target="_blank" title="kozlovskyi">kozlovskyi</a>
+		<span class="karma" data-karma="304016-3080495"><b class="icon-karma-up" title="Мне нравится" data-karma-act="1-264127-2745153"></b><span class="num-wrap"><span class="num" title="Понравилось">0</span></span></span>
+		<span class="h-meta">
+			13.06.16 | 19:02
+			<span class="more-meta">
+				|
+				<a href="#comment3080495" title="Постоянная ссылка"><i class="icon-link"></i></a>
+
+			</span>
+		</span>
+	</div>
+	<p class="content">z-sg,
+<br>Нет, нету никакого понта в этих сканерах, поигрался я им два дня и забил на это дело</p>
+<div id="comment-form-reply-3080495"><a href="http://4pdaservice.org/3080495/2">ответить</a></div></div><ul class="comment-list level-2"></ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<script type="text/template" data-name="commentNotice"><!--/*
+<div class="notice abs red" style="display:none">
+	<div class="ttl">Важно!</div>
+	Мы напоминаем вам о необходимости уважать собеседников.<br />
+	Любые проявления хамства и неуважения к другим людям, их мнению, устройству или операционной системе наказываются переводом вашего аккаунта в режим "только чтение" на срок от 3 до 7 суток и автоматическому снижению кармы до отрицательных значений.
+	<a class="btn white nomargin" id="ok-commentNotice">ВСЕ ПОНЯЛ</a>
+</div>
+*///--></script>
+<script type="text/javascript">
+$4.onInit("jQuery textTemplate varStorage",function(){
+	$("#commentform-needjs").hide();
+	var dis="disabled",frm=$("#commentform"),tmp=$4.textTemplate,inp='[name="comment"]',cm="commentNotice",vs=$4.varStorage,h=vs.get(cm),$cm=$(tmp.tmpLoad(cm));
+	frm.css("position","relative").append($cm).find(inp).removeAttr(dis).focus(function(ev){
+		if(!h&&!(h=vs.get(cm))){
+			frm.children().attr(dis,dis);
+			$cm.fadeIn().focus();
+		}
+	});
+	frm.on("click","#ok-"+cm,function(){
+		vs.set(cm,h=true,14*24*60*60);
+		$cm&&$cm.fadeOut();
+		frm.children().removeAttr(dis);
+		frm.find(inp).focus();
+	});
+})
+</script><br>
+		</div>
+<ul class="page-nav box">
+	<li><a href="http://4pda.ru/news/newer/1465830037/" rel="next"><i class="icon-left-small"></i>&nbsp;Назад&nbsp;</a></li>
+	<li><a href="http://4pda.ru/news/older/1465830037/" rel="prev">&nbsp;Вперед&nbsp;<i class="icon-right-small"></i></a></li>
+</ul>
+<script type="text/javascript">function getCommentsData(){return '{"304016":{"0":[0,0,0,0],"3080362":[0,0,0,0],"3080384":[0,0,0,15],"3080392":[0,0,0,2],"3080484":[0,0,0,0],"3080391":[0,0,0,1],"3080397":[0,0,0,0],"3080405":[0,0,0,0],"3080413":[0,0,0,1],"3080447":[0,0,0,0],"3080491":[0,0,0,0],"3080478":[0,0,0,1],"3080506":[0,0,0,0],"3080364":[0,0,0,0],"3080389":[0,0,0,0],"3080393":[0,0,0,2],"3080396":[0,0,0,1],"3080503":[0,0,0,0],"3080406":[0,0,0,0],"3080422":[0,0,0,2],"3080430":[0,0,0,0],"3080437":[0,0,0,0],"3080432":[0,0,0,0],"3080466":[0,0,0,0],"3080477":[0,0,0,0],"3080442":[0,0,0,2],"3080495":[0,0,0,0]}}';}</script><script type="text/javascript">kek(304016, true);</script></div><script type="text/javascript" src="file:///android_asset/newsAttaches.js"></script>
+<script>jsEmoticons.parseAll('file:///android_asset/forum/style_emoticons/default/');initPostBlock();</script>
+</div></body></html>

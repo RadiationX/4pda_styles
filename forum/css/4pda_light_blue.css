@@ -84,7 +84,7 @@ Edited by: RadiationX|*or you nick*
   font-size: 0.75em!important;
 }
 HTML {
-  font-size: 1em;
+  font-size: 1rem;
 }
 body {
   width: 100%;
@@ -92,7 +92,7 @@ body {
   margin: 0;
   background: #eeeeee;
   font-family: "roboto", sans-serif;
-  font-size: 100%;
+  font-size: 1em;
   color: #212121;
   line-height: 1.25em;
   overflow-wrap: break-word;
@@ -447,9 +447,6 @@ a {
   width: auto!important;
   height: auto!important;
   margin: 0.5em auto;
-}
-.container .content .content-box ul {
-  margin-top: -0.9em;
 }
 .container .content .content-box blockquote {
   background: rgba(2, 119, 189, 0.1);
@@ -919,72 +916,31 @@ a {
   margin-left: 1em;
   clear: both;
 }
+.list-group-item.selected .msg-content:after,
+.our-message.selected .msg-content:after {
+  opacity: 0.2;
+}
+.list-group-item.selected .check-item,
+.our-message.selected .check-item {
+  opacity: 0.2;
+}
 .list-group-item .check-item,
 .our-message .check-item {
-  float: right;
-  height: 2em;
-  width: 2em;
-  line-height: 2em;
-  display: block;
-  padding: 0.4em;
-  display: none;
-}
-.list-group-item .check-item input,
-.our-message .check-item input {
-  display: none;
-}
-.list-group-item .check-item .checkbox,
-.our-message .check-item .checkbox {
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  width: 1.125em;
-  height: 1.125em;
-  display: block;
-  border: 0.125em solid #737373;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-.list-group-item .check-item .checkbox .icon-check:before,
-.our-message .check-item .checkbox .icon-check:before {
-  display: none;
-}
-.list-group-item .check-item .checkbox .icon-uncheck,
-.our-message .check-item .checkbox .icon-uncheck {
-  display: block;
-  width: 0.4375em;
   height: 0.75em;
-  right: 0.8125em;
-  top: 0.4375em;
+  width: 0.75em;
+  background: #7f7f7f;
+  opacity: 0;
   position: absolute;
-  border: 0.125em solid #737373;
-  border-color: white;
-  border-left: none;
-  border-top: none;
-  -webkit-transform: rotate(45deg) scale(0);
-  transform: rotate(45deg) scale(0);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  bottom: 0.25em;
+  left: -0.25em;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 20;
+  transition: opacity 0.25s;
 }
-.list-group-item .check-item .checkbox .icon-uncheck:before,
-.our-message .check-item .checkbox .icon-uncheck:before {
+.list-group-item .check-item > *,
+.our-message .check-item > * {
   display: none;
-}
-.list-group-item .check-item input:checked + .checkbox,
-.our-message .check-item input:checked + .checkbox {
-  border-color: #0277bd;
-  background: #0277bd;
-}
-.list-group-item .check-item input:checked + .checkbox .icon-uncheck,
-.our-message .check-item input:checked + .checkbox .icon-uncheck {
-  -webkit-transform: rotate(45deg) scale(1);
-  transform: rotate(45deg) scale(1);
-  opacity: 1;
-}
-.list-group-item .check-item:after,
-.our-message .check-item:after {
-  clear: both;
-  content: "";
-  display: table;
 }
 .list-group-item .time,
 .our-message .time {
@@ -999,8 +955,8 @@ a {
 .our-message .time .read-status {
   width: 0.5em;
   height: 0.5em;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
   position: absolute;
   right: -1em;
   bottom: 0.66666667em;
@@ -1064,6 +1020,26 @@ a {
   margin: 0;
   overflow: hidden;
 }
+.list-group-item .msg-content .post-block,
+.our-message .msg-content .post-block {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+.list-group-item .msg-content:after,
+.our-message .msg-content:after {
+  content: "";
+  background: #7f7f7f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
 .list-group-item:before,
 .our-message:before {
   position: relative;
@@ -1094,11 +1070,8 @@ a {
   margin-right: 1em;
 }
 .our-message .check-item {
-  float: left;
-}
-.our-message .check-item .checkbox .icon-uncheck {
-  right: auto;
-  left: 0.75em;
+  left: auto;
+  right: -0.25em;
 }
 .our-message .time {
   right: auto;
@@ -1471,6 +1444,7 @@ a {
 .poll .hidemain form .poll_body .poll_theme .items.voted .item .num_votes {
   float: right;
   font-size: 0.875em;
+  clear: both;
 }
 .poll .hidemain form .poll_body .poll_theme .items.voted .item .num_votes span {
   font-weight: bold;
@@ -1479,6 +1453,7 @@ a {
   content: " Голосов";
 }
 .poll .hidemain form .poll_body .poll_theme .items.voted .item .range {
+  clear: both;
   margin-top: 0.25em;
   position: relative;
   background: rgba(128, 128, 128, 0.2);
@@ -1527,11 +1502,12 @@ a {
   display: inline-block;
   font-size: 0.875em;
   font-weight: bold;
-  line-height: 2.571em;
+  min-height: 2.571em;
   padding: 0 0.571em;
   margin: 0.571em 0em;
   border: none;
   text-transform: uppercase;
+  white-space: normal;
 }
 .poll .hidemain form .buttons .button:last-child {
   float: left;
@@ -1543,6 +1519,49 @@ a {
   content: "";
   display: table;
   clear: both;
+}
+a[href*=findpost][title="Перейти к сообщению"] {
+  color: #ffffff;
+  background: #0277bd;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #0c6296;
+  width: 1.25em;
+  height: 1.25em;
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-bottom;
+  position: relative;
+  margin: 0 0.1875em;
+}
+a[href*=findpost][title="Перейти к сообщению"] img {
+  display: none;
+}
+a[href*=findpost][title="Перейти к сообщению"]:before {
+  content: "";
+  display: block;
+  height: 0.4375em;
+  width: 0.4375em;
+  box-sizing: border-box;
+  border: 0.125em solid #737373;
+  border-color: white;
+  border-top: none;
+  border-right: none;
+  top: 50%;
+  margin-top: -0.1875em;
+  left: 50%;
+  margin-left: -0.125em;
+  position: absolute;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+a[href*=findpost][title="Перейти к сообщению"]:after {
+  content: "";
+  position: absolute;
+  height: 2.25em;
+  width: 2.25em;
+  top: -0.5em;
+  left: -0.5em;
 }
 .post_body {
   padding: 1em;
@@ -1628,54 +1647,37 @@ a {
 .post_body [attach_id][title*="Скачать"]:not(.linked-image)[href*=".txt"][title*=".txt"]:before {
   content: "\e00b";
 }
-.post_body a[href*=findpost][title="Перейти к сообщению"] {
-  color: #ffffff;
-  background: #0277bd;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  background: #0c6296;
-  width: 1.25em;
-  height: 1.25em;
-  display: inline-block;
-  text-align: center;
-  vertical-align: text-bottom;
-  position: relative;
-  margin: 0 0.1875em;
-}
-.post_body a[href*=findpost][title="Перейти к сообщению"] img {
-  display: none;
-}
-.post_body a[href*=findpost][title="Перейти к сообщению"]:before {
-  content: "";
-  display: block;
-  height: 0.4375em;
-  width: 0.4375em;
-  box-sizing: border-box;
-  border: 0.125em solid #737373;
-  border-color: white;
-  border-top: none;
-  border-right: none;
-  top: 50%;
-  margin-top: -0.1875em;
-  left: 50%;
-  margin-left: -0.125em;
-  position: absolute;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-.post_body a[href*=findpost][title="Перейти к сообщению"]:after {
-  content: "";
-  position: absolute;
-  height: 2.25em;
-  width: 2.25em;
-  top: -0.5em;
-  left: -0.5em;
+@-webkit-keyframes highlight {
+  0% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .post_container {
   background: #ffffff;
   margin: 0.5em 0;
   box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.post_container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #0277bd;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+}
+.post_container.active:before {
+  /*transform: scale(1);
+            opacity: 0.25;*/
+  -webkit-animation: highlight 0.5s;
 }
 .post_container .post_header {
   padding: 1em;
@@ -1707,6 +1709,8 @@ a {
 .post_container .post_header .inf {
   position: absolute;
   left: 5em;
+  max-width: 100%;
+  overflow: hidden;
 }
 .post_container .post_header .inf.nick {
   top: 0.125em;
@@ -1750,7 +1754,7 @@ a {
   top: -1em;
   height: 3em;
   width: 2.5em;
-  background-image: url(file:///android_asset/forum/style_images/ic_dots_vertical_grey600_24dp.png), url(../../forum/style_images/ic_dots_vertical_grey600_24dp.png);
+  background-image: url(file:///android_asset/forum/style_images/dots-vertical.svg), url(../../forum/style_images/dots-vertical.svg);
   background-size: 1.5em;
   background-position: 0.375em center;
   background-repeat: no-repeat;
@@ -1970,6 +1974,12 @@ a {
 }
 .user-profile-list > li h3 + .info-list {
   padding-top: 0em;
+}
+.user-profile-list > li textarea {
+  display: block;
+}
+.user-profile-list > li.hide-on-empty {
+  display: none;
 }
 .user-profile-list > li:first-child {
   margin-top: 0;
@@ -2348,7 +2358,7 @@ li .post-block {
 .post-block.quote > .block-title:empty:before {
   content: "Цитата";
 }
-.post-block.quote > .block-title a[href*=findpost][title="Перейти к сообщению"] {
+.post-block.quote > .block-title a[href*=findpost] {
   background: none;
   position: absolute;
   left: 0;
@@ -2357,14 +2367,14 @@ li .post-block {
   height: 100%;
   margin: 0;
 }
-.post-block.quote > .block-title a[href*=findpost][title="Перейти к сообщению"]:before {
+.post-block.quote > .block-title a[href*=findpost]:before {
   border-color: #0277bd;
   left: 1.5em;
   width: 0.5625em;
   height: 0.5625em;
   margin-top: -0.25em;
 }
-.post-block.quote > .block-title a[href*=findpost][title="Перейти к сообщению"]:after {
+.post-block.quote > .block-title a[href*=findpost]:after {
   display: none;
 }
 .post-block.quote > .block-body {
@@ -2618,6 +2628,147 @@ li .post-block {
     margin-right: 0!important;
     border-left: 1px solid #e9e9e9;
     border-right: 1px solid #e9e9e9;
+  }
+}
+@media screen and (max-width: 20rem) {
+  /*body {
+        opacity: 0.75;
+    }*/
+  .user-profile-list > li:first-child .user-box .photo {
+    width: 100%;
+    display: block;
+    height: 6em;
+    text-align: center;
+  }
+  .user-profile-list > li:first-child .user-box .photo .img {
+    height: 5em;
+    width: 5em;
+    margin: auto;
+    -webkit-border-radius: 6em;
+    border-radius: 6em;
+  }
+  .user-profile-list > li:first-child .user-box .photo .img.circle {
+    -webkit-border-radius: 5em;
+    border-radius: 5em;
+  }
+  .user-profile-list > li:first-child .user-box h1 {
+    text-align: center;
+  }
+  .user-profile-list > li:first-child .user-box .title {
+    text-align: center;
+  }
+  .user-profile-list > li:first-child .user-box h2 {
+    text-align: center;
+  }
+  .date {
+    clear: both;
+  }
+  .date .text {
+    text-align: center;
+    font-style: italic;
+    padding: 0.5em 0;
+  }
+  .list-group-item,
+  .our-message {
+    display: block;
+    float: none;
+  }
+  .list-group-item .time,
+  .our-message .time {
+    bottom: 0.25em;
+    z-index: 100;
+  }
+  .list-group-item .time .read-status,
+  .our-message .time .read-status {
+    left: -0.875em;
+    bottom: 0.5em;
+  }
+  .list-group-item .msg-content,
+  .our-message .msg-content {
+    padding-bottom: 1.5em;
+  }
+  .list-group-item:before,
+  .our-message:before {
+    display: none;
+  }
+  .our-message {
+    margin-left: 0.5em;
+  }
+  .our-message .time .read-status {
+    left: auto;
+    right: -0.875em;
+  }
+  .post-block.quote > .block-title {
+    padding-left: 1em;
+    padding-top: 3em;
+  }
+  .post-block.quote > .block-title:empty {
+    padding-top: 0.875em;
+  }
+  .post-block.quote > .block-title a[href*=findpost]:before {
+    margin-top: 0;
+    top: 1em;
+  }
+  .post-block.spoil > .block-title {
+    padding-right: 1em;
+    padding-top: 3em;
+  }
+  .post-block.spoil > .block-title:after {
+    right: 50%;
+    margin-right: -0.375em;
+    top: 1em;
+  }
+  .post-block.tbl {
+    display: block;
+  }
+  .post-block.tbl > .block-title {
+    display: block;
+    width: 100%;
+    min-height: auto;
+  }
+  .post-block.tbl > .block-body {
+    display: block;
+  }
+}
+@media screen and (max-width: 16rem) {
+  .post_container .post_header .header_wrapper {
+    padding-bottom: 4em;
+  }
+  .post_container .post_header .inf {
+    left: 0em;
+  }
+  .post_container .post_header .inf.nick {
+    top: 4.125em;
+  }
+  .post_container .post_header .inf.group {
+    top: 5.375em;
+  }
+  .post_container .post_header .inf.reputation {
+    top: 6.5em;
+  }
+  .post_container .post_header .inf.date {
+    left: 0;
+    right: auto;
+    top: 7.625em;
+  }
+  .panel .navi {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .panel .navi .button {
+    display: inline-block;
+    width: 3em;
+  }
+  .panel .navi .button > span {
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none;
+  }
+  .panel .navi .button.page {
+    width: 100%;
+    display: block;
   }
 }
 .search-web-view {
