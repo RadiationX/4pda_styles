@@ -96,7 +96,7 @@ Edited by: RadiationX|*or you nick*
   font-size: 0.75em!important;
 }
 HTML {
-  font-size: 1em;
+  font-size: 1rem;
 }
 body {
   width: 100%;
@@ -104,7 +104,7 @@ body {
   margin: 0;
   background: #1a1a1a;
   font-family: "roboto";
-  font-size: 100%;
+  font-size: 1em;
   color: #dedede;
   line-height: 1.25em;
   overflow-wrap: break-word;
@@ -459,9 +459,6 @@ a {
   width: auto!important;
   height: auto!important;
   margin: 0.5em auto;
-}
-.container .content .content-box ul {
-  margin-top: -0.9em;
 }
 .container .content .content-box blockquote {
   background: rgba(23, 65, 95, 0.15);
@@ -970,8 +967,8 @@ a {
 .our-message .time .read-status {
   width: 0.5em;
   height: 0.5em;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
   position: absolute;
   right: -1em;
   bottom: 0.66666667em;
@@ -1460,6 +1457,7 @@ a {
 .poll .hidemain form .poll_body .poll_theme .items.voted .item .num_votes {
   float: right;
   font-size: 0.875em;
+  clear: both;
 }
 .poll .hidemain form .poll_body .poll_theme .items.voted .item .num_votes span {
   font-weight: bold;
@@ -1468,6 +1466,7 @@ a {
   content: " Голосов";
 }
 .poll .hidemain form .poll_body .poll_theme .items.voted .item .range {
+  clear: both;
   margin-top: 0.25em;
   position: relative;
   background: rgba(128, 128, 128, 0.2);
@@ -1516,11 +1515,12 @@ a {
   display: inline-block;
   font-size: 0.875em;
   font-weight: bold;
-  line-height: 2.571em;
+  min-height: 2.571em;
   padding: 0 0.571em;
   margin: 0.571em 0em;
   border: none;
   text-transform: uppercase;
+  white-space: normal;
 }
 .poll .hidemain form .buttons .button:last-child {
   float: left;
@@ -1662,6 +1662,9 @@ a[href*=findpost][title="Перейти к сообщению"]:after {
 }
 @-webkit-keyframes highlight {
   0% {
+    opacity: 0;
+  }
+  20% {
     opacity: 0.25;
   }
   100% {
@@ -1682,7 +1685,7 @@ a[href*=findpost][title="Перейти к сообщению"]:after {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #17415f;
+  background: #0277bd;
   z-index: 10;
   opacity: 0;
   pointer-events: none;
@@ -1690,7 +1693,7 @@ a[href*=findpost][title="Перейти к сообщению"]:after {
 .post_container.active:before {
   /*transform: scale(1);
             opacity: 0.25;*/
-  -webkit-animation: highlight 0.5s;
+  -webkit-animation: highlight 1s;
 }
 .post_container .post_header {
   padding: 1em;
@@ -1722,6 +1725,8 @@ a[href*=findpost][title="Перейти к сообщению"]:after {
 .post_container .post_header .inf {
   position: absolute;
   left: 5em;
+  max-width: 100%;
+  overflow: hidden;
 }
 .post_container .post_header .inf.nick {
   top: 0.125em;
@@ -1964,6 +1969,7 @@ a[href*=findpost][title="Перейти к сообщению"]:after {
 .user-profile-list > li .info-list > li {
   padding: 0;
   line-height: 1.5em;
+  overflow: hidden;
 }
 .user-profile-list > li .info-list > li:after {
   content: "";
@@ -1973,6 +1979,8 @@ a[href*=findpost][title="Перейти к сообщению"]:after {
 .user-profile-list > li .info-list > li .title {
   float: left;
   padding-right: 0.5em;
+  max-width: 100%;
+  overflow: hidden;
 }
 .user-profile-list > li .info-list > li .area {
   float: left;
@@ -1985,6 +1993,13 @@ a[href*=findpost][title="Перейти к сообщению"]:after {
 }
 .user-profile-list > li h3 + .info-list {
   padding-top: 0em;
+}
+.user-profile-list > li textarea {
+  display: block;
+  width: 100%;
+}
+.user-profile-list > li.hide-on-empty {
+  display: none;
 }
 .user-profile-list > li:first-child {
   margin-top: 0;
@@ -2013,7 +2028,7 @@ a[href*=findpost][title="Перейти к сообщению"]:after {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   -webkit-border-radius: 4em;
   border-radius: 4em;
@@ -2633,6 +2648,225 @@ li .post-block {
     margin-right: 0!important;
     border-left: 1px solid #474747;
     border-right: 1px solid #474747;
+  }
+}
+@media screen and (max-width: 18em) {
+  .container .product-detail {
+    position: relative;
+    background: #363636;
+  }
+  .container .product-detail .photo {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+  }
+  .container .product-detail .photo img {
+    width: 100%;
+  }
+  .container .product-detail .photo .label {
+    color: #ededed;
+    background: #17415f;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.25em;
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 0;
+    height: 2.25em;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0))) !important;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%) !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%) !important;
+  }
+  .container .product-detail .description h1 {
+    position: relative;
+    padding-top: 0.66666667em;
+    background: none;
+    text-shadow: none;
+    color: #dedede;
+    border-bottom: 1px solid #474747;
+  }
+  .container .product-detail .description .info-holder {
+    padding: 0 1em;
+    position: absolute;
+    bottom: -2.25em;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 2.25em;
+    height: 2.25em;
+    color: #8a8a8a;
+  }
+  .container .product-detail .description .info-holder .date {
+    font-style: normal;
+    font-size: 0.875em;
+  }
+  .container .product-detail .description .info-holder .name {
+    font-size: 0.875em;
+  }
+  .container .product-detail .description .info-holder .name a {
+    color: #8a8a8a;
+  }
+  .container .product-detail .description .more-box {
+    position: absolute;
+    bottom: -2.25em;
+    right: 0;
+    line-height: 2.25em;
+    height: 2.25em;
+    min-width: 2.25em;
+    text-align: center;
+  }
+  .container .product-detail .description .more-box .number {
+    font-size: 0.875em;
+    color: #8a8a8a;
+  }
+  .container .product-detail .description .more-box .meta {
+    display: none;
+  }
+}
+@media screen and (max-width: 16rem) {
+  /*body {
+        opacity: 0.75;
+    }*/
+  .user-profile-list > li:first-child .user-box .photo {
+    width: 100%;
+    display: block;
+    height: 6em;
+    text-align: center;
+  }
+  .user-profile-list > li:first-child .user-box .photo .img {
+    height: 5em;
+    width: 5em;
+    margin: auto;
+    -webkit-border-radius: 6em;
+    border-radius: 6em;
+  }
+  .user-profile-list > li:first-child .user-box .photo .img.circle {
+    -webkit-border-radius: 5em;
+    border-radius: 5em;
+  }
+  .user-profile-list > li:first-child .user-box h1 {
+    text-align: center;
+  }
+  .user-profile-list > li:first-child .user-box .title {
+    text-align: center;
+  }
+  .user-profile-list > li:first-child .user-box h2 {
+    text-align: center;
+  }
+  .date {
+    clear: both;
+  }
+  .date .text {
+    text-align: center;
+    font-style: italic;
+    padding: 0.5em 0;
+  }
+  .list-group-item,
+  .our-message {
+    display: block;
+    float: none;
+  }
+  .list-group-item .time,
+  .our-message .time {
+    bottom: 0.25em;
+    z-index: 100;
+  }
+  .list-group-item .time .read-status,
+  .our-message .time .read-status {
+    left: -0.875em;
+    bottom: 0.5em;
+  }
+  .list-group-item .msg-content,
+  .our-message .msg-content {
+    padding-bottom: 1.5em;
+  }
+  .list-group-item:before,
+  .our-message:before {
+    display: none;
+  }
+  .our-message {
+    margin-left: 0.5em;
+  }
+  .our-message .time .read-status {
+    left: auto;
+    right: -0.875em;
+  }
+  .post-block.quote > .block-title {
+    padding-left: 1em;
+    padding-top: 3em;
+  }
+  .post-block.quote > .block-title:empty {
+    padding-top: 0.875em;
+  }
+  .post-block.quote > .block-title a[href*=findpost]:before {
+    margin-top: 0;
+    top: 1em;
+  }
+  .post-block.spoil > .block-title {
+    padding-right: 1em;
+    padding-top: 3em;
+  }
+  .post-block.spoil > .block-title:after {
+    right: 50%;
+    margin-right: -0.375em;
+    top: 1em;
+  }
+  .post-block.tbl {
+    display: block;
+  }
+  .post-block.tbl > .block-title {
+    display: block;
+    width: 100%;
+    min-height: auto;
+  }
+  .post-block.tbl > .block-body {
+    display: block;
+  }
+}
+@media screen and (max-width: 16rem) {
+  .post_container .post_header .header_wrapper {
+    padding-bottom: 4em;
+  }
+  .post_container .post_header .inf {
+    left: 0em;
+  }
+  .post_container .post_header .inf.nick {
+    top: 4.125em;
+  }
+  .post_container .post_header .inf.group {
+    top: 5.375em;
+  }
+  .post_container .post_header .inf.reputation {
+    top: 6.5em;
+  }
+  .post_container .post_header .inf.date {
+    left: 0;
+    right: auto;
+    top: 7.625em;
+  }
+  .panel .navi {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .panel .navi .button {
+    display: inline-block;
+    width: 3em;
+  }
+  .panel .navi .button > span {
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none;
+  }
+  .panel .navi .button.page {
+    width: 100%;
+    display: block;
   }
 }
 .search-web-view {

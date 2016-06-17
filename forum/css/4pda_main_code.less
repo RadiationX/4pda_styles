@@ -1792,6 +1792,9 @@ a[href*=findpost][title="Перейти к сообщению"] {
 
 @-webkit-keyframes highlight {
     0% {
+        opacity: 0;
+    }
+    20% {
         opacity: 0.25;
     }
     100% {
@@ -1809,7 +1812,7 @@ a[href*=findpost][title="Перейти к сообщению"] {
         top: 0;
         height: 100%;
         width: 100%;
-        background: @mainColor;
+        background: @accentColor;
         z-index: 10;
         opacity: 0;
         pointer-events: none;
@@ -1818,7 +1821,7 @@ a[href*=findpost][title="Перейти к сообщению"] {
         &:before {
             /*transform: scale(1);
             opacity: 0.25;*/
-            -webkit-animation: highlight 0.5s;
+            -webkit-animation: highlight 1s;
         }
     }
     .post_header {
@@ -2124,6 +2127,7 @@ a[href*=findpost][title="Перейти к сообщению"] {
             >li {
                 padding: 0;
                 line-height: 1.5em;
+                overflow: hidden;
                 &:after {
                     content: "";
                     display: table;
@@ -2132,6 +2136,8 @@ a[href*=findpost][title="Перейти к сообщению"] {
                 .title {
                     float: left;
                     padding-right: 0.5em;
+                    max-width: 100%;
+                    overflow: hidden;
                 }
                 .area {
                     float: left;
@@ -2150,6 +2156,7 @@ a[href*=findpost][title="Перейти к сообщению"] {
         }
         textarea {
             display: block;
+            width: 100%;
         }
         &.hide-on-empty {
             display: none;
@@ -2180,7 +2187,7 @@ a[href*=findpost][title="Перейти к сообщению"] {
                         width: 100%;
                         background-position: center;
                         background-repeat: no-repeat;
-                        background-size: contain;
+                        background-size: cover;
                         position: relative;
                         .bRad(4em);
                         &.circle {
@@ -2964,7 +2971,91 @@ li .post-block {
     }
 }
 
-@media screen and (max-width: 20rem) {
+@media screen and (max-width: 18em) {
+    .container {
+        .product-detail {
+            position: relative;
+            background: @bgColor1;
+            .photo {
+                position: relative;
+                padding-bottom: 75%;
+                height: 0;
+                img {
+                    width: 100%;
+                }
+                .label {
+                    .contrast;
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    line-height: 2.25em;
+                    position: absolute;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    top: 0;
+                    height: 2.25em;
+                    width: 100%;
+                    z-index: 1;
+                    background: @labelColor!important;
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @labelColor), color-stop(100%, rgba(0, 0, 0, 0)))!important;
+                    background: -webkit-linear-gradient(top, @labelColor 0%, rgba(0, 0, 0, 0) 100%)!important;
+                    background: linear-gradient(to bottom, @labelColor 0%, rgba(0, 0, 0, 0) 100%)!important;
+                }
+            }
+            .description {
+                h1 {
+                    position: relative;
+                    padding-top: 16/24em;
+                    background: none;
+                    text-shadow: none;
+                    color: @textColor;
+                    border-bottom: @border1;
+                }
+                .info-holder {
+                    padding: 0 1em;
+                    position: absolute;
+                    bottom: -2.25em;
+                    width: 100%;
+                    box-sizing: border-box;
+                    line-height: 2.25em;
+                    height: 2.25em;
+                    color: @secondTextColor;
+                    .date {
+                        font-style: normal;
+                        font-size: 0.875em;
+                    }
+                    .name {
+                        font-size: 0.875em;
+                        a {
+                            color: @secondTextColor;
+                        }
+                    }
+                    .area {}
+                }
+                .more-box {
+                    position: absolute;
+                    bottom: -2.25em;
+                    right: 0;
+                    line-height: 2.25em;
+                    height: 2.25em;
+                    min-width: 2.25em;
+                    text-align: center;
+                    .number {
+                        font-size: 0.875em;
+                        color: @secondTextColor;
+                    }
+                    .number:after {}
+                    .meta {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 16rem) {
     /*body {
         opacity: 0.75;
     }*/
